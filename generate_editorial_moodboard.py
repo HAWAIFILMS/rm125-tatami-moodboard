@@ -12,7 +12,67 @@ if os.path.exists(LOGO_PATH):
 
 # LOCATION SHORTLIST (9 Tatamis/Dojos + 3 White Spaces)
 venues_catalog = [
-    # 01 / WARM WOOD & TRADITIONAL DOJOS
+    # 01 / WARM WOOD & TRADITIONAL DOJOS (TURPIN PREFERRED ORDER)
+    {
+        "category": "warm-wood",
+        "cat_num": "01",
+        "cat_title": "Traditional Dojos & Martial Arts",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+        "id": "las-encinas",
+        "folder": "Encinas",
+        "name": "Las Encinas de Boadilla",
+        "tag": "PRIORITY · MULTI-SPACE",
+        "tag_class": "available",
+        "location": "Boadilla del Monte · Madrid",
+        "distance": "~32.2 km from Valdebebas",
+        "drive_time": "~45–50 min driving",
+        "notes": "Private sports club complex with dedicated martial arts tatami rooms and specialized fencing pistes."
+    },
+    {
+        "category": "warm-wood",
+        "cat_num": "01",
+        "cat_title": "Traditional Dojos & Martial Arts",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+        "id": "csd-car",
+        "folder": "CSD",
+        "name": "CSD (CAR Madrid)",
+        "tag": "PRIORITY · MULTI-SPACE",
+        "tag_class": "available",
+        "location": "C/ Pintor el Greco, 1 (Moncloa) · Madrid",
+        "distance": "~14.7 km from Valdebebas",
+        "drive_time": "~24 min driving",
+        "notes": "National elite training center (Consejo Superior de Deportes). Multi-space: Specifically prioritized for Gimnasia Rítmica and adjacent training hall."
+    },
+    {
+        "category": "warm-wood",
+        "cat_num": "01",
+        "cat_title": "Traditional Dojos & Martial Arts",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+        "id": "principe-asturias",
+        "folder": "Principe de Asturias",
+        "name": "Polideportivo Príncipe de Asturias",
+        "tag": "PRIORITY · MULTI-SPACE",
+        "tag_class": "available",
+        "location": "Madrid",
+        "distance": "~16.0 km from Valdebebas",
+        "drive_time": "~25 min driving",
+        "notes": "Monumental indoor sports pavilion with extensive polished wood sports parquet, perimeter bleachers, and high ceiling clearance."
+    },
+    {
+        "category": "warm-wood",
+        "cat_num": "01",
+        "cat_title": "Traditional Dojos & Martial Arts",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+        "id": "santiago-apostol",
+        "folder": "Complejo Deportivo Santiago Apostol",
+        "name": "Complejo Deportivo Santiago Apóstol",
+        "tag": "PRIORITY · MULTI-SPACE",
+        "tag_class": "available",
+        "location": "Villanueva de la Cañada · Madrid",
+        "distance": "~44.2 km from Valdebebas",
+        "drive_time": "~60–65 min driving",
+        "notes": "Multi-space sports complex featuring dedicated tatami and fencing rooms."
+    },
     {
         "category": "warm-wood",
         "cat_num": "01",
@@ -46,7 +106,7 @@ venues_catalog = [
     {
         "category": "warm-wood",
         "cat_num": "01",
-        "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
+        "cat_title": "Traditional Dojos & Martial Arts",
         "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
         "id": "cc-ejercitos",
         "folder": "CC Ejércitos",
@@ -61,7 +121,7 @@ venues_catalog = [
     {
         "category": "warm-wood",
         "cat_num": "01",
-        "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
+        "cat_title": "Traditional Dojos & Martial Arts",
         "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
         "id": "zanshin",
         "folder": "Zanshin Madrid",
@@ -76,95 +136,20 @@ venues_catalog = [
     {
         "category": "warm-wood",
         "cat_num": "01",
-        "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
+        "cat_title": "Traditional Dojos & Martial Arts",
         "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
-        "id": "plato-who",
-        "folder": "Who Espacio Creativo",
-        "name": "Plató Who (Who Espacio Creativo)",
-        "tag": "PRIORITY · MULTI-SPACE",
-        "tag_class": "available",
-        "location": "Madrid Centro",
-        "distance": "~12.0 km from Valdebebas",
-        "drive_time": "~20 min driving",
-        "notes": "Contemporary architectural creative space. Warm timber accents, light floors, abundant natural soft daylight across open-plan spans."
-    },
-    {
-        "category": "warm-wood",
-        "cat_num": "01",
-        "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
-        "id": "csd-car",
-        "folder": "CSD",
-        "name": "CSD (CAR Madrid)",
-        "tag": "PRIORITY · MULTI-SPACE",
-        "tag_class": "available",
-        "location": "C/ Pintor el Greco, 1 (Moncloa) · Madrid",
-        "distance": "~14.7 km from Valdebebas",
-        "drive_time": "~24 min driving",
-        "notes": "National elite training center (Consejo Superior de Deportes). Multi-space: Specifically prioritized for Gimnasia Rítmica and adjacent training hall."
-    },
-    {
-        "category": "warm-wood",
-        "cat_num": "01",
-        "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
-        "id": "principe-asturias",
-        "folder": "Principe de Asturias",
-        "name": "Polideportivo Príncipe de Asturias",
-        "tag": "PRIORITY · MULTI-SPACE",
-        "tag_class": "available",
-        "location": "Madrid",
-        "distance": "~16.0 km from Valdebebas",
-        "drive_time": "~25 min driving",
-        "notes": "Monumental indoor sports pavilion with extensive polished wood sports parquet, perimeter bleachers, and high ceiling clearance."
-    },
-    {
-        "category": "warm-wood",
-        "cat_num": "01",
-        "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
-        "id": "las-encinas",
-        "folder": "Encinas",
-        "name": "Las Encinas de Boadilla",
-        "tag": "PRIORITY · MULTI-SPACE",
-        "tag_class": "available",
-        "location": "Boadilla del Monte · Madrid",
-        "distance": "~32.2 km from Valdebebas",
-        "drive_time": "~45–50 min driving",
-        "notes": "Private sports club complex with dedicated martial arts tatami rooms and specialized fencing pistes."
-    },
-    {
-        "category": "warm-wood",
-        "cat_num": "01",
-        "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
-        "id": "santiago-apostol",
-        "folder": "Complejo Deportivo Santiago Apostol",
-        "name": "Complejo Deportivo Santiago Apóstol",
-        "tag": "PRIORITY · MULTI-SPACE",
-        "tag_class": "available",
-        "location": "Villanueva de la Cañada · Madrid",
-        "distance": "~44.2 km from Valdebebas",
-        "drive_time": "~60–65 min driving",
-        "notes": "Multi-space sports complex featuring dedicated tatami and fencing rooms."
+        "id": "dojo-shubukan",
+        "folder": "Dojo Shubukan",
+        "name": "Dojo Shubukan",
+        "tag": "NEW · TRADITIONAL TATAMI",
+        "tag_class": "confirmed",
+        "location": "C/ de los Yébenes, 98 (Aluche) · Madrid",
+        "distance": "~18.2 km from Valdebebas",
+        "drive_time": "~26 min driving",
+        "notes": "Dedicated Japanese martial arts dojo with authentic tatami flooring, traditional shoji wooden partitions, and atmospheric lighting."
     },
 
     # 02 / WHITE & POLYVALENT SPACES
-    {
-        "category": "white-polyvalent",
-        "cat_num": "02",
-        "cat_title": "White & Polyvalent Spaces",
-        "cat_desc": "Curated white and daylight architectural spaces for custom set design and spatial intervention.",
-        "id": "espacio-larra",
-        "folder": "Espacio Larra",
-        "name": "Espacio Larra (Larra 14)",
-        "tag": "SELECTED · PLATÓ",
-        "tag_class": "confirmed",
-        "location": "C/ de Larra, 14 (Chamberí) · Madrid",
-        "distance": "~12.7 km from Valdebebas",
-        "drive_time": "~21 min driving",
-        "notes": "Historic editorial building. Pristine white cyclorama Plató, grand skylit central atrium, raw gallery spaces, and auditorium."
-    },
     {
         "category": "white-polyvalent",
         "cat_num": "02",
@@ -179,6 +164,36 @@ venues_catalog = [
         "distance": "~9.5 km from Valdebebas",
         "drive_time": "~14 min driving",
         "notes": "Botanical glasshouse venue with natural overhead light and architectural steel frames. Closest polyvalent space to Valdebebas."
+    },
+    {
+        "category": "white-polyvalent",
+        "cat_num": "02",
+        "cat_title": "White & Polyvalent Spaces",
+        "cat_desc": "Curated white and daylight architectural spaces for custom set design and spatial intervention.",
+        "id": "plato-who",
+        "folder": "Who Espacio Creativo",
+        "name": "Plató Who (Who Espacio Creativo)",
+        "tag": "SELECTED · ARCHITECTURAL",
+        "tag_class": "available",
+        "location": "Madrid Centro",
+        "distance": "~12.0 km from Valdebebas",
+        "drive_time": "~20 min driving",
+        "notes": "Contemporary architectural creative space. Warm timber accents, light floors, abundant natural soft daylight across open-plan spans."
+    },
+    {
+        "category": "white-polyvalent",
+        "cat_num": "02",
+        "cat_title": "White & Polyvalent Spaces",
+        "cat_desc": "Curated white and daylight architectural spaces for custom set design and spatial intervention.",
+        "id": "espacio-larra",
+        "folder": "Espacio Larra",
+        "name": "Espacio Larra (Larra 14)",
+        "tag": "SELECTED · PLATÓ",
+        "tag_class": "confirmed",
+        "location": "C/ de Larra, 14 (Chamberí) · Madrid",
+        "distance": "~12.7 km from Valdebebas",
+        "drive_time": "~21 min driving",
+        "notes": "Historic editorial building. Pristine white cyclorama Plató, grand skylit central atrium, raw gallery spaces, and auditorium."
     },
     {
         "category": "white-polyvalent",
@@ -1045,9 +1060,100 @@ html_template = f"""<!DOCTYPE html>
     .masthead-right {{ display: none; }}
     .hero-meta-grid {{ flex-direction: column; gap: 14px; }}
   }}
+
+  /* Curation Mode Floating Tool Bar */
+  .curate-toolbar {{
+    position: fixed;
+    top: 14px;
+    right: 48px;
+    z-index: 120;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }}
+
+  .curate-btn {{
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 7px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    border: 1px solid var(--line-hairline);
+    background: var(--bg-card);
+    color: var(--ink-charcoal);
+    box-shadow: 0 4px 16px rgba(15, 15, 15, 0.08);
+    transition: all 0.15s ease;
+  }}
+
+  .curate-btn:hover {{
+    background: var(--bg-surface-subtle);
+    color: var(--ink-black);
+  }}
+
+  .curate-btn.active {{
+    background: #E53935;
+    color: #FFFFFF;
+    border-color: #D32F2F;
+  }}
+
+  .delete-badge {{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(15, 15, 15, 0.55);
+    backdrop-filter: blur(8px);
+    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    color: #FFFFFF;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.15s ease;
+  }}
+
+  body.curate-active .delete-badge {{
+    display: flex;
+  }}
+
+  .mosaic-cell.marked-for-removal {{
+    opacity: 0.25;
+    filter: grayscale(1);
+  }}
+
+  .mosaic-cell.marked-for-removal .delete-badge {{
+    background: #E53935;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+  }}
+
+  .curate-status-pill {{
+    display: none;
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: #111111;
+    padding: 6px 14px;
+    border-radius: 999px;
+  }}
+
+  body.curate-active .curate-status-pill {{
+    display: inline-block;
+  }}
+
 </style>
 </head>
 <body>
+
+
 
   <!-- Masthead Bar -->
   <header class="masthead">
@@ -1057,7 +1163,7 @@ html_template = f"""<!DOCTYPE html>
       <div class="masthead-project">TMC × TATAMIS — ADIDAS RM125</div>
     </div>
     <div class="masthead-right">
-      <div class="curation-counter">12 Locations · 479 Archive Plates</div>
+      <div class="curation-counter">{len(venues_catalog)} Locations · {total_images} Curated Plates</div>
       <div class="masthead-sep"></div>
       <div class="masthead-origin-badge">Origin: Valdebebas</div>
     </div>
@@ -1099,7 +1205,7 @@ html_template = f"""<!DOCTYPE html>
         </div>
       </div>
       <h1 class="hero-headline">Location Moodboard</h1>
-      <p class="hero-deck">Curated location options for client review and feasibility assessment. Features 9 authentic tatamis and martial arts dojos alongside 3 polyvalent white architectural spaces in Madrid.</p>
+      <p class="hero-deck">Curated location options for client review and feasibility assessment. Features 9 authentic tatamis and martial arts dojos alongside 4 polyvalent white architectural spaces in Madrid.</p>
     </section>
 
 
@@ -1218,6 +1324,82 @@ html_template += f"""
   </div>
 
   <script>
+
+    let curationMode = false;
+    const selectedForTrash = new Set();
+
+    function toggleCurationMode() {{
+      curationMode = !curationMode;
+      document.body.classList.toggle('curate-active', curationMode);
+      const btn = document.getElementById('toggleCurateBtn');
+      btn.classList.toggle('active', curationMode);
+      btn.innerText = curationMode ? '✕ Exit Curate' : '✂️ Curate Mode';
+      updateCurateUI();
+    }}
+
+    function toggleMarkCell(e, badge) {{
+      e.stopPropagation();
+      const cell = badge.closest('.mosaic-cell');
+      const src = cell.getAttribute('data-src');
+      if (selectedForTrash.has(src)) {{
+        selectedForTrash.delete(src);
+        cell.classList.remove('marked-for-removal');
+      }} else {{
+        selectedForTrash.add(src);
+        cell.classList.add('marked-for-removal');
+      }}
+      updateCurateUI();
+    }}
+
+    function handleCellClick(e, cell) {{
+      if (curationMode) {{
+        const src = cell.getAttribute('data-src');
+        if (selectedForTrash.has(src)) {{
+          selectedForTrash.delete(src);
+          cell.classList.remove('marked-for-removal');
+        }} else {{
+          selectedForTrash.add(src);
+          cell.classList.add('marked-for-removal');
+        }}
+        updateCurateUI();
+      }} else {{
+        openLightbox(cell);
+      }}
+    }}
+
+    function updateCurateUI() {{
+      const applyBtn = document.getElementById('applyDeleteBtn');
+      const countPill = document.getElementById('curateCount');
+      const deleteNum = document.getElementById('deleteNum');
+      countPill.innerText = `${{selectedForTrash.size}} marked`;
+      deleteNum.innerText = selectedForTrash.size;
+      applyBtn.style.display = (curationMode && selectedForTrash.size > 0) ? 'inline-block' : 'none';
+    }}
+
+    async function applyBatchRemove() {{
+      if (selectedForTrash.size === 0) return;
+      const count = selectedForTrash.size;
+      if (!confirm(`Are you sure you want to remove and trash ${{count}} images? They will be moved to .trashed_plates safely.`)) {{
+        return;
+      }}
+      try {{
+        const res = await fetch('/api/remove-images', {{
+          method: 'POST',
+          headers: {{'Content-Type': 'application/json'}},
+          body: JSON.stringify({{images: Array.from(selectedForTrash)}})
+        }});
+        const data = await res.json();
+        if (data.ok) {{
+          alert(`Successfully removed ${{data.removed_count}} images! The moodboard has been automatically regenerated.`);
+          location.reload();
+        }} else {{
+          alert('Error removing images: ' + data.error);
+        }}
+      }} catch (err) {{
+        alert('Could not connect to curation server: ' + err.message);
+      }}
+    }}
+
     function openLightbox(el) {{
       const img = el.querySelector('img');
       if (!img) return;
