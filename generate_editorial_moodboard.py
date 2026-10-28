@@ -221,7 +221,7 @@ for v in venues_catalog:
     thumb_v_folder = os.path.join(THUMBS_DIR, v["folder"])
     images = []
     if os.path.exists(v_folder):
-        files = sorted([f for f in os.listdir(v_folder) if f.lower().endswith(('.jpg', '.jpeg', '.png')) and not f.startswith('._')])
+        files = sorted([f for f in os.listdir(v_folder) if f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp')) and not f.startswith('._')])
         for f in files:
             orig_rel = f"assets/{v['folder']}/{f}"
             base_name = os.path.splitext(f)[0]
@@ -1152,6 +1152,13 @@ html_template = f"""<!DOCTYPE html>
 </style>
 </head>
 <body>
+  <!-- Local Curation Bar -->
+  <div class="curate-toolbar">
+    <span class="curate-status-pill" id="curateCount">0 marked</span>
+    <button class="curate-btn" id="toggleCurateBtn" onclick="toggleCurationMode()">✂️ Curate Mode</button>
+    <button class="curate-btn" id="applyDeleteBtn" style="display:none; background:#E53935; color:#fff;" onclick="applyBatchRemove()">Trash Selected (<span id="deleteNum">0</span>)</button>
+  </div>
+
 
 
 
@@ -1288,7 +1295,8 @@ for cat_id, cat_data in categories_grouped.items():
         for idx, img_info in enumerate(v['images']):
             span_cls = get_grid_span(idx, num_imgs)
             html_template += f"""
-            <div class="mosaic-cell {span_cls}" onclick="openLightbox(this)">
+            <div class="mosaic-cell {span_cls}" data-src="{img_info['orig']}" onclick="handleCellClick(event, this)">
+              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
               <img src="{img_info['thumb']}" data-full="{img_info['orig']}" alt="{v['name']} plate {idx+1}" loading="lazy">
               <span class="cell-caption">Plate {idx+1:02d}</span>
             </div>
