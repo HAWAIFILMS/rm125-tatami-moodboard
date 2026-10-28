@@ -763,6 +763,7 @@ html_template = f"""<!DOCTYPE html>
     border-top: 2px solid var(--ink-black);
     padding: 36px 40px 48px;
     margin-bottom: 96px;
+    scroll-margin-top: 76px;
   }}
 
   .venue-lead-row {{
