@@ -637,8 +637,9 @@ html_template = f"""<!DOCTYPE html>
 
   /* Hero Section */
   .hero-section {{
-    padding: 72px 0 56px;
+    padding: 72px 0 64px;
     border-bottom: 1px solid var(--line-hairline);
+    margin-bottom: 32px;
   }}
 
   .hero-top-row {{
@@ -709,99 +710,7 @@ html_template = f"""<!DOCTYPE html>
     line-height: 1.45;
   }}
 
-  /* Filter & View Control Bar */
-  .filter-bar {{
-    position: sticky;
-    top: 57px;
-    z-index: 90;
-    background: rgba(249, 245, 233, 0.94);
-    backdrop-filter: blur(14px);
-    border-bottom: 1px solid var(--line-hairline);
-    padding: 12px 56px;
-    margin: 0 -56px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-  }}
 
-  .filter-group {{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
-  }}
-
-  .filter-label {{
-    font-family: var(--font-heading);
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin-right: 6px;
-  }}
-
-  .filter-btn {{
-    background: transparent;
-    border: none;
-    font-family: var(--font-heading);
-    font-size: 10.5px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    padding: 5px 12px;
-    border-radius: 999px;
-    cursor: pointer;
-    transition: all 0.15s ease;
-  }}
-
-  .filter-btn:hover {{
-    color: var(--ink-black);
-    background: var(--bg-surface-subtle);
-  }}
-
-  .filter-btn.active {{
-    color: var(--ink-black);
-    background: var(--ink-black);
-    color: var(--bg-page);
-    font-weight: 600;
-  }}
-
-  .search-wrapper {{
-    position: relative;
-    display: flex;
-    align-items: center;
-  }}
-
-  input.search-input {{
-    background: var(--bg-surface-subtle);
-    border: none;
-    font-family: var(--font-body);
-    font-size: 12.5px;
-    color: var(--ink-black);
-    padding: 6px 14px 6px 30px;
-    border-radius: 999px;
-    width: 220px;
-    outline: none;
-    transition: width 0.2s ease, background 0.2s ease;
-  }}
-
-  input.search-input:focus {{
-    width: 280px;
-    background: #FFFFFF;
-  }}
-
-  .search-icon {{
-    position: absolute;
-    left: 12px;
-    display: flex;
-    align-items: center;
-    color: var(--ink-muted);
-    pointer-events: none;
-  }}
 
   /* Chapter Section */
   section.chapter {{
@@ -1124,7 +1033,7 @@ html_template = f"""<!DOCTYPE html>
   @media (max-width: 768px) {{
     header.masthead {{ padding: 14px 24px; }}
     .editorial-wrapper {{ padding: 0 20px; }}
-    .filter-bar {{ padding: 12px 20px; margin: 0 -20px 32px; }}
+    
     article.venue-unit {{ padding: 24px 18px 36px; }}
     .venue-lead-row {{ flex-direction: column; gap: 18px; }}
     .venue-specs-column {{ width: 100%; justify-content: space-between; }}
@@ -1192,19 +1101,7 @@ html_template = f"""<!DOCTYPE html>
       <p class="hero-deck">Curated location options for client review and feasibility assessment. Features 9 authentic tatamis and martial arts dojos alongside 3 polyvalent white architectural spaces in Madrid.</p>
     </section>
 
-    <!-- Interactive Navigation & Filter Bar -->
-    <div class="filter-bar">
-      <div class="filter-group">
-        <span class="filter-label">Filter:</span>
-        <button class="filter-btn active" onclick="filterCategory('all', this)">All Venues ({len(venues_catalog)})</button>
-        <button class="filter-btn" onclick="filterCategory('warm-wood', this)">01 Traditional Wood (9)</button>
-        <button class="filter-btn" onclick="filterCategory('white-polyvalent', this)">02 White Polyvalent (3)</button>
-      </div>
-      <div class="search-wrapper">
-        <span class="search-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
-        <input type="text" class="search-input" id="venueSearch" placeholder="Search venue, district..." oninput="handleSearch(this.value)">
-      </div>
-    </div>
+
 
     <!-- Main Categories -->
     <main>
