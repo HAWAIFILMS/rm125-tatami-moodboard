@@ -1,0 +1,288 @@
+{
+  "project": "TMC \u00d7 TATAMIS \u2014 ADIDAS RM125",
+  "title": "Location Moodboard",
+  "subtitle": "Photographic & Architectural References \u00b7 Madrid 2026",
+  "client": "TMC / adidas",
+  "curated_by": "Hawai Films \u00b7 Production & Locations",
+  "shoot_dates": "18\u201319 November 2026",
+  "origin": "Ciudad Real Madrid (Valdebebas)",
+  "categories": [
+    {
+      "id": "warm-wood",
+      "label": "01 / WARM WOOD & TRADITIONAL DOJOS",
+      "desc": "Authentic timber construction, traditional tatamis, Japanese architectural minimalism, and heritage parquets.",
+      "venues": [
+        {
+          "id": "shotokan",
+          "name": "Shotokan Honbu Dojo",
+          "tag": "HERITAGE DOJO",
+          "tag_class": "confirmed",
+          "location": "Chamart\u00edn / Prosperidad \u00b7 Madrid",
+          "distance": "~8.0 km from Valdebebas",
+          "drive_time": "~15 min driving",
+          "notes": "Traditional Japanese dojo. Full wood perimeter framing, natural tatami, warm directional light.",
+          "images": [
+            "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO.jpg",
+            "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-4.jpg",
+            "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-5.jpg",
+            "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-6.jpg"
+          ]
+        },
+        {
+          "id": "zanshin",
+          "name": "Zanshin Madrid",
+          "tag": "MINIMALIST DOJO",
+          "tag_class": "confirmed",
+          "location": "C/ Clara del Rey, Chamart\u00edn \u00b7 Madrid",
+          "distance": "~8.9 km from Valdebebas",
+          "drive_time": "~16 min driving",
+          "notes": "Japanese martial arts center with warm wood wall cladding, clean tatami configuration, high ceiling clearance.",
+          "images": [
+            "assets/Zanshin Madrid/Zanshin Madrid 04.jpg",
+            "assets/Zanshin Madrid/Zanshin Madrid 02.jpg",
+            "assets/Zanshin Madrid/Zanshin Madrid 03.jpg",
+            "assets/Zanshin Madrid/Zanshin Madrid 01.jpg"
+          ]
+        },
+        {
+          "id": "cc-ejercitos",
+          "name": "CC Ej\u00e9rcitos (Casino Militar)",
+          "tag": "HISTORIC PARQUET",
+          "tag_class": "optioned",
+          "location": "Gran V\u00eda, 13 (Centro) \u00b7 Madrid",
+          "distance": "~13.5 km from Valdebebas",
+          "drive_time": "~22 min driving",
+          "notes": "Stately historic palace. Stained wood herringbone parquets, classical moldings, monumental ceiling heights.",
+          "images": [
+            "assets/CC Ej\u00e9rcitos/CC EJERCITOS_ESGRIMA-2.jpg",
+            "assets/CC Ej\u00e9rcitos/CC EJERCITOS_ESGRIMA-3.jpg",
+            "assets/CC Ej\u00e9rcitos/CC EJERCITOS_ESGRIMA-7.jpg",
+            "assets/CC Ej\u00e9rcitos/CC EJERCITOS_ESGRIMA.jpg"
+          ]
+        },
+        {
+          "id": "who-creativo",
+          "name": "Who Espacio Creativo",
+          "tag": "WARM STUDIO",
+          "tag_class": "available",
+          "location": "Madrid Centro",
+          "distance": "~12.0 km from Valdebebas",
+          "drive_time": "~20 min driving",
+          "notes": "Modern architectural creative space. Warm wood accents, light floors, abundant natural soft daylight.",
+          "images": [
+            "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_1.jpg",
+            "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_2.jpg",
+            "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_8.jpg",
+            "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_9.jpg"
+          ]
+        },
+        {
+          "id": "moratalaz",
+          "name": "Av. Moratalaz Dojo",
+          "tag": "MULTI-ROOM",
+          "tag_class": "available",
+          "location": "Moratalaz \u00b7 Madrid",
+          "distance": "~11.6 km from Valdebebas",
+          "drive_time": "~20 min driving",
+          "notes": "Functional martial arts center. Sala Grande with wood-paneled walls and tatami flooring.",
+          "images": [
+            "assets/Av. Moratalaz/AV MORATALAZ_SALA GRANDE-4.jpg",
+            "assets/Av. Moratalaz/AV MORATALAZ_SALA GRANDE-2.jpg",
+            "assets/Av. Moratalaz/AV MORATALAZ_SALA GRANDE-3.jpg",
+            "assets/Av. Moratalaz/AV MORATALAZ_SALA GRANDE.jpg"
+          ]
+        },
+        {
+          "id": "gimnasio-kime",
+          "name": "Club Deportivo Kime",
+          "tag": "BOXING & TATAMI",
+          "tag_class": "available",
+          "location": "Ventas / Ciudad Lineal \u00b7 Madrid",
+          "distance": "~8.2 km from Valdebebas",
+          "drive_time": "~15 min driving",
+          "notes": "Classic neighborhood martial arts gym. Wood training flooring, mirrors, tatami mat area.",
+          "images": [
+            "assets/Club Deportivo Kime/Club Deportivo Kime 02.jpeg",
+            "assets/Club Deportivo Kime/Club Deportivo Kime 03.jpg",
+            "assets/Club Deportivo Kime/Club Deportivo Kime 02.jpg",
+            "assets/Club Deportivo Kime/Club Deportivo Kime 01.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "architectural-olympic",
+      "label": "02 / BRUTALIST & OLYMPIC HIGH-PERFORMANCE",
+      "desc": "Raw architectural concrete volumes, municipal sports pavilions, and Olympic-grade athlete training venues.",
+      "venues": [
+        {
+          "id": "puerta-hierro",
+          "name": "Parque Deportivo Puerta de Hierro",
+          "tag": "BRUTALIST HIGHLIGHT",
+          "tag_class": "optioned",
+          "location": "Ctra. de El Pardo, km 1 \u00b7 Madrid",
+          "distance": "~15.7 km from Valdebebas",
+          "drive_time": "~25 min driving",
+          "notes": "Raw architectural concrete sports pavilion. Standout brutalist visual character with high overhead volume. Municipal permit lead time applies.",
+          "images": [
+            "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_.jpg",
+            "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-5.jpg",
+            "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-4.jpg",
+            "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-6.jpg"
+          ]
+        },
+        {
+          "id": "csd-car",
+          "name": "CSD (Centro de Alto Rendimiento)",
+          "tag": "OLYMPIC CENTRE",
+          "tag_class": "available",
+          "location": "C/ Pintor el Greco, 1 (Moncloa) \u00b7 Madrid",
+          "distance": "~14.7 km from Valdebebas",
+          "drive_time": "~24 min driving",
+          "notes": "Official national elite athlete training center. Lucha (wrestling mats) and Esgrima (fencing pistes) halls. Institutional permit required.",
+          "images": [
+            "assets/CSD/CSD_ESGRIMA-4.jpg",
+            "assets/CSD/CSD_ESGRIMA-2.jpg",
+            "assets/CSD/CSD_ESGRIMA.jpg",
+            "assets/CSD/CSD_ESGRIMA-3.jpg"
+          ]
+        },
+        {
+          "id": "principe-asturias",
+          "name": "Polideportivo Pr\u00edncipe de Asturias",
+          "tag": "SPORTS PARQUET",
+          "tag_class": "available",
+          "location": "Madrid",
+          "distance": "~16.0 km from Valdebebas",
+          "drive_time": "~25 min driving",
+          "notes": "Monumental indoor pavilion with polished light wood sports parquet, high roof truss system, perimeter stands.",
+          "images": [
+            "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-9-2.jpg",
+            "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-4-2.jpg",
+            "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-25.jpg",
+            "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-7-2.jpg"
+          ]
+        },
+        {
+          "id": "las-encinas",
+          "name": "Las Encinas de Boadilla",
+          "tag": "SPORTS CLUB",
+          "tag_class": "available",
+          "location": "Boadilla del Monte \u00b7 Madrid",
+          "distance": "~32.2 km from Valdebebas",
+          "drive_time": "~45\u201350 min driving",
+          "notes": "Private sporting grounds with dedicated martial arts tatami rooms and specialized fencing pistes.",
+          "images": [
+            "assets/Encinas/LAS ENCINAS-70.jpg",
+            "assets/Encinas/LAS ENCINAS-71.jpg",
+            "assets/Encinas/LAS ENCINAS-74.jpg",
+            "assets/Encinas/LAS ENCINAS-69.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polyvalent-white",
+      "label": "03 / POLYVALENT ARCHITECTURAL & WHITE SPACES",
+      "desc": "Clean industrial lofts, monumental concrete galleries, and white cyclorama stages for custom floating tatami installations.",
+      "venues": [
+        {
+          "id": "concrete-heaven",
+          "name": "Concrete Heaven (Museo Automoci\u00f3n)",
+          "tag": "RAW CONCRETE",
+          "tag_class": "available",
+          "location": "Madrid Norte / Sur",
+          "distance": "~8\u201325 km from Valdebebas",
+          "drive_time": "~15\u201330 min driving",
+          "notes": "Monumental board-formed raw concrete structure with 3 open-plan floor levels and outdoor courtyards. Pure brutalist backdrop.",
+          "images": [
+            "assets/Concrete Heaven/concrete heaven_Ext_-5.jpg",
+            "assets/Concrete Heaven/concrete heaven_Ext_-7.jpg",
+            "assets/Concrete Heaven/concrete heaven_Ext_-6.jpg",
+            "assets/Concrete Heaven/concrete heaven_Ext_.jpg"
+          ]
+        },
+        {
+          "id": "espacio-larra",
+          "name": "Espacio Larra (Larra 14)",
+          "tag": "WHITE PLAT\u00d3",
+          "tag_class": "available",
+          "location": "C/ de Larra, 14 (Chamber\u00ed) \u00b7 Madrid",
+          "distance": "~12.7 km from Valdebebas",
+          "drive_time": "~21 min driving",
+          "notes": "Historic editorial building. Pristine white cyclorama Plat\u00f3, grand skylit central atrium, raw gallery spaces.",
+          "images": [
+            "assets/Espacio Larra/049.jpg",
+            "assets/Espacio Larra/048.jpg",
+            "assets/Espacio Larra/hall.jpg",
+            "assets/Espacio Larra/040.jpg"
+          ]
+        },
+        {
+          "id": "espacio-23",
+          "name": "Espacio 23",
+          "tag": "WARM LOFT",
+          "tag_class": "available",
+          "location": "Arganzuela / Delicias \u00b7 Madrid",
+          "distance": "~14.9 km from Valdebebas",
+          "drive_time": "~24 min driving",
+          "notes": "Industrial-chic loft with warm natural timber beams, exposed brick, clean white walls, warm natural light.",
+          "images": [
+            "assets/Espacio 23/Espacio 23_042.jpg",
+            "assets/Espacio 23/Espacio 23_057.jpg",
+            "assets/Espacio 23/Espacio 23_061.jpg",
+            "assets/Espacio 23/Espacio 23_011.jpg"
+          ]
+        },
+        {
+          "id": "gv-venue",
+          "name": "GV Venue Gran V\u00eda",
+          "tag": "WHITE GALLERY",
+          "tag_class": "available",
+          "location": "Gran V\u00eda (Centro) \u00b7 Madrid",
+          "distance": "~13.7 km from Valdebebas",
+          "drive_time": "~23 min driving",
+          "notes": "Multi-level white open space with monumental windows overlooking Gran V\u00eda. Clean contemporary architectural canvas.",
+          "images": [
+            "assets/GV Venue/2507_GV VENUE   (80).jpg",
+            "assets/GV Venue/2507_GV VENUE   (62).jpg",
+            "assets/GV Venue/2507_GV VENUE   (78).jpg",
+            "assets/GV Venue/2507_GV VENUE   (76).jpg"
+          ]
+        },
+        {
+          "id": "alhajas-palacio",
+          "name": "Las Alhajas Palacio",
+          "tag": "NEOCLASSICAL",
+          "tag_class": "available",
+          "location": "Plaza de San Mart\u00edn (Centro) \u00b7 Madrid",
+          "distance": "~13.8 km from Valdebebas",
+          "drive_time": "~23 min driving",
+          "notes": "Grand neoclassical palace with a 4-story covered atrium, light stonework, and fine timber accents.",
+          "images": [
+            "assets/Las Alhajas Palacio/LAS ALHAJAS PALACIO (1 de 31).jpg",
+            "assets/Las Alhajas Palacio/LAS ALHAJAS PALACIO (6 de 31).jpg",
+            "assets/Las Alhajas Palacio/LAS ALHAJAS PALACIO (5 de 31).jpg",
+            "assets/Las Alhajas Palacio/LAS ALHAJAS PALACIO (2 de 31).jpg"
+          ]
+        },
+        {
+          "id": "proxima-estacion",
+          "name": "Pr\u00f3xima Estaci\u00f3n",
+          "tag": "INDUSTRIAL STAGE",
+          "tag_class": "available",
+          "location": "Arganzuela \u00b7 Madrid",
+          "distance": "~17.5 km from Valdebebas",
+          "drive_time": "~26 min driving",
+          "notes": "Industrial open-plan venue with polished concrete floors, steel trusses, and flexible staging space.",
+          "images": [
+            "assets/Proxima Estacion/PROXIMA ESTACION-2.jpg",
+            "assets/Proxima Estacion/PROXIMA ESTACION-3.jpg",
+            "assets/Proxima Estacion/PROXIMA ESTACION-1.jpg",
+            "assets/Proxima Estacion/PROXIMA ESTACION-8.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}
