@@ -199,13 +199,27 @@ venues_catalog = [
 
 total_images = 0
 categories_grouped = {}
+THUMBS_DIR = os.path.join(ROOT, "assets_thumbs")
 
 for v in venues_catalog:
     v_folder = os.path.join(ASSETS_DIR, v["folder"])
+    thumb_v_folder = os.path.join(THUMBS_DIR, v["folder"])
     images = []
     if os.path.exists(v_folder):
         files = sorted([f for f in os.listdir(v_folder) if f.lower().endswith(('.jpg', '.jpeg', '.png')) and not f.startswith('._')])
-        images = [f"assets/{v['folder']}/{f}" for f in files]
+        for f in files:
+            orig_rel = f"assets/{v['folder']}/{f}"
+            base_name = os.path.splitext(f)[0]
+            thumb_file = f"{base_name}.webp"
+            thumb_abs = os.path.join(thumb_v_folder, thumb_file)
+            if os.path.exists(thumb_abs):
+                thumb_rel = f"assets_thumbs/{v['folder']}/{thumb_file}"
+            else:
+                thumb_rel = orig_rel
+            images.append({
+                "orig": orig_rel,
+                "thumb": thumb_rel
+            })
     v["images"] = images
     total_images += len(images)
     
@@ -814,16 +828,16 @@ html_template = f"""<!DOCTYPE html>
     opacity: 1;
   }}
 
-  /* Floating Quick-Nav Pill */
+  /* Floating Left-Side Nav Trigger & Drawer */
   .quick-nav-pill {{
     position: fixed;
     bottom: 32px;
-    right: 48px;
+    left: 40px;
     z-index: 95;
     background: var(--ink-black);
     color: var(--bg-page);
     border-radius: 999px;
-    box-shadow: 0 8px 32px rgba(15, 15, 15, 0.24);
+    box-shadow: 0 12px 36px rgba(15, 15, 15, 0.28);
     display: flex;
     align-items: center;
     padding: 6px;
@@ -853,21 +867,22 @@ html_template = f"""<!DOCTYPE html>
     background: rgba(255, 255, 255, 0.16);
   }}
 
-  /* Jump Menu Drawer */
+  /* Left-Side Navigation Drawer */
   .jump-drawer {{
     display: none;
     position: fixed;
     bottom: 84px;
-    right: 48px;
+    left: 40px;
     z-index: 96;
     background: var(--bg-card);
     border: 1px solid var(--line-hairline);
     border-top: 2px solid var(--ink-black);
-    box-shadow: 0 16px 48px rgba(15, 15, 15, 0.18);
-    width: 340px;
-    max-height: 460px;
+    box-shadow: 0 20px 50px rgba(15, 15, 15, 0.22);
+    width: 320px;
+    max-height: 480px;
     overflow-y: auto;
     padding: 16px 0;
+    border-radius: 4px;
   }}
 
   .jump-drawer.active {{
@@ -960,8 +975,8 @@ html_template = f"""<!DOCTYPE html>
     }}
     .masthead-right {{ display: none; }}
     .hero-meta-grid {{ flex-direction: column; gap: 14px; }}
-    .quick-nav-pill {{ right: 20px; bottom: 20px; }}
-    .jump-drawer {{ right: 20px; bottom: 72px; width: 280px; }}
+    .quick-nav-pill {{ left: 20px; bottom: 20px; }}
+    .jump-drawer {{ left: 20px; bottom: 72px; width: 280px; }}
   }}
 </style>
 </head>
@@ -978,7 +993,6 @@ html_template = f"""<!DOCTYPE html>
       <nav class="index-nav">
         <a href="#warm-wood">01 Traditional Wood ({len(categories_grouped.get('warm-wood', {}).get('venues', []))})</a>
         <a href="#white-polyvalent">02 White Polyvalent ({len(categories_grouped.get('white-polyvalent', {}).get('venues', []))})</a>
-        <a href="#production-wildcard">03 Wildcard ({len(categories_grouped.get('production-wildcard', {}).get('venues', []))})</a>
       </nav>
       <div class="curation-counter">Location Selection · {len(venues_catalog)} Venues · {total_images} Plates</div>
     </div>
@@ -1098,11 +1112,11 @@ for cat_id, cat_data in categories_grouped.items():
           <div class="pixieset-mosaic">
         """
 
-        for idx, img_path in enumerate(v['images']):
+        for idx, img_info in enumerate(v['images']):
             span_cls = get_grid_span(idx, num_imgs)
             html_template += f"""
             <div class="mosaic-cell {span_cls}" onclick="openLightbox(this)">
-              <img src="{img_path}" alt="{v['name']} plate {idx+1}" loading="lazy">
+              <img src="{img_info['thumb']}" data-full="{img_info['orig']}" alt="{v['name']} plate {idx+1}" loading="lazy">
               <span class="cell-caption">Plate {idx+1:02d}</span>
             </div>
             """
@@ -1162,7 +1176,7 @@ html_template += f"""
       if (!img) return;
       const modal = document.getElementById('lightboxModal');
       const modalImg = document.getElementById('lightboxImg');
-      modalImg.src = img.src;
+      modalImg.src = img.getAttribute('data-full') || img.src;
       modal.classList.add('active');
     }}
 
