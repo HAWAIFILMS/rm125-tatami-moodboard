@@ -235,6 +235,20 @@ for v in venues_catalog:
 
 print(f"Shortlist catalog ready: {len(venues_catalog)} venues, {total_images} total images linked.")
 
+sidebar_nav_html = ""
+for cat_id, cat_data in categories_grouped.items():
+    sidebar_nav_html += f"<div class='sidebar-group-title'>{cat_data['title']}</div>"
+    for v in cat_data['venues']:
+        sidebar_nav_html += f"""
+        <a href="#venue-{v['id']}" class="sidebar-item" data-venue-target="venue-{v['id']}">
+          <span class="sidebar-item-name">{v['name']}</span>
+          <div class="sidebar-item-meta">
+            <span>{v['tag'].split('·')[0].strip()}</span>
+            <span>{v['drive_time']}</span>
+          </div>
+        </a>
+        """
+
 html_template = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -372,11 +386,112 @@ html_template = f"""<!DOCTYPE html>
     color: var(--ink-muted);
   }}
 
+  /* App Layout: Left Sidebar + Main Content */
+  .app-layout {{
+    display: flex;
+    min-height: calc(100vh - 57px);
+  }}
+
+  /* Left Side Navigation Panel */
+  aside.location-sidebar {{
+    width: 290px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 57px;
+    height: calc(100vh - 57px);
+    overflow-y: auto;
+    border-right: 1px solid var(--line-hairline);
+    background: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    z-index: 80;
+  }}
+
+  .sidebar-header {{
+    padding: 20px 24px 14px;
+    border-bottom: 1px solid var(--line-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }}
+
+  .sidebar-title {{
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-black);
+  }}
+
+  .sidebar-count {{
+    font-family: var(--font-heading);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--ink-faint);
+    background: var(--bg-surface-subtle);
+    padding: 2px 8px;
+    border-radius: 999px;
+  }}
+
+  .sidebar-nav {{
+    padding: 12px 0 32px;
+    flex: 1;
+  }}
+
+  .sidebar-group-title {{
+    padding: 14px 24px 6px;
+    font-family: var(--font-heading);
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }}
+
+  .sidebar-item {{
+    display: block;
+    padding: 9px 24px;
+    text-decoration: none;
+    color: var(--ink-charcoal);
+    transition: background 0.15s ease, color 0.15s ease, border-left-color 0.15s ease;
+    border-left: 2px solid transparent;
+  }}
+
+  .sidebar-item:hover {{
+    background: var(--bg-surface-subtle);
+    color: var(--ink-black);
+  }}
+
+  .sidebar-item.active {{
+    background: var(--bg-surface-subtle);
+    color: var(--ink-black);
+    border-left-color: var(--ink-black);
+    font-weight: 600;
+  }}
+
+  .sidebar-item-name {{
+    font-size: 13px;
+    line-height: 1.35;
+    display: block;
+    margin-bottom: 2px;
+  }}
+
+  .sidebar-item-meta {{
+    font-family: var(--font-heading);
+    font-size: 10.5px;
+    color: var(--ink-muted);
+    display: flex;
+    justify-content: space-between;
+  }}
+
   /* Page Wrapper */
   .editorial-wrapper {{
-    max-width: 1680px;
+    flex: 1;
+    min-width: 0;
+    max-width: 1540px;
     margin: 0 auto;
-    padding: 0 56px;
+    padding: 0 48px;
   }}
 
   /* Hero Section */
@@ -962,11 +1077,20 @@ html_template = f"""<!DOCTYPE html>
     }}
   }}
 
+  @media (max-width: 1024px) {{
+    aside.location-sidebar {{
+      display: none;
+    }}
+    .editorial-wrapper {{
+      padding: 0 32px;
+    }}
+  }}
+
   @media (max-width: 768px) {{
     header.masthead {{ padding: 14px 24px; }}
-    .editorial-wrapper {{ padding: 0 24px; }}
-    .filter-bar {{ padding: 12px 24px; margin: 0 -24px 32px; }}
-    article.venue-unit {{ padding: 24px 20px 36px; }}
+    .editorial-wrapper {{ padding: 0 20px; }}
+    .filter-bar {{ padding: 12px 20px; margin: 0 -20px 32px; }}
+    article.venue-unit {{ padding: 24px 18px 36px; }}
     .venue-lead-row {{ flex-direction: column; gap: 18px; }}
     .venue-specs-column {{ width: 100%; justify-content: space-between; }}
     .mosaic-cell.hero-large, .mosaic-cell.hero-side, .mosaic-cell.half-cell, .mosaic-cell.quad-cell, .mosaic-cell.trio-cell {{
@@ -975,8 +1099,6 @@ html_template = f"""<!DOCTYPE html>
     }}
     .masthead-right {{ display: none; }}
     .hero-meta-grid {{ flex-direction: column; gap: 14px; }}
-    .quick-nav-pill {{ left: 20px; bottom: 20px; }}
-    .jump-drawer {{ left: 20px; bottom: 72px; width: 280px; }}
   }}
 </style>
 </head>
@@ -998,7 +1120,21 @@ html_template = f"""<!DOCTYPE html>
     </div>
   </header>
 
-  <div class="editorial-wrapper">
+  <!-- Main App Layout: Sidebar + Editorial Stream -->
+  <div class="app-layout">
+    
+    <!-- Left Side Navigation Panel -->
+    <aside class="location-sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-title">Locations Directory</span>
+        <span class="sidebar-count">{len(venues_catalog)} Venues</span>
+      </div>
+      <nav class="sidebar-nav">
+        {sidebar_nav_html}
+      </nav>
+    </aside>
+
+    <div class="editorial-wrapper">
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -1130,16 +1266,7 @@ for cat_id, cat_data in categories_grouped.items():
     </section>
     """
 
-jump_html = ""
-for cat_id, cat_data in categories_grouped.items():
-    jump_html += f"<div class='jump-group-title'>{cat_data['title']}</div>"
-    for v in cat_data['venues']:
-        jump_html += f"""
-        <a href="#venue-{v['id']}" class="jump-item" onclick="toggleJumpDrawer(false)">
-          <span class="jump-item-name">{v['name']}</span>
-          <span class="jump-item-meta">{v['drive_time']}</span>
-        </a>
-        """
+
 
 html_template += f"""
     </main>
@@ -1150,19 +1277,8 @@ html_template += f"""
       <div>ADIDAS × TMC · RM125 TATAMIS · CONFIDENTIAL PRODUCTION MATERIAL</div>
     </footer>
 
-  </div>
-
-  <!-- Quick Nav Floating Control -->
-  <div class="quick-nav-pill">
-    <button class="quick-nav-btn" onclick="toggleJumpDrawer()">Venues ({len(venues_catalog)})</button>
-    <button class="quick-nav-btn" onclick="window.scrollTo({{top: 0, behavior: 'smooth'}})">Top</button>
-  </div>
-
-  <!-- Jump Menu Drawer -->
-  <div class="jump-drawer" id="jumpDrawer">
-    <div class="jump-header">Location Directory</div>
-    {jump_html}
-  </div>
+    </div><!-- /.editorial-wrapper -->
+  </div><!-- /.app-layout -->
 
   <!-- Fullscreen Modal Lightbox -->
   <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
@@ -1258,9 +1374,31 @@ html_template += f"""
     document.addEventListener('keydown', (e) => {{
       if (e.key === 'Escape') {{
         document.getElementById('lightboxModal').classList.remove('active');
-        document.getElementById('jumpDrawer').classList.remove('active');
       }}
     }});
+
+    // Active state highlighting on scroll
+    const venueElements = document.querySelectorAll('article.venue-unit');
+    const sidebarLinks = document.querySelectorAll('.sidebar-item');
+
+    const observer = new IntersectionObserver((entries) => {{
+      entries.forEach(entry => {{
+        if (entry.isIntersecting) {{
+          const id = entry.target.id;
+          sidebarLinks.forEach(link => {{
+            if (link.getAttribute('data-venue-target') === id) {{
+              link.classList.add('active');
+            }} else {{
+              link.classList.remove('active');
+            }}
+          }});
+        }}
+      }});
+    }}, {{
+      rootMargin: '-20% 0px -70% 0px'
+    }});
+
+    venueElements.forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
