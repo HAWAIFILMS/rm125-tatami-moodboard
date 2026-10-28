@@ -194,23 +194,6 @@ venues_catalog = [
         "distance": "~11.5 km from Valdebebas",
         "drive_time": "~18 min driving",
         "notes": "Premium venue in ABC Serrano with polished architectural finishes and daylight atriums."
-    },
-
-    # 03 / PRODUCTION WILDCARD (STATUS UPDATE)
-    {
-        "category": "production-wildcard",
-        "cat_num": "03",
-        "cat_title": "Production Wildcard (Status Update)",
-        "cat_desc": "Alternative industrial and innovation center verified with Zafarrancho Locations.",
-        "id": "nave-boetticher",
-        "folder": "La Nave Boetticher",
-        "name": "La Nave Boetticher",
-        "tag": "NO DISPONIBLE · PUBLICIDAD",
-        "tag_class": "optioned",
-        "location": "C/ Cifuentes, 5 (Villaverde) · Madrid",
-        "distance": "~22.3 km from Valdebebas",
-        "drive_time": "~34 min driving",
-        "notes": "Descartada por Zafarrancho (Cecilia Corrales): La Nave Boetticher no acepta rodajes publicitarios según normativa municipal. Se mantiene en archivo únicamente como referencia visual de escala catedralicia."
     }
 ]
 
