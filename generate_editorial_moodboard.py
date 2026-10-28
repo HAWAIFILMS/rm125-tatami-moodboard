@@ -10,7 +10,7 @@ if os.path.exists(LOGO_PATH):
     with open(LOGO_PATH, "r", encoding="utf-8") as f:
         hawai_logo_svg = f.read().strip()
 
-# EXACT TURPIN SHORTLIST (9 Tatamis/Dojos + 3 White Spaces + 1 Wildcard Boetticher)
+# EXACT TURPIN SHORTLIST (9 Tatamis/Dojos + 3 White Spaces)
 venues_catalog = [
     # 01 / WARM WOOD & TRADITIONAL DOJOS (TURPIN SHORTLIST)
     {
@@ -1006,7 +1006,7 @@ html_template = f"""<!DOCTYPE html>
         </div>
       </div>
       <h1 class="hero-headline">Location Moodboard</h1>
-      <p class="hero-deck">Curated selection filtered directly by David Turpin for client review and immediate Zafarrancho availability checks. Includes 9 prioritized tatamis/dojos, 3 polyvalent white spaces, and the La Nave Boetticher industrial contingency.</p>
+      <p class="hero-deck">Curated selection filtered directly by David Turpin for client review and immediate Zafarrancho availability checks. Includes 9 prioritized tatamis/dojos and 3 polyvalent white architectural spaces.</p>
     </section>
 
     <!-- Interactive Navigation & Filter Bar -->
