@@ -237,17 +237,43 @@ print(f"Shortlist catalog ready: {len(venues_catalog)} venues, {total_images} to
 
 sidebar_nav_html = ""
 for cat_id, cat_data in categories_grouped.items():
-    sidebar_nav_html += f"<div class='sidebar-group-title'>{cat_data['title']}</div>"
-    for v in cat_data['venues']:
+    cat_venues = cat_data['venues']
+    sidebar_nav_html += f"""
+    <div class="sidebar-section">
+      <div class="sidebar-section-header">
+        <div class="sidebar-section-label">
+          <span class="section-badge-num">{cat_data['num']}</span>
+          <span class="section-badge-title">{cat_data['title']}</span>
+        </div>
+        <span class="section-badge-count">{len(cat_venues)}</span>
+      </div>
+      <div class="sidebar-items-list">
+    """
+    for idx_v, v in enumerate(cat_venues):
+        primary_tag = v['tag'].split('·')[0].strip()
+        is_priority = 'PRIORITY' in v['tag'].upper()
+        p_dot = '<span class="priority-dot" title="Priority Check"></span>' if is_priority else ''
         sidebar_nav_html += f"""
         <a href="#venue-{v['id']}" class="sidebar-item" data-venue-target="venue-{v['id']}">
-          <span class="sidebar-item-name">{v['name']}</span>
-          <div class="sidebar-item-meta">
-            <span>{v['tag'].split('·')[0].strip()}</span>
-            <span>{v['drive_time']}</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">{idx_v+1:02d}</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">{v['name']}</span>
+                {p_dot}
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">{primary_tag}</span>
+                <span class="sidebar-item-time">{v['drive_time'].replace('driving', '').strip()}</span>
+              </div>
+            </div>
           </div>
         </a>
         """
+    sidebar_nav_html += """
+      </div>
+    </div>
+    """
 
 html_template = f"""<!DOCTYPE html>
 <html lang="en">
@@ -394,32 +420,35 @@ html_template = f"""<!DOCTYPE html>
 
   /* Left Side Navigation Panel */
   aside.location-sidebar {{
-    width: 290px;
+    width: 320px;
     flex-shrink: 0;
     position: sticky;
     top: 57px;
     height: calc(100vh - 57px);
     overflow-y: auto;
     border-right: 1px solid var(--line-hairline);
-    background: var(--bg-card);
+    background: var(--bg-surface-subtle);
     display: flex;
     flex-direction: column;
     z-index: 80;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(15, 15, 15, 0.15) transparent;
   }}
 
   .sidebar-header {{
-    padding: 20px 24px 14px;
-    border-bottom: 1px solid var(--line-light);
+    padding: 24px 26px 18px;
+    border-bottom: 1px solid var(--line-hairline);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--bg-card);
   }}
 
   .sidebar-title {{
     font-family: var(--font-heading);
-    font-size: 11px;
+    font-size: 10.5px;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--ink-black);
   }}
@@ -428,61 +457,173 @@ html_template = f"""<!DOCTYPE html>
     font-family: var(--font-heading);
     font-size: 10px;
     font-weight: 600;
-    color: var(--ink-faint);
-    background: var(--bg-surface-subtle);
-    padding: 2px 8px;
-    border-radius: 999px;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
   }}
 
   .sidebar-nav {{
-    padding: 12px 0 32px;
+    padding: 8px 0 40px;
     flex: 1;
   }}
 
-  .sidebar-group-title {{
-    padding: 14px 24px 6px;
+  .sidebar-section {{
+    margin-bottom: 16px;
+  }}
+
+  .sidebar-section-header {{
+    padding: 18px 26px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }}
+
+  .sidebar-section-label {{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }}
+
+  .section-badge-num {{
     font-family: var(--font-heading);
-    font-size: 9.5px;
+    font-size: 9px;
     font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
     color: var(--ink-faint);
+    letter-spacing: 0.05em;
+  }}
+
+  .section-badge-title {{
+    font-family: var(--font-heading);
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-charcoal);
+  }}
+
+  .section-badge-count {{
+    font-family: var(--font-heading);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--ink-faint);
+    background: rgba(15, 15, 15, 0.04);
+    padding: 1px 7px;
+    border-radius: 999px;
+  }}
+
+  .sidebar-items-list {{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
   }}
 
   .sidebar-item {{
     display: block;
-    padding: 9px 24px;
+    padding: 10px 26px;
     text-decoration: none;
     color: var(--ink-charcoal);
-    transition: background 0.15s ease, color 0.15s ease, border-left-color 0.15s ease;
+    transition: all 0.15s ease;
     border-left: 2px solid transparent;
   }}
 
   .sidebar-item:hover {{
-    background: var(--bg-surface-subtle);
+    background: rgba(15, 15, 15, 0.035);
     color: var(--ink-black);
   }}
 
   .sidebar-item.active {{
-    background: var(--bg-surface-subtle);
-    color: var(--ink-black);
+    background: var(--bg-card);
     border-left-color: var(--ink-black);
+    box-shadow: 0 2px 8px rgba(15, 15, 15, 0.04);
+  }}
+
+  .sidebar-item.active .sidebar-item-name {{
+    color: var(--ink-black);
     font-weight: 600;
   }}
 
+  .sidebar-item.active .sidebar-item-num {{
+    color: var(--ink-black);
+  }}
+
+  .sidebar-item-main {{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }}
+
+  .sidebar-item-num {{
+    font-family: var(--font-heading);
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--ink-faint);
+    letter-spacing: 0.04em;
+    padding-top: 2px;
+    min-width: 16px;
+  }}
+
+  .sidebar-item-text-group {{
+    flex: 1;
+    min-width: 0;
+  }}
+
+  .sidebar-item-title-row {{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    margin-bottom: 3px;
+  }}
+
   .sidebar-item-name {{
-    font-size: 13px;
-    line-height: 1.35;
-    display: block;
-    margin-bottom: 2px;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--ink-charcoal);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }}
+
+  .priority-dot {{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #1A6B3C;
+    flex-shrink: 0;
   }}
 
   .sidebar-item-meta {{
     font-family: var(--font-heading);
-    font-size: 10.5px;
+    font-size: 10px;
     color: var(--ink-muted);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.04em;
+  }}
+
+  .sidebar-item-tag {{
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+  }}
+
+  .sidebar-item-time {{
+    color: var(--ink-muted);
+    font-weight: 500;
+  }}
+
+  .masthead-origin-badge {{
+    font-family: var(--font-heading);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    background: var(--bg-surface-subtle);
+    padding: 4px 10px;
+    border-radius: 999px;
   }}
 
   /* Page Wrapper */
@@ -943,113 +1084,7 @@ html_template = f"""<!DOCTYPE html>
     opacity: 1;
   }}
 
-  /* Floating Left-Side Nav Trigger & Drawer */
-  .quick-nav-pill {{
-    position: fixed;
-    bottom: 32px;
-    left: 40px;
-    z-index: 95;
-    background: var(--ink-black);
-    color: var(--bg-page);
-    border-radius: 999px;
-    box-shadow: 0 12px 36px rgba(15, 15, 15, 0.28);
-    display: flex;
-    align-items: center;
-    padding: 6px;
-    gap: 4px;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-  }}
 
-  .quick-nav-btn {{
-    background: transparent;
-    border: none;
-    color: var(--bg-page);
-    font-family: var(--font-heading);
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 8px 16px;
-    border-radius: 999px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    transition: background 0.15s ease;
-  }}
-
-  .quick-nav-btn:hover {{
-    background: rgba(255, 255, 255, 0.16);
-  }}
-
-  /* Left-Side Navigation Drawer */
-  .jump-drawer {{
-    display: none;
-    position: fixed;
-    bottom: 84px;
-    left: 40px;
-    z-index: 96;
-    background: var(--bg-card);
-    border: 1px solid var(--line-hairline);
-    border-top: 2px solid var(--ink-black);
-    box-shadow: 0 20px 50px rgba(15, 15, 15, 0.22);
-    width: 320px;
-    max-height: 480px;
-    overflow-y: auto;
-    padding: 16px 0;
-    border-radius: 4px;
-  }}
-
-  .jump-drawer.active {{
-    display: block;
-  }}
-
-  .jump-header {{
-    padding: 4px 20px 12px;
-    font-family: var(--font-heading);
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    border-bottom: 1px solid var(--line-light);
-  }}
-
-  .jump-group-title {{
-    padding: 10px 20px 4px;
-    font-family: var(--font-heading);
-    font-size: 9.5px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-  }}
-
-  .jump-item {{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 20px;
-    text-decoration: none;
-    color: var(--ink-charcoal);
-    font-size: 13px;
-    transition: background 0.15s ease;
-  }}
-
-  .jump-item:hover {{
-    background: var(--bg-surface-subtle);
-    color: var(--ink-black);
-  }}
-
-  .jump-item-name {{
-    font-weight: 500;
-  }}
-
-  .jump-item-meta {{
-    font-family: var(--font-heading);
-    font-size: 10.5px;
-    color: var(--ink-muted);
-  }}
 
   /* Footer */
   footer.editorial-footer {{
@@ -1112,11 +1147,9 @@ html_template = f"""<!DOCTYPE html>
       <div class="masthead-project">TMC × TATAMIS — ADIDAS RM125</div>
     </div>
     <div class="masthead-right">
-      <nav class="index-nav">
-        <a href="#warm-wood">01 Traditional Wood ({len(categories_grouped.get('warm-wood', {}).get('venues', []))})</a>
-        <a href="#white-polyvalent">02 White Polyvalent ({len(categories_grouped.get('white-polyvalent', {}).get('venues', []))})</a>
-      </nav>
-      <div class="curation-counter">Location Selection · {len(venues_catalog)} Venues · {total_images} Plates</div>
+      <div class="curation-counter">12 Locations · 479 Archive Plates</div>
+      <div class="masthead-sep"></div>
+      <div class="masthead-origin-badge">Origin: Valdebebas</div>
     </div>
   </header>
 

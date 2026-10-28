@@ -143,32 +143,35 @@
 
   /* Left Side Navigation Panel */
   aside.location-sidebar {
-    width: 290px;
+    width: 320px;
     flex-shrink: 0;
     position: sticky;
     top: 57px;
     height: calc(100vh - 57px);
     overflow-y: auto;
     border-right: 1px solid var(--line-hairline);
-    background: var(--bg-card);
+    background: var(--bg-surface-subtle);
     display: flex;
     flex-direction: column;
     z-index: 80;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(15, 15, 15, 0.15) transparent;
   }
 
   .sidebar-header {
-    padding: 20px 24px 14px;
-    border-bottom: 1px solid var(--line-light);
+    padding: 24px 26px 18px;
+    border-bottom: 1px solid var(--line-hairline);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--bg-card);
   }
 
   .sidebar-title {
     font-family: var(--font-heading);
-    font-size: 11px;
+    font-size: 10.5px;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--ink-black);
   }
@@ -177,61 +180,173 @@
     font-family: var(--font-heading);
     font-size: 10px;
     font-weight: 600;
-    color: var(--ink-faint);
-    background: var(--bg-surface-subtle);
-    padding: 2px 8px;
-    border-radius: 999px;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
   }
 
   .sidebar-nav {
-    padding: 12px 0 32px;
+    padding: 8px 0 40px;
     flex: 1;
   }
 
-  .sidebar-group-title {
-    padding: 14px 24px 6px;
+  .sidebar-section {
+    margin-bottom: 16px;
+  }
+
+  .sidebar-section-header {
+    padding: 18px 26px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidebar-section-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-badge-num {
     font-family: var(--font-heading);
-    font-size: 9.5px;
+    font-size: 9px;
     font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
     color: var(--ink-faint);
+    letter-spacing: 0.05em;
+  }
+
+  .section-badge-title {
+    font-family: var(--font-heading);
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-charcoal);
+  }
+
+  .section-badge-count {
+    font-family: var(--font-heading);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--ink-faint);
+    background: rgba(15, 15, 15, 0.04);
+    padding: 1px 7px;
+    border-radius: 999px;
+  }
+
+  .sidebar-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
   }
 
   .sidebar-item {
     display: block;
-    padding: 9px 24px;
+    padding: 10px 26px;
     text-decoration: none;
     color: var(--ink-charcoal);
-    transition: background 0.15s ease, color 0.15s ease, border-left-color 0.15s ease;
+    transition: all 0.15s ease;
     border-left: 2px solid transparent;
   }
 
   .sidebar-item:hover {
-    background: var(--bg-surface-subtle);
+    background: rgba(15, 15, 15, 0.035);
     color: var(--ink-black);
   }
 
   .sidebar-item.active {
-    background: var(--bg-surface-subtle);
-    color: var(--ink-black);
+    background: var(--bg-card);
     border-left-color: var(--ink-black);
+    box-shadow: 0 2px 8px rgba(15, 15, 15, 0.04);
+  }
+
+  .sidebar-item.active .sidebar-item-name {
+    color: var(--ink-black);
     font-weight: 600;
   }
 
+  .sidebar-item.active .sidebar-item-num {
+    color: var(--ink-black);
+  }
+
+  .sidebar-item-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .sidebar-item-num {
+    font-family: var(--font-heading);
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--ink-faint);
+    letter-spacing: 0.04em;
+    padding-top: 2px;
+    min-width: 16px;
+  }
+
+  .sidebar-item-text-group {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .sidebar-item-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    margin-bottom: 3px;
+  }
+
   .sidebar-item-name {
-    font-size: 13px;
-    line-height: 1.35;
-    display: block;
-    margin-bottom: 2px;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--ink-charcoal);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .priority-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #1A6B3C;
+    flex-shrink: 0;
   }
 
   .sidebar-item-meta {
     font-family: var(--font-heading);
-    font-size: 10.5px;
+    font-size: 10px;
     color: var(--ink-muted);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.04em;
+  }
+
+  .sidebar-item-tag {
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+  }
+
+  .sidebar-item-time {
+    color: var(--ink-muted);
+    font-weight: 500;
+  }
+
+  .masthead-origin-badge {
+    font-family: var(--font-heading);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    background: var(--bg-surface-subtle);
+    padding: 4px 10px;
+    border-radius: 999px;
   }
 
   /* Page Wrapper */
@@ -692,113 +807,7 @@
     opacity: 1;
   }
 
-  /* Floating Left-Side Nav Trigger & Drawer */
-  .quick-nav-pill {
-    position: fixed;
-    bottom: 32px;
-    left: 40px;
-    z-index: 95;
-    background: var(--ink-black);
-    color: var(--bg-page);
-    border-radius: 999px;
-    box-shadow: 0 12px 36px rgba(15, 15, 15, 0.28);
-    display: flex;
-    align-items: center;
-    padding: 6px;
-    gap: 4px;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-  }
 
-  .quick-nav-btn {
-    background: transparent;
-    border: none;
-    color: var(--bg-page);
-    font-family: var(--font-heading);
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 8px 16px;
-    border-radius: 999px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    transition: background 0.15s ease;
-  }
-
-  .quick-nav-btn:hover {
-    background: rgba(255, 255, 255, 0.16);
-  }
-
-  /* Left-Side Navigation Drawer */
-  .jump-drawer {
-    display: none;
-    position: fixed;
-    bottom: 84px;
-    left: 40px;
-    z-index: 96;
-    background: var(--bg-card);
-    border: 1px solid var(--line-hairline);
-    border-top: 2px solid var(--ink-black);
-    box-shadow: 0 20px 50px rgba(15, 15, 15, 0.22);
-    width: 320px;
-    max-height: 480px;
-    overflow-y: auto;
-    padding: 16px 0;
-    border-radius: 4px;
-  }
-
-  .jump-drawer.active {
-    display: block;
-  }
-
-  .jump-header {
-    padding: 4px 20px 12px;
-    font-family: var(--font-heading);
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    border-bottom: 1px solid var(--line-light);
-  }
-
-  .jump-group-title {
-    padding: 10px 20px 4px;
-    font-family: var(--font-heading);
-    font-size: 9.5px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-  }
-
-  .jump-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 20px;
-    text-decoration: none;
-    color: var(--ink-charcoal);
-    font-size: 13px;
-    transition: background 0.15s ease;
-  }
-
-  .jump-item:hover {
-    background: var(--bg-surface-subtle);
-    color: var(--ink-black);
-  }
-
-  .jump-item-name {
-    font-weight: 500;
-  }
-
-  .jump-item-meta {
-    font-family: var(--font-heading);
-    font-size: 10.5px;
-    color: var(--ink-muted);
-  }
 
   /* Footer */
   footer.editorial-footer {
@@ -867,11 +876,9 @@
       <div class="masthead-project">TMC × TATAMIS — ADIDAS RM125</div>
     </div>
     <div class="masthead-right">
-      <nav class="index-nav">
-        <a href="#warm-wood">01 Traditional Wood (9)</a>
-        <a href="#white-polyvalent">02 White Polyvalent (3)</a>
-      </nav>
-      <div class="curation-counter">Location Selection · 12 Venues · 479 Plates</div>
+      <div class="curation-counter">12 Locations · 479 Archive Plates</div>
+      <div class="masthead-sep"></div>
+      <div class="masthead-origin-badge">Origin: Valdebebas</div>
     </div>
   </header>
 
@@ -885,103 +892,225 @@
         <span class="sidebar-count">12 Venues</span>
       </div>
       <nav class="sidebar-nav">
-        <div class='sidebar-group-title'>Traditional Dojos & Martial Arts</div>
+        
+    <div class="sidebar-section">
+      <div class="sidebar-section-header">
+        <div class="sidebar-section-label">
+          <span class="section-badge-num">01</span>
+          <span class="section-badge-title">Traditional Dojos & Martial Arts</span>
+        </div>
+        <span class="section-badge-count">9</span>
+      </div>
+      <div class="sidebar-items-list">
+    
         <a href="#venue-puerta-hierro" class="sidebar-item" data-venue-target="venue-puerta-hierro">
-          <span class="sidebar-item-name">Parque Deportivo Puerta de Hierro</span>
-          <div class="sidebar-item-meta">
-            <span>PRIORITY</span>
-            <span>~25 min driving</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">01</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">Parque Deportivo Puerta de Hierro</span>
+                <span class="priority-dot" title="Priority Check"></span>
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">PRIORITY</span>
+                <span class="sidebar-item-time">~25 min</span>
+              </div>
+            </div>
           </div>
         </a>
         
         <a href="#venue-shotokan" class="sidebar-item" data-venue-target="venue-shotokan">
-          <span class="sidebar-item-name">Shotokan Honbu Dojo</span>
-          <div class="sidebar-item-meta">
-            <span>PRIORITY</span>
-            <span>~15 min driving</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">02</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">Shotokan Honbu Dojo</span>
+                <span class="priority-dot" title="Priority Check"></span>
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">PRIORITY</span>
+                <span class="sidebar-item-time">~15 min</span>
+              </div>
+            </div>
           </div>
         </a>
         
         <a href="#venue-cc-ejercitos" class="sidebar-item" data-venue-target="venue-cc-ejercitos">
-          <span class="sidebar-item-name">CC Ejércitos (Club de Esgrima)</span>
-          <div class="sidebar-item-meta">
-            <span>PRIORITY</span>
-            <span>~22 min driving</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">03</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">CC Ejércitos (Club de Esgrima)</span>
+                <span class="priority-dot" title="Priority Check"></span>
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">PRIORITY</span>
+                <span class="sidebar-item-time">~22 min</span>
+              </div>
+            </div>
           </div>
         </a>
         
         <a href="#venue-zanshin" class="sidebar-item" data-venue-target="venue-zanshin">
-          <span class="sidebar-item-name">Zanshin Madrid</span>
-          <div class="sidebar-item-meta">
-            <span>PRIORITY</span>
-            <span>~16 min driving</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">04</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">Zanshin Madrid</span>
+                <span class="priority-dot" title="Priority Check"></span>
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">PRIORITY</span>
+                <span class="sidebar-item-time">~16 min</span>
+              </div>
+            </div>
           </div>
         </a>
         
         <a href="#venue-plato-who" class="sidebar-item" data-venue-target="venue-plato-who">
-          <span class="sidebar-item-name">Plató Who (Who Espacio Creativo)</span>
-          <div class="sidebar-item-meta">
-            <span>PRIORITY</span>
-            <span>~20 min driving</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">05</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">Plató Who (Who Espacio Creativo)</span>
+                <span class="priority-dot" title="Priority Check"></span>
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">PRIORITY</span>
+                <span class="sidebar-item-time">~20 min</span>
+              </div>
+            </div>
           </div>
         </a>
         
         <a href="#venue-csd-car" class="sidebar-item" data-venue-target="venue-csd-car">
-          <span class="sidebar-item-name">CSD (CAR Madrid)</span>
-          <div class="sidebar-item-meta">
-            <span>PRIORITY</span>
-            <span>~24 min driving</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">06</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">CSD (CAR Madrid)</span>
+                <span class="priority-dot" title="Priority Check"></span>
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">PRIORITY</span>
+                <span class="sidebar-item-time">~24 min</span>
+              </div>
+            </div>
           </div>
         </a>
         
         <a href="#venue-principe-asturias" class="sidebar-item" data-venue-target="venue-principe-asturias">
-          <span class="sidebar-item-name">Polideportivo Príncipe de Asturias</span>
-          <div class="sidebar-item-meta">
-            <span>PRIORITY</span>
-            <span>~25 min driving</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">07</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">Polideportivo Príncipe de Asturias</span>
+                <span class="priority-dot" title="Priority Check"></span>
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">PRIORITY</span>
+                <span class="sidebar-item-time">~25 min</span>
+              </div>
+            </div>
           </div>
         </a>
         
         <a href="#venue-las-encinas" class="sidebar-item" data-venue-target="venue-las-encinas">
-          <span class="sidebar-item-name">Las Encinas de Boadilla</span>
-          <div class="sidebar-item-meta">
-            <span>PRIORITY</span>
-            <span>~45–50 min driving</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">08</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">Las Encinas de Boadilla</span>
+                <span class="priority-dot" title="Priority Check"></span>
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">PRIORITY</span>
+                <span class="sidebar-item-time">~45–50 min</span>
+              </div>
+            </div>
           </div>
         </a>
         
         <a href="#venue-santiago-apostol" class="sidebar-item" data-venue-target="venue-santiago-apostol">
-          <span class="sidebar-item-name">Complejo Deportivo Santiago Apóstol</span>
-          <div class="sidebar-item-meta">
-            <span>PRIORITY</span>
-            <span>~60–65 min driving</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">09</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">Complejo Deportivo Santiago Apóstol</span>
+                <span class="priority-dot" title="Priority Check"></span>
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">PRIORITY</span>
+                <span class="sidebar-item-time">~60–65 min</span>
+              </div>
+            </div>
           </div>
         </a>
-        <div class='sidebar-group-title'>White & Polyvalent Spaces</div>
+        
+      </div>
+    </div>
+    
+    <div class="sidebar-section">
+      <div class="sidebar-section-header">
+        <div class="sidebar-section-label">
+          <span class="section-badge-num">02</span>
+          <span class="section-badge-title">White & Polyvalent Spaces</span>
+        </div>
+        <span class="section-badge-count">3</span>
+      </div>
+      <div class="sidebar-items-list">
+    
         <a href="#venue-espacio-larra" class="sidebar-item" data-venue-target="venue-espacio-larra">
-          <span class="sidebar-item-name">Espacio Larra (Larra 14)</span>
-          <div class="sidebar-item-meta">
-            <span>SELECTED</span>
-            <span>~21 min driving</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">01</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">Espacio Larra (Larra 14)</span>
+                
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">SELECTED</span>
+                <span class="sidebar-item-time">~21 min</span>
+              </div>
+            </div>
           </div>
         </a>
         
         <a href="#venue-invernadero-penotes" class="sidebar-item" data-venue-target="venue-invernadero-penotes">
-          <span class="sidebar-item-name">Invernadero Los Peñotes</span>
-          <div class="sidebar-item-meta">
-            <span>SELECTED</span>
-            <span>~14 min driving</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">02</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">Invernadero Los Peñotes</span>
+                
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">SELECTED</span>
+                <span class="sidebar-item-time">~14 min</span>
+              </div>
+            </div>
           </div>
         </a>
         
         <a href="#venue-espacio-abc" class="sidebar-item" data-venue-target="venue-espacio-abc">
-          <span class="sidebar-item-name">Espacio ABC</span>
-          <div class="sidebar-item-meta">
-            <span>SELECTED</span>
-            <span>~18 min driving</span>
+          <div class="sidebar-item-main">
+            <span class="sidebar-item-num">03</span>
+            <div class="sidebar-item-text-group">
+              <div class="sidebar-item-title-row">
+                <span class="sidebar-item-name">Espacio ABC</span>
+                
+              </div>
+              <div class="sidebar-item-meta">
+                <span class="sidebar-item-tag">SELECTED</span>
+                <span class="sidebar-item-time">~18 min</span>
+              </div>
+            </div>
           </div>
         </a>
         
+      </div>
+    </div>
+    
       </nav>
     </aside>
 
