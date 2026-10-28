@@ -10,14 +10,14 @@ if os.path.exists(LOGO_PATH):
     with open(LOGO_PATH, "r", encoding="utf-8") as f:
         hawai_logo_svg = f.read().strip()
 
-# EXACT TURPIN SHORTLIST (9 Tatamis/Dojos + 3 White Spaces)
+# LOCATION SHORTLIST (9 Tatamis/Dojos + 3 White Spaces)
 venues_catalog = [
-    # 01 / WARM WOOD & TRADITIONAL DOJOS (TURPIN SHORTLIST)
+    # 01 / WARM WOOD & TRADITIONAL DOJOS
     {
         "category": "warm-wood",
         "cat_num": "01",
-        "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Priority martial arts facilities selected by David Turpin for immediate availability check.",
+        "cat_title": "Traditional Dojos & Martial Arts",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
         "id": "puerta-hierro",
         "folder": "Puerta de Hierro",
         "name": "Parque Deportivo Puerta de Hierro",
@@ -26,13 +26,13 @@ venues_catalog = [
         "location": "Ctra. de El Pardo, km 1 · Madrid",
         "distance": "~15.7 km from Valdebebas",
         "drive_time": "~25 min driving",
-        "notes": "Standout brutalist exposed raw concrete sports pavilion with tatami mats. Turpin note: Municipal administrative permit lead time is lengthy; availability & feasibility must be confirmed immediately."
+        "notes": "Standout brutalist exposed raw concrete sports pavilion with tatami mats. Note: Municipal administrative permit lead time is lengthy; subject to immediate feasibility confirmation."
     },
     {
         "category": "warm-wood",
         "cat_num": "01",
-        "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Priority martial arts facilities selected by David Turpin for immediate availability check.",
+        "cat_title": "Traditional Dojos & Martial Arts",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
         "id": "shotokan",
         "folder": "Shotokan Honbu Dojo",
         "name": "Shotokan Honbu Dojo",
@@ -47,7 +47,7 @@ venues_catalog = [
         "category": "warm-wood",
         "cat_num": "01",
         "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Priority martial arts facilities selected by David Turpin for immediate availability check.",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
         "id": "cc-ejercitos",
         "folder": "CC Ejércitos",
         "name": "CC Ejércitos (Club de Esgrima)",
@@ -62,7 +62,7 @@ venues_catalog = [
         "category": "warm-wood",
         "cat_num": "01",
         "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Priority martial arts facilities selected by David Turpin for immediate availability check.",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
         "id": "zanshin",
         "folder": "Zanshin Madrid",
         "name": "Zanshin Madrid",
@@ -77,7 +77,7 @@ venues_catalog = [
         "category": "warm-wood",
         "cat_num": "01",
         "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Priority martial arts facilities selected by David Turpin for immediate availability check.",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
         "id": "plato-who",
         "folder": "Who Espacio Creativo",
         "name": "Plató Who (Who Espacio Creativo)",
@@ -92,7 +92,7 @@ venues_catalog = [
         "category": "warm-wood",
         "cat_num": "01",
         "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Priority martial arts facilities selected by David Turpin for immediate availability check.",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
         "id": "csd-car",
         "folder": "CSD",
         "name": "CSD (CAR Madrid)",
@@ -107,7 +107,7 @@ venues_catalog = [
         "category": "warm-wood",
         "cat_num": "01",
         "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Priority martial arts facilities selected by David Turpin for immediate availability check.",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
         "id": "principe-asturias",
         "folder": "Principe de Asturias",
         "name": "Polideportivo Príncipe de Asturias",
@@ -122,7 +122,7 @@ venues_catalog = [
         "category": "warm-wood",
         "cat_num": "01",
         "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Priority martial arts facilities selected by David Turpin for immediate availability check.",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
         "id": "las-encinas",
         "folder": "Encinas",
         "name": "Las Encinas de Boadilla",
@@ -137,7 +137,7 @@ venues_catalog = [
         "category": "warm-wood",
         "cat_num": "01",
         "cat_title": "Traditional Dojos & Martial Arts (Shortlist)",
-        "cat_desc": "Priority martial arts facilities selected by David Turpin for immediate availability check.",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
         "id": "santiago-apostol",
         "folder": "Complejo Deportivo Santiago Apostol",
         "name": "Complejo Deportivo Santiago Apóstol",
@@ -149,12 +149,12 @@ venues_catalog = [
         "notes": "Multi-space sports complex featuring dedicated tatami and fencing rooms."
     },
 
-    # 02 / WHITE & POLYVALENT SPACES (TURPIN SHORTLIST)
+    # 02 / WHITE & POLYVALENT SPACES
     {
         "category": "white-polyvalent",
         "cat_num": "02",
-        "cat_title": "White & Polyvalent Spaces (Shortlist)",
-        "cat_desc": "Curated white and daylight architectural spaces requested by David Turpin for custom intervention.",
+        "cat_title": "White & Polyvalent Spaces",
+        "cat_desc": "Curated white and daylight architectural spaces for custom set design and spatial intervention.",
         "id": "espacio-larra",
         "folder": "Espacio Larra",
         "name": "Espacio Larra (Larra 14)",
@@ -168,8 +168,8 @@ venues_catalog = [
     {
         "category": "white-polyvalent",
         "cat_num": "02",
-        "cat_title": "White & Polyvalent Spaces (Shortlist)",
-        "cat_desc": "Curated white and daylight architectural spaces requested by David Turpin for custom intervention.",
+        "cat_title": "White & Polyvalent Spaces",
+        "cat_desc": "Curated white and daylight architectural spaces for custom set design and spatial intervention.",
         "id": "invernadero-penotes",
         "folder": "Invernadero los Peñotes",
         "name": "Invernadero Los Peñotes",
@@ -183,8 +183,8 @@ venues_catalog = [
     {
         "category": "white-polyvalent",
         "cat_num": "02",
-        "cat_title": "White & Polyvalent Spaces (Shortlist)",
-        "cat_desc": "Curated white and daylight architectural spaces requested by David Turpin for custom intervention.",
+        "cat_title": "White & Polyvalent Spaces",
+        "cat_desc": "Curated white and daylight architectural spaces for custom set design and spatial intervention.",
         "id": "espacio-abc",
         "folder": "Espacio ABC",
         "name": "Espacio ABC",
@@ -226,7 +226,7 @@ html_template = f"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TMC × TATAMIS · ADIDAS RM125 · TURPIN SHORTLIST MOODBOARD</title>
+<title>TMC × TATAMIS · ADIDAS RM125 · LOCATION MOODBOARD</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -980,7 +980,7 @@ html_template = f"""<!DOCTYPE html>
         <a href="#white-polyvalent">02 White Polyvalent ({len(categories_grouped.get('white-polyvalent', {}).get('venues', []))})</a>
         <a href="#production-wildcard">03 Wildcard ({len(categories_grouped.get('production-wildcard', {}).get('venues', []))})</a>
       </nav>
-      <div class="curation-counter">Turpin Shortlist · {len(venues_catalog)} Venues · {total_images} Plates</div>
+      <div class="curation-counter">Location Selection · {len(venues_catalog)} Venues · {total_images} Plates</div>
     </div>
   </header>
 
@@ -989,7 +989,7 @@ html_template = f"""<!DOCTYPE html>
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-top-row">
-        <span class="editorial-badge">Turpin Selection · Shortlist Moodboard</span>
+        <span class="editorial-badge">Production Dossier · Location Moodboard</span>
         <div class="hero-meta-grid">
           <div class="hero-meta-col">
             <span class="meta-col-label">Client</span>
@@ -1006,17 +1006,16 @@ html_template = f"""<!DOCTYPE html>
         </div>
       </div>
       <h1 class="hero-headline">Location Moodboard</h1>
-      <p class="hero-deck">Curated selection filtered directly by David Turpin for client review and immediate Zafarrancho availability checks. Includes 9 prioritized tatamis/dojos and 3 polyvalent white architectural spaces.</p>
+      <p class="hero-deck">Curated location options for client review and feasibility assessment. Features 9 authentic tatamis and martial arts dojos alongside 3 polyvalent white architectural spaces in Madrid.</p>
     </section>
 
     <!-- Interactive Navigation & Filter Bar -->
     <div class="filter-bar">
       <div class="filter-group">
         <span class="filter-label">Filter:</span>
-        <button class="filter-btn active" onclick="filterCategory('all', this)">All Shortlist ({len(venues_catalog)})</button>
+        <button class="filter-btn active" onclick="filterCategory('all', this)">All Venues ({len(venues_catalog)})</button>
         <button class="filter-btn" onclick="filterCategory('warm-wood', this)">01 Traditional Wood (9)</button>
         <button class="filter-btn" onclick="filterCategory('white-polyvalent', this)">02 White Polyvalent (3)</button>
-        <button class="filter-btn" onclick="filterCategory('production-wildcard', this)">03 Wildcard (1)</button>
       </div>
       <div class="search-wrapper">
         <span class="search-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
@@ -1141,13 +1140,13 @@ html_template += f"""
 
   <!-- Quick Nav Floating Control -->
   <div class="quick-nav-pill">
-    <button class="quick-nav-btn" onclick="toggleJumpDrawer()">Shortlist ({len(venues_catalog)})</button>
+    <button class="quick-nav-btn" onclick="toggleJumpDrawer()">Venues ({len(venues_catalog)})</button>
     <button class="quick-nav-btn" onclick="window.scrollTo({{top: 0, behavior: 'smooth'}})">Top</button>
   </div>
 
   <!-- Jump Menu Drawer -->
   <div class="jump-drawer" id="jumpDrawer">
-    <div class="jump-header">Turpin Shortlist Directory</div>
+    <div class="jump-header">Location Directory</div>
     {jump_html}
   </div>
 
@@ -1256,4 +1255,4 @@ html_template += f"""
 with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
     f.write(html_template)
 
-print(f"Generated {OUTPUT_HTML} with Turpin Shortlist!")
+print(f"Generated {OUTPUT_HTML} successfully!")
