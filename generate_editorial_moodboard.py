@@ -689,6 +689,21 @@ html_template = f"""<!DOCTYPE html>
     background: var(--pill-neutral-bg);
     color: var(--pill-neutral-text);
   }}
+  .status-pill.unavailable {{
+    background: #FEE2E2;
+    color: #991B1B;
+  }}
+
+  .venue-status-banner {{
+    margin-top: 8px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: rgba(15, 15, 15, 0.03);
+    border-left: 3px solid var(--ink-black);
+    font-size: 13px;
+    color: var(--ink-charcoal);
+    font-weight: 500;
+  }}
 
   p.venue-curation-text {{
     font-size: 14px;
@@ -1103,6 +1118,16 @@ for cat_id, cat_data in categories_grouped.items():
         num_imgs = len(v['images'])
         search_terms = f"{v['name']} {v['location']} {v['tag']} {v['notes']}".lower()
 
+        rate_html = f"""
+              <div class="spec-item">
+                <span class="spec-label">Rate / Tarifa</span>
+                <span class="spec-val-primary">{v['rate']}</span>
+                <span class="spec-val-secondary">cotización</span>
+              </div>
+        """ if v.get("rate") else ""
+
+        status_html = f"""<div class="venue-status-banner"><strong>Feasibility & Status:</strong> {v['status_note']}</div>""" if v.get("status_note") else ""
+
         html_template += f"""
         <article class="venue-unit" id="venue-{v['id']}" data-category="{v['category']}" data-search="{search_terms}">
           <div class="venue-lead-row">
@@ -1113,9 +1138,11 @@ for cat_id, cat_data in categories_grouped.items():
               </div>
               <div class="venue-district">{v['location']}</div>
               <p class="venue-curation-text">{v['notes']}</p>
+              {status_html}
             </div>
             
             <div class="venue-specs-column">
+              {rate_html}
               <div class="spec-item">
                 <span class="spec-label">Drive Time</span>
                 <span class="spec-val-primary">{v['drive_time']}</span>

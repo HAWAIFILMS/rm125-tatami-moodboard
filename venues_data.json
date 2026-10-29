@@ -147,7 +147,8 @@
       "LAS ENCINAS-7.jpg",
       "LAS ENCINAS-8.jpg",
       "LAS ENCINAS-9.jpg"
-    ]
+    ],
+    "status_note": "TBC Prelight 18 Nov, Shoot 19 Nov · Tarifas TBC"
   },
   {
     "category": "warm-wood",
@@ -500,7 +501,8 @@
         "orig": "assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (34).jpg",
         "thumb": "assets_thumbs/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (34).webp"
       }
-    ]
+    ],
+    "status_note": "Pendiente de respuesta (gestión municipal vía Ayuntamiento)"
   },
   {
     "category": "warm-wood",
@@ -804,7 +806,9 @@
         "thumb": "assets_thumbs/CC Ejércitos/WhatsApp Image 2026-01-13 at 20.20.50.webp"
       }
     ],
-    "hidden": true
+    "hidden": true,
+    "status_note": "Disponible 18 Nov (exc. sala baile), 19 Nov TBC · Catering exclusivo centro · Tarifa: 5.300 €/jornada + IVA (+20% nocturno)",
+    "rate": "5.300 € / jornada + IVA"
   },
   {
     "category": "warm-wood",
@@ -895,7 +899,9 @@
         "orig": "assets/Dojo Shubukan/shubukan_10_vertical_tatami.jpg",
         "thumb": "assets_thumbs/Dojo Shubukan/shubukan_10_vertical_tatami.webp"
       }
-    ]
+    ],
+    "status_note": "TBC Disponibilidad 18–19 Nov (sujeto a cuadre clases) · Tarifa: 300 €/h + IVA · Interés en visita previa",
+    "rate": "300 €/h + IVA"
   },
   {
     "category": "white-polyvalent",
@@ -989,7 +995,8 @@
         "orig": "assets/Kairos Krav Maga/kairos_05_industrial_hall.jpg",
         "thumb": "assets_thumbs/Kairos Krav Maga/kairos_05_industrial_hall.webp"
       }
-    ]
+    ],
+    "status_note": "Factible mover clases Jueves 19 Nov · Posible montaje nocturno 18–19 Nov · Tarifa jornada completa TBC"
   },
   {
     "category": "white-polyvalent",
@@ -999,8 +1006,8 @@
     "id": "invernadero-penotes",
     "folder": "Invernadero los Peñotes",
     "name": "Invernadero Los Peñotes",
-    "tag": "SELECTED · GLASSHOUSE",
-    "tag_class": "confirmed",
+    "tag": "NO DISPONIBLE",
+    "tag_class": "unavailable",
     "location": "Alcobendas · Madrid",
     "distance": "~9.5 km from Valdebebas",
     "drive_time": "~14 min driving",
@@ -1050,7 +1057,8 @@
         "orig": "assets/Invernadero los Peñotes/invernadero los peñotes (9 de 19).jpg",
         "thumb": "assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (9 de 19).webp"
       }
-    ]
+    ],
+    "status_note": "NO DISPONIBLE para fechas de rodaje"
   },
   {
     "category": "white-polyvalent",
@@ -1060,8 +1068,8 @@
     "id": "plato-who",
     "folder": "Who Espacio Creativo",
     "name": "Plató Who (Who Espacio Creativo)",
-    "tag": "SELECTED · ARCHITECTURAL",
-    "tag_class": "available",
+    "tag": "DISPONIBLE · 18–19 NOV",
+    "tag_class": "confirmed",
     "location": "Madrid Centro",
     "distance": "~12.0 km from Valdebebas",
     "drive_time": "~20 min driving",
@@ -1263,7 +1271,9 @@
         "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_9.jpg",
         "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_9.webp"
       }
-    ]
+    ],
+    "status_note": "DISPONIBLE 18–19 Nov · Tarifa: 2.500 € – 3.000 €/jornada (según uso zona montacargas)",
+    "rate": "2.500 € – 3.000 € / jornada"
   },
   {
     "category": "white-polyvalent",

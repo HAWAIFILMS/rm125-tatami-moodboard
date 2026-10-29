@@ -578,6 +578,21 @@
     background: var(--pill-neutral-bg);
     color: var(--pill-neutral-text);
   }
+  .status-pill.unavailable {
+    background: #FEE2E2;
+    color: #991B1B;
+  }
+
+  .venue-status-banner {
+    margin-top: 8px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: rgba(15, 15, 15, 0.03);
+    border-left: 3px solid var(--ink-black);
+    font-size: 13px;
+    color: var(--ink-charcoal);
+    font-weight: 500;
+  }
 
   p.venue-curation-text {
     font-size: 14px;
@@ -930,7 +945,7 @@
               <span class="sidebar-item-name">Invernadero Los Peñotes</span>
             </div>
             <div class="sidebar-item-footer-row">
-              <span class="status-indicator">SELECTED</span>
+              <span class="status-indicator">NO DISPONIBLE</span>
               <span class="sidebar-item-time">14 min</span>
             </div>
           </div>
@@ -943,7 +958,7 @@
               <span class="sidebar-item-name">Plató Who (Who Espacio Creativo)</span>
             </div>
             <div class="sidebar-item-footer-row">
-              <span class="status-indicator">SELECTED</span>
+              <span class="status-indicator">DISPONIBLE</span>
               <span class="sidebar-item-time">20 min</span>
             </div>
           </div>
@@ -1003,9 +1018,11 @@
               </div>
               <div class="venue-district">Boadilla del Monte · Madrid</div>
               <p class="venue-curation-text">Private sports club complex with dedicated martial arts tatami rooms and specialized fencing pistes.</p>
+              <div class="venue-status-banner"><strong>Feasibility & Status:</strong> TBC Prelight 18 Nov, Shoot 19 Nov · Tarifas TBC</div>
             </div>
             
             <div class="venue-specs-column">
+              
               <div class="spec-item">
                 <span class="spec-label">Drive Time</span>
                 <span class="spec-val-primary">~45–50 min driving</span>
@@ -1224,9 +1241,11 @@
               </div>
               <div class="venue-district">Villanueva de la Cañada · Madrid</div>
               <p class="venue-curation-text">Multi-space sports complex featuring dedicated tatami and fencing rooms.</p>
+              <div class="venue-status-banner"><strong>Feasibility & Status:</strong> Pendiente de respuesta (gestión municipal vía Ayuntamiento)</div>
             </div>
             
             <div class="venue-specs-column">
+              
               <div class="spec-item">
                 <span class="spec-label">Drive Time</span>
                 <span class="spec-val-primary">~60–65 min driving</span>
@@ -1289,9 +1308,17 @@
               </div>
               <div class="venue-district">C/ de los Yébenes, 98 (Aluche) · Madrid</div>
               <p class="venue-curation-text">Dedicated Japanese martial arts dojo with authentic tatami flooring, traditional shoji wooden partitions, and atmospheric lighting.</p>
+              <div class="venue-status-banner"><strong>Feasibility & Status:</strong> TBC Disponibilidad 18–19 Nov (sujeto a cuadre clases) · Tarifa: 300 €/h + IVA · Interés en visita previa</div>
             </div>
             
             <div class="venue-specs-column">
+              
+              <div class="spec-item">
+                <span class="spec-label">Rate / Tarifa</span>
+                <span class="spec-val-primary">300 €/h + IVA</span>
+                <span class="spec-val-secondary">cotización</span>
+              </div>
+        
               <div class="spec-item">
                 <span class="spec-label">Drive Time</span>
                 <span class="spec-val-primary">~26 min driving</span>
@@ -1390,9 +1417,11 @@
               </div>
               <div class="venue-district">C/ Vital Aza, 56 (Ciudad Lineal) · Madrid</div>
               <p class="venue-curation-text">Converted industrial warehouse featuring a 230 m² open-plan tatami with padded perimeter walls, independent street access, and dedicated staging area.</p>
+              <div class="venue-status-banner"><strong>Feasibility & Status:</strong> Factible mover clases Jueves 19 Nov · Posible montaje nocturno 18–19 Nov · Tarifa jornada completa TBC</div>
             </div>
             
             <div class="venue-specs-column">
+              
               <div class="spec-item">
                 <span class="spec-label">Drive Time</span>
                 <span class="spec-val-primary">~15 min driving</span>
@@ -1466,9 +1495,11 @@
               </div>
               <div class="venue-district">Madrid</div>
               <p class="venue-curation-text">Private architectural residence featuring a dedicated timber-lined yoga and tatami studio. Complete intimacy, private access, and ideal production shooting conditions.</p>
+              
             </div>
             
             <div class="venue-specs-column">
+              
               <div class="spec-item">
                 <span class="spec-label">Drive Time</span>
                 <span class="spec-val-primary">~22 min driving</span>
@@ -1552,18 +1583,20 @@
           </div>
         </article>
         
-        <article class="venue-unit" id="venue-invernadero-penotes" data-category="white-polyvalent" data-search="invernadero los peñotes alcobendas · madrid selected · glasshouse botanical glasshouse venue with natural overhead light and architectural steel frames. closest polyvalent space to valdebebas.">
+        <article class="venue-unit" id="venue-invernadero-penotes" data-category="white-polyvalent" data-search="invernadero los peñotes alcobendas · madrid no disponible botanical glasshouse venue with natural overhead light and architectural steel frames. closest polyvalent space to valdebebas.">
           <div class="venue-lead-row">
             <div class="venue-left-block">
               <div class="venue-title-meta">
                 <h3 class="venue-title">Invernadero Los Peñotes</h3>
-                <span class="status-pill confirmed">SELECTED · GLASSHOUSE</span>
+                <span class="status-pill unavailable">NO DISPONIBLE</span>
               </div>
               <div class="venue-district">Alcobendas · Madrid</div>
               <p class="venue-curation-text">Botanical glasshouse venue with natural overhead light and architectural steel frames. Closest polyvalent space to Valdebebas.</p>
+              <div class="venue-status-banner"><strong>Feasibility & Status:</strong> NO DISPONIBLE para fechas de rodaje</div>
             </div>
             
             <div class="venue-specs-column">
+              
               <div class="spec-item">
                 <span class="spec-label">Drive Time</span>
                 <span class="spec-val-primary">~14 min driving</span>
@@ -1653,18 +1686,26 @@
           </div>
         </article>
         
-        <article class="venue-unit" id="venue-plato-who" data-category="white-polyvalent" data-search="plató who (who espacio creativo) madrid centro selected · architectural contemporary architectural creative space. warm timber accents, light floors, abundant natural soft daylight across open-plan spans.">
+        <article class="venue-unit" id="venue-plato-who" data-category="white-polyvalent" data-search="plató who (who espacio creativo) madrid centro disponible · 18–19 nov contemporary architectural creative space. warm timber accents, light floors, abundant natural soft daylight across open-plan spans.">
           <div class="venue-lead-row">
             <div class="venue-left-block">
               <div class="venue-title-meta">
                 <h3 class="venue-title">Plató Who (Who Espacio Creativo)</h3>
-                <span class="status-pill available">SELECTED · ARCHITECTURAL</span>
+                <span class="status-pill confirmed">DISPONIBLE · 18–19 NOV</span>
               </div>
               <div class="venue-district">Madrid Centro</div>
               <p class="venue-curation-text">Contemporary architectural creative space. Warm timber accents, light floors, abundant natural soft daylight across open-plan spans.</p>
+              <div class="venue-status-banner"><strong>Feasibility & Status:</strong> DISPONIBLE 18–19 Nov · Tarifa: 2.500 € – 3.000 €/jornada (según uso zona montacargas)</div>
             </div>
             
             <div class="venue-specs-column">
+              
+              <div class="spec-item">
+                <span class="spec-label">Rate / Tarifa</span>
+                <span class="spec-val-primary">2.500 € – 3.000 € / jornada</span>
+                <span class="spec-val-secondary">cotización</span>
+              </div>
+        
               <div class="spec-item">
                 <span class="spec-label">Drive Time</span>
                 <span class="spec-val-primary">~20 min driving</span>
