@@ -1,0 +1,1689 @@
+[
+  {
+    "category": "warm-wood",
+    "cat_num": "01",
+    "cat_title": "Traditional Dojos & Martial Arts",
+    "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+    "id": "las-encinas",
+    "folder": "Encinas",
+    "name": "Las Encinas de Boadilla",
+    "tag": "PRIORITY · MULTI-SPACE",
+    "tag_class": "available",
+    "location": "Boadilla del Monte · Madrid",
+    "distance": "~32.2 km from Valdebebas",
+    "drive_time": "~45–50 min driving",
+    "notes": "Private sports club complex with dedicated martial arts tatami rooms and specialized fencing pistes.",
+    "images": [
+      {
+        "orig": "assets/Encinas/**12sala de esgrima club las encinas.jpg",
+        "thumb": "assets_thumbs/Encinas/**12sala de esgrima club las encinas.webp"
+      },
+      {
+        "orig": "assets/Encinas/11sala de esgrima club las encinas.jpg",
+        "thumb": "assets_thumbs/Encinas/11sala de esgrima club las encinas.webp"
+      },
+      {
+        "orig": "assets/Encinas/14sala de esgrima club las encinas.jpg",
+        "thumb": "assets_thumbs/Encinas/14sala de esgrima club las encinas.webp"
+      },
+      {
+        "orig": "assets/Encinas/16sala de esgrima club las encinas.jpg",
+        "thumb": "assets_thumbs/Encinas/16sala de esgrima club las encinas.webp"
+      },
+      {
+        "orig": "assets/Encinas/18sala de esgrima club las encinas.jpg",
+        "thumb": "assets_thumbs/Encinas/18sala de esgrima club las encinas.webp"
+      },
+      {
+        "orig": "assets/Encinas/1sala de esgrima club las encinas.jpg",
+        "thumb": "assets_thumbs/Encinas/1sala de esgrima club las encinas.webp"
+      },
+      {
+        "orig": "assets/Encinas/2sala de esgrima club las encinas.jpg",
+        "thumb": "assets_thumbs/Encinas/2sala de esgrima club las encinas.webp"
+      },
+      {
+        "orig": "assets/Encinas/3sala de esgrima club las encinas.jpg",
+        "thumb": "assets_thumbs/Encinas/3sala de esgrima club las encinas.webp"
+      },
+      {
+        "orig": "assets/Encinas/7sala de esgrima club las encinas.jpg",
+        "thumb": "assets_thumbs/Encinas/7sala de esgrima club las encinas.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-1.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-1.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-10.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-10.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-2.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-2.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-22.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-22.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-23.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-23.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-24.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-24.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-26.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-26.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-3.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-3.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-4.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-4.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-5.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-5.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-6.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-6.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-69.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-69.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-7.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-7.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-70.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-70.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-71.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-71.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-72.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-72.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-73.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-73.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-74.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-74.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-75.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-75.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-76.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-76.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-8.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-8.webp"
+      },
+      {
+        "orig": "assets/Encinas/LAS ENCINAS-9.jpg",
+        "thumb": "assets_thumbs/Encinas/LAS ENCINAS-9.webp"
+      }
+    ]
+  },
+  {
+    "category": "warm-wood",
+    "cat_num": "01",
+    "cat_title": "Traditional Dojos & Martial Arts",
+    "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+    "id": "csd-car",
+    "folder": "CSD",
+    "name": "CSD (CAR Madrid)",
+    "tag": "PRIORITY · MULTI-SPACE",
+    "tag_class": "available",
+    "location": "C/ Pintor el Greco, 1 (Moncloa) · Madrid",
+    "distance": "~14.7 km from Valdebebas",
+    "drive_time": "~24 min driving",
+    "notes": "National elite training center (Consejo Superior de Deportes). Multi-space: Specifically prioritized for Gimnasia Rítmica and adjacent training hall.",
+    "images": [
+      {
+        "orig": "assets/CSD/CSD_ESGRIMA-10.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_ESGRIMA-10.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_ESGRIMA-2.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_ESGRIMA-2.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_ESGRIMA-3.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_ESGRIMA-3.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_ESGRIMA-4.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_ESGRIMA-4.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_ESGRIMA-5.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_ESGRIMA-5.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_ESGRIMA-6.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_ESGRIMA-6.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_ESGRIMA-7.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_ESGRIMA-7.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_ESGRIMA-8.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_ESGRIMA-8.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_ESGRIMA-9.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_ESGRIMA-9.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_ESGRIMA.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_ESGRIMA.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_MALE ARTISTIC GYM-10.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_MALE ARTISTIC GYM-10.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_MALE ARTISTIC GYM-2.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_MALE ARTISTIC GYM-2.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_MALE ARTISTIC GYM-3.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_MALE ARTISTIC GYM-3.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_MALE ARTISTIC GYM-4.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_MALE ARTISTIC GYM-4.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_MALE ARTISTIC GYM-5.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_MALE ARTISTIC GYM-5.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_MALE ARTISTIC GYM-6.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_MALE ARTISTIC GYM-6.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_MALE ARTISTIC GYM-7.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_MALE ARTISTIC GYM-7.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_MALE ARTISTIC GYM-8.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_MALE ARTISTIC GYM-8.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_MALE ARTISTIC GYM-9.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_MALE ARTISTIC GYM-9.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_MALE ARTISTIC GYM.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_MALE ARTISTIC GYM.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-10.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-10.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-11.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-11.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-12.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-12.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-13.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-13.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-14.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-14.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-16.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-16.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-18.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-18.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-19.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-19.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-2.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-2.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-20.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-20.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-21.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-21.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-24.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-24.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-25.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-25.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-3.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-3.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-4.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-4.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-5.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-5.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-6.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-6.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-7.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-7.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-8.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-8.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS-9.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS-9.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_RHYTHMIC GIMNASTICS.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_RHYTHMIC GIMNASTICS.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_WRESTLING-10.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_WRESTLING-10.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_WRESTLING-2.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_WRESTLING-2.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_WRESTLING-3.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_WRESTLING-3.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_WRESTLING-4.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_WRESTLING-4.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_WRESTLING-5.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_WRESTLING-5.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_WRESTLING-6.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_WRESTLING-6.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_WRESTLING-7.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_WRESTLING-7.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_WRESTLING-8.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_WRESTLING-8.webp"
+      },
+      {
+        "orig": "assets/CSD/CSD_WRESTLING.jpg",
+        "thumb": "assets_thumbs/CSD/CSD_WRESTLING.webp"
+      }
+    ]
+  },
+  {
+    "category": "warm-wood",
+    "cat_num": "01",
+    "cat_title": "Traditional Dojos & Martial Arts",
+    "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+    "id": "principe-asturias",
+    "folder": "Principe de Asturias",
+    "name": "Polideportivo Príncipe de Asturias",
+    "tag": "PRIORITY · MULTI-SPACE",
+    "tag_class": "available",
+    "location": "Madrid",
+    "distance": "~16.0 km from Valdebebas",
+    "drive_time": "~25 min driving",
+    "notes": "Monumental indoor sports pavilion with extensive polished wood sports parquet, perimeter bleachers, and high ceiling clearance.",
+    "images": [
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-10-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-10-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-11-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-11-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-15-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-15-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-16-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-16-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-17-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-17-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-18-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-18-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-19-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-19-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-2-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-2-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-20-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-20-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-21-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-21-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-22-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-22-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-23-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-23-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-24-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-24-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-25.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-25.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-4-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-4-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-5-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-5-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-6-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-6-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-7-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-7-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-8-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-8-2.webp"
+      },
+      {
+        "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-9-2.jpg",
+        "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-9-2.webp"
+      }
+    ]
+  },
+  {
+    "category": "warm-wood",
+    "cat_num": "01",
+    "cat_title": "Traditional Dojos & Martial Arts",
+    "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+    "id": "santiago-apostol",
+    "folder": "Complejo Deportivo Santiago Apostol",
+    "name": "Complejo Deportivo Santiago Apóstol",
+    "tag": "PRIORITY · MULTI-SPACE",
+    "tag_class": "available",
+    "location": "Villanueva de la Cañada · Madrid",
+    "distance": "~44.2 km from Valdebebas",
+    "drive_time": "~60–65 min driving",
+    "notes": "Multi-space sports complex featuring dedicated tatami and fencing rooms.",
+    "images": [
+      {
+        "orig": "assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (21).jpg",
+        "thumb": "assets_thumbs/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (21).webp"
+      },
+      {
+        "orig": "assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (22).jpg",
+        "thumb": "assets_thumbs/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (22).webp"
+      },
+      {
+        "orig": "assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (23).jpg",
+        "thumb": "assets_thumbs/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (23).webp"
+      },
+      {
+        "orig": "assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (33).jpg",
+        "thumb": "assets_thumbs/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (33).webp"
+      },
+      {
+        "orig": "assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (34).jpg",
+        "thumb": "assets_thumbs/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (34).webp"
+      }
+    ]
+  },
+  {
+    "category": "warm-wood",
+    "cat_num": "01",
+    "cat_title": "Traditional Dojos & Martial Arts",
+    "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+    "id": "puerta-hierro",
+    "folder": "Puerta de Hierro",
+    "name": "Parque Deportivo Puerta de Hierro",
+    "tag": "PRIORITY · BRUTALIST",
+    "tag_class": "optioned",
+    "location": "Ctra. de El Pardo, km 1 · Madrid",
+    "distance": "~15.7 km from Valdebebas",
+    "drive_time": "~25 min driving",
+    "notes": "Standout brutalist exposed raw concrete sports pavilion with tatami mats. Note: Municipal administrative permit lead time is lengthy; subject to immediate feasibility confirmation.",
+    "images": [
+      {
+        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-10.jpg",
+        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-10.webp"
+      },
+      {
+        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-11.jpg",
+        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-11.webp"
+      },
+      {
+        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-2.jpg",
+        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-2.webp"
+      },
+      {
+        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-3.jpg",
+        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-3.webp"
+      },
+      {
+        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-4.jpg",
+        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-4.webp"
+      },
+      {
+        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-5.jpg",
+        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-5.webp"
+      },
+      {
+        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-6.jpg",
+        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-6.webp"
+      },
+      {
+        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-9.jpg",
+        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-9.webp"
+      },
+      {
+        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_.jpg",
+        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_.webp"
+      }
+    ]
+  },
+  {
+    "category": "warm-wood",
+    "cat_num": "01",
+    "cat_title": "Traditional Dojos & Martial Arts",
+    "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+    "id": "shotokan",
+    "folder": "Shotokan Honbu Dojo",
+    "name": "Shotokan Honbu Dojo",
+    "tag": "PRIORITY · MULTI-SPACE",
+    "tag_class": "confirmed",
+    "location": "Chamartín / Prosperidad · Madrid",
+    "distance": "~8.0 km from Valdebebas",
+    "drive_time": "~15 min driving",
+    "notes": "Authentic Japanese karate dojo. Multi-space configuration with warm timber perimeter lattice, clean tatami flooring, and warm directional ambient light.",
+    "images": [
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-10.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-10.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-11.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-11.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-12.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-12.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-13.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-13.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-14.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-14.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-15.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-15.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-16.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-16.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-17.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-17.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-18.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-18.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-19.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-19.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-2.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-2.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-20.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-20.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-21.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-21.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-22.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-22.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-23.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-23.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-3.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-3.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-4.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-4.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-5.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-5.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-6.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-6.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-7.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-7.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-9.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO-9.webp"
+      },
+      {
+        "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO.jpg",
+        "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO.webp"
+      }
+    ]
+  },
+  {
+    "category": "warm-wood",
+    "cat_num": "01",
+    "cat_title": "Traditional Dojos & Martial Arts",
+    "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+    "id": "cc-ejercitos",
+    "folder": "CC Ejércitos",
+    "name": "CC Ejércitos (Club de Esgrima)",
+    "tag": "PRIORITY · MULTI-SPACE",
+    "tag_class": "confirmed",
+    "location": "Gran Vía, 13 (Centro) · Madrid",
+    "distance": "~13.5 km from Valdebebas",
+    "drive_time": "~22 min driving",
+    "notes": "Stately historic palace. Stained wood herringbone parquets, classical moldings, monumental ceiling heights. Multi-space: Sala de Esgrima, Gimnasio, and Sala de Baile.",
+    "images": [
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-10.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-10.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-11.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-11.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-12.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-12.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-14.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-14.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-15.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-15.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-16.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-16.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-18.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-18.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-19.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-19.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-2.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-2.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-20.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-20.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-21.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-21.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-22.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-22.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-23.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-23.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-24.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-24.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-25.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-25.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-26.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-26.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-27.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-27.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-28.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-28.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-29.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-29.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-3.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-3.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-4.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-4.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-5.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-5.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_ESGRIMA-7.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_ESGRIMA-7.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_GIMNASIO-12.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_GIMNASIO-12.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_GIMNASIO-15.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_GIMNASIO-15.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_GIMNASIO-19.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_GIMNASIO-19.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_GIMNASIO-2.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_GIMNASIO-2.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_GIMNASIO-21.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_GIMNASIO-21.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_GIMNASIO-3.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_GIMNASIO-3.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_GIMNASIO-6.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_GIMNASIO-6.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_GIMNASIO-7.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_GIMNASIO-7.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_SALA BAILE-10.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_SALA BAILE-10.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_SALA BAILE-11.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_SALA BAILE-11.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_SALA BAILE-12.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_SALA BAILE-12.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_SALA BAILE-13.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_SALA BAILE-13.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_SALA BAILE-14.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_SALA BAILE-14.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_SALA BAILE-2.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_SALA BAILE-2.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_SALA BAILE-3.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_SALA BAILE-3.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_SALA BAILE-4.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_SALA BAILE-4.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_SALA BAILE-5.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_SALA BAILE-5.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_SALA BAILE-8.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_SALA BAILE-8.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/CC EJERCITOS_SALA BAILE.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/CC EJERCITOS_SALA BAILE.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/TRAINERS ROOM_CCE_ESGRIMA-1.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/TRAINERS ROOM_CCE_ESGRIMA-1.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/WhatsApp Image 2026-01-13 at 20.20.50.jpeg",
+        "thumb": "assets_thumbs/CC Ejércitos/WhatsApp Image 2026-01-13 at 20.20.50.webp"
+      },
+      {
+        "orig": "assets/CC Ejércitos/WhatsApp Image 2026-01-13 at 20.20.50.jpg",
+        "thumb": "assets_thumbs/CC Ejércitos/WhatsApp Image 2026-01-13 at 20.20.50.webp"
+      }
+    ]
+  },
+  {
+    "category": "warm-wood",
+    "cat_num": "01",
+    "cat_title": "Traditional Dojos & Martial Arts",
+    "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+    "id": "zanshin",
+    "folder": "Zanshin Madrid",
+    "name": "Zanshin Madrid",
+    "tag": "PRIORITY · 1 SPACE",
+    "tag_class": "confirmed",
+    "location": "C/ Clara del Rey, Chamartín · Madrid",
+    "distance": "~8.9 km from Valdebebas",
+    "drive_time": "~16 min driving",
+    "notes": "Minimalist Japanese martial arts studio. Warm wood wall paneling, clean tatami configuration, high ceiling clearance.",
+    "images": [
+      {
+        "orig": "assets/Zanshin Madrid/Zanshin Madrid 01.jpg",
+        "thumb": "assets_thumbs/Zanshin Madrid/Zanshin Madrid 01.webp"
+      },
+      {
+        "orig": "assets/Zanshin Madrid/Zanshin Madrid 02.jpg",
+        "thumb": "assets_thumbs/Zanshin Madrid/Zanshin Madrid 02.webp"
+      },
+      {
+        "orig": "assets/Zanshin Madrid/Zanshin Madrid 03.jpg",
+        "thumb": "assets_thumbs/Zanshin Madrid/Zanshin Madrid 03.webp"
+      },
+      {
+        "orig": "assets/Zanshin Madrid/Zanshin Madrid 04.jpeg",
+        "thumb": "assets_thumbs/Zanshin Madrid/Zanshin Madrid 04.webp"
+      },
+      {
+        "orig": "assets/Zanshin Madrid/Zanshin Madrid 04.jpg",
+        "thumb": "assets_thumbs/Zanshin Madrid/Zanshin Madrid 04.webp"
+      },
+      {
+        "orig": "assets/Zanshin Madrid/Zanshin Madrid 05.jpg",
+        "thumb": "assets_thumbs/Zanshin Madrid/Zanshin Madrid 05.webp"
+      }
+    ]
+  },
+  {
+    "category": "warm-wood",
+    "cat_num": "01",
+    "cat_title": "Traditional Dojos & Martial Arts",
+    "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+    "id": "dojo-shubukan",
+    "folder": "Dojo Shubukan",
+    "name": "Dojo Shubukan",
+    "tag": "NEW · TRADITIONAL TATAMI",
+    "tag_class": "confirmed",
+    "location": "C/ de los Yébenes, 98 (Aluche) · Madrid",
+    "distance": "~18.2 km from Valdebebas",
+    "drive_time": "~26 min driving",
+    "notes": "Dedicated Japanese martial arts dojo with authentic tatami flooring, traditional shoji wooden partitions, and atmospheric lighting.",
+    "images": [
+      {
+        "orig": "assets/Dojo Shubukan/shubukan_01_main_tatami_pano.jpg",
+        "thumb": "assets_thumbs/Dojo Shubukan/shubukan_01_main_tatami_pano.webp"
+      },
+      {
+        "orig": "assets/Dojo Shubukan/shubukan_02_tatami_angle.jpg",
+        "thumb": "assets_thumbs/Dojo Shubukan/shubukan_02_tatami_angle.webp"
+      },
+      {
+        "orig": "assets/Dojo Shubukan/shubukan_04_dojo_tatami.jpg",
+        "thumb": "assets_thumbs/Dojo Shubukan/shubukan_04_dojo_tatami.webp"
+      },
+      {
+        "orig": "assets/Dojo Shubukan/shubukan_05_tatami_perspective.jpg",
+        "thumb": "assets_thumbs/Dojo Shubukan/shubukan_05_tatami_perspective.webp"
+      },
+      {
+        "orig": "assets/Dojo Shubukan/shubukan_06_traditional_wood_floor.jpg",
+        "thumb": "assets_thumbs/Dojo Shubukan/shubukan_06_traditional_wood_floor.webp"
+      },
+      {
+        "orig": "assets/Dojo Shubukan/shubukan_07_action_tatami.jpg",
+        "thumb": "assets_thumbs/Dojo Shubukan/shubukan_07_action_tatami.webp"
+      },
+      {
+        "orig": "assets/Dojo Shubukan/shubukan_09_production_space.jpg",
+        "thumb": "assets_thumbs/Dojo Shubukan/shubukan_09_production_space.webp"
+      },
+      {
+        "orig": "assets/Dojo Shubukan/shubukan_10_vertical_tatami.jpg",
+        "thumb": "assets_thumbs/Dojo Shubukan/shubukan_10_vertical_tatami.webp"
+      }
+    ]
+  },
+  {
+    "category": "warm-wood",
+    "cat_num": "01",
+    "cat_title": "Traditional Dojos & Martial Arts",
+    "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+    "id": "casa-yoga-four-rooms",
+    "folder": "Casa Yoga Four Rooms (ref. 7953)",
+    "name": "Casa Residencial Yoga (Four Rooms · Ref. 7953)",
+    "tag": "ANA PICK · PRIVATE RESIDENCE",
+    "tag_class": "confirmed",
+    "location": "Madrid",
+    "distance": "~14.0 km from Valdebebas",
+    "drive_time": "~22 min driving",
+    "notes": "Private architectural residence featuring a dedicated timber-lined yoga and tatami studio. Complete intimacy, private access, and ideal production shooting conditions.",
+    "images": [
+      {
+        "orig": "assets/Casa Yoga Four Rooms (ref. 7953)/01_yoga_tatami_room_hero.jpg",
+        "thumb": "assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/01_yoga_tatami_room_hero.webp"
+      },
+      {
+        "orig": "assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_02.jpg",
+        "thumb": "assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_02.webp"
+      },
+      {
+        "orig": "assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_08.jpg",
+        "thumb": "assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_08.webp"
+      },
+      {
+        "orig": "assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_14.jpg",
+        "thumb": "assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_14.webp"
+      },
+      {
+        "orig": "assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_41.jpg",
+        "thumb": "assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_41.webp"
+      },
+      {
+        "orig": "assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_42.jpg",
+        "thumb": "assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_42.webp"
+      },
+      {
+        "orig": "assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_43.jpg",
+        "thumb": "assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_43.webp"
+      },
+      {
+        "orig": "assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_44.jpg",
+        "thumb": "assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_44.webp"
+      },
+      {
+        "orig": "assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_45.jpg",
+        "thumb": "assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_45.webp"
+      },
+      {
+        "orig": "assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_46.jpg",
+        "thumb": "assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_46.webp"
+      }
+    ]
+  },
+  {
+    "category": "warm-wood",
+    "cat_num": "01",
+    "cat_title": "Traditional Dojos & Martial Arts",
+    "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+    "id": "kairos-krav-maga",
+    "folder": "Kairos Krav Maga",
+    "name": "Kairós Tatami (Vital Aza)",
+    "tag": "NEW · 230M² DIÁFANO",
+    "tag_class": "available",
+    "location": "C/ Vital Aza, 56 (Ciudad Lineal) · Madrid",
+    "distance": "~9.8 km from Valdebebas",
+    "drive_time": "~15 min driving",
+    "notes": "Converted industrial warehouse featuring a 230 m² open-plan tatami with padded perimeter walls, independent street access, and dedicated staging area.",
+    "images": [
+      {
+        "orig": "assets/Kairos Krav Maga/kairos_01_tatami_diafano.jpg",
+        "thumb": "assets_thumbs/Kairos Krav Maga/kairos_01_tatami_diafano.webp"
+      },
+      {
+        "orig": "assets/Kairos Krav Maga/kairos_02_tatami_perspective.jpg",
+        "thumb": "assets_thumbs/Kairos Krav Maga/kairos_02_tatami_perspective.webp"
+      },
+      {
+        "orig": "assets/Kairos Krav Maga/kairos_03_tatami_wide.jpg",
+        "thumb": "assets_thumbs/Kairos Krav Maga/kairos_03_tatami_wide.webp"
+      },
+      {
+        "orig": "assets/Kairos Krav Maga/kairos_04_padded_walls.jpg",
+        "thumb": "assets_thumbs/Kairos Krav Maga/kairos_04_padded_walls.webp"
+      },
+      {
+        "orig": "assets/Kairos Krav Maga/kairos_05_industrial_hall.jpg",
+        "thumb": "assets_thumbs/Kairos Krav Maga/kairos_05_industrial_hall.webp"
+      }
+    ]
+  },
+  {
+    "category": "white-polyvalent",
+    "cat_num": "02",
+    "cat_title": "White & Polyvalent Spaces",
+    "cat_desc": "Curated white and daylight architectural spaces for custom set design and spatial intervention.",
+    "id": "invernadero-penotes",
+    "folder": "Invernadero los Peñotes",
+    "name": "Invernadero Los Peñotes",
+    "tag": "SELECTED · GLASSHOUSE",
+    "tag_class": "confirmed",
+    "location": "Alcobendas · Madrid",
+    "distance": "~9.5 km from Valdebebas",
+    "drive_time": "~14 min driving",
+    "notes": "Botanical glasshouse venue with natural overhead light and architectural steel frames. Closest polyvalent space to Valdebebas.",
+    "images": [
+      {
+        "orig": "assets/Invernadero los Peñotes/invernadero los peñotes (10 de 19).jpg",
+        "thumb": "assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (10 de 19).webp"
+      },
+      {
+        "orig": "assets/Invernadero los Peñotes/invernadero los peñotes (11 de 19).jpg",
+        "thumb": "assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (11 de 19).webp"
+      },
+      {
+        "orig": "assets/Invernadero los Peñotes/invernadero los peñotes (12 de 19).jpg",
+        "thumb": "assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (12 de 19).webp"
+      },
+      {
+        "orig": "assets/Invernadero los Peñotes/invernadero los peñotes (13 de 19).jpg",
+        "thumb": "assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (13 de 19).webp"
+      },
+      {
+        "orig": "assets/Invernadero los Peñotes/invernadero los peñotes (15 de 19).jpg",
+        "thumb": "assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (15 de 19).webp"
+      },
+      {
+        "orig": "assets/Invernadero los Peñotes/invernadero los peñotes (17 de 19).jpg",
+        "thumb": "assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (17 de 19).webp"
+      },
+      {
+        "orig": "assets/Invernadero los Peñotes/invernadero los peñotes (18 de 19).jpg",
+        "thumb": "assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (18 de 19).webp"
+      },
+      {
+        "orig": "assets/Invernadero los Peñotes/invernadero los peñotes (4 de 19).jpg",
+        "thumb": "assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (4 de 19).webp"
+      },
+      {
+        "orig": "assets/Invernadero los Peñotes/invernadero los peñotes (6 de 19).jpg",
+        "thumb": "assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (6 de 19).webp"
+      },
+      {
+        "orig": "assets/Invernadero los Peñotes/invernadero los peñotes (7 de 19).jpg",
+        "thumb": "assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (7 de 19).webp"
+      },
+      {
+        "orig": "assets/Invernadero los Peñotes/invernadero los peñotes (9 de 19).jpg",
+        "thumb": "assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (9 de 19).webp"
+      }
+    ]
+  },
+  {
+    "category": "white-polyvalent",
+    "cat_num": "02",
+    "cat_title": "White & Polyvalent Spaces",
+    "cat_desc": "Curated white and daylight architectural spaces for custom set design and spatial intervention.",
+    "id": "plato-who",
+    "folder": "Who Espacio Creativo",
+    "name": "Plató Who (Who Espacio Creativo)",
+    "tag": "SELECTED · ARCHITECTURAL",
+    "tag_class": "available",
+    "location": "Madrid Centro",
+    "distance": "~12.0 km from Valdebebas",
+    "drive_time": "~20 min driving",
+    "notes": "Contemporary architectural creative space. Warm timber accents, light floors, abundant natural soft daylight across open-plan spans.",
+    "images": [
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_1.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_1.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_10.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_10.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_11.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_11.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_12.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_12.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_13.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_13.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_14.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_14.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_15.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_15.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_16.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_16.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_17.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_17.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_18.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_18.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_19.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_19.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_2.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_2.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_20.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_20.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_21.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_21.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_22.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_22.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_23.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_23.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_24.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_24.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_25.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_25.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_27.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_27.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_28.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_28.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_29.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_29.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_30.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_30.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_31.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_31.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_35.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_35.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_36.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_36.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_38.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_38.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_39.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_39.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_4.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_4.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_42.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_42.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_44.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_44.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_47.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_47.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_48.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_48.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_49.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_49.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_5.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_5.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_51.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_51.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_52.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_52.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_53.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_53.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_54.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_54.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_55.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_55.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_56.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_56.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_57.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_57.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_58.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_58.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_59.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_59.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_6.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_6.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_60.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_60.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_61.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_61.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_64.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_64.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_66.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_66.webp"
+      },
+      {
+        "orig": "assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_9.jpg",
+        "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_9.webp"
+      }
+    ]
+  },
+  {
+    "category": "white-polyvalent",
+    "cat_num": "02",
+    "cat_title": "White & Polyvalent Spaces",
+    "cat_desc": "Curated white and daylight architectural spaces for custom set design and spatial intervention.",
+    "id": "espacio-larra",
+    "folder": "Espacio Larra",
+    "name": "Espacio Larra (Larra 14)",
+    "tag": "SELECTED · PLATÓ",
+    "tag_class": "confirmed",
+    "location": "C/ de Larra, 14 (Chamberí) · Madrid",
+    "distance": "~12.7 km from Valdebebas",
+    "drive_time": "~21 min driving",
+    "notes": "Historic editorial building. Pristine white cyclorama Plató, grand skylit central atrium, raw gallery spaces, and auditorium.",
+    "images": [
+      {
+        "orig": "assets/Espacio Larra/001.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/001.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/0017.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/0017.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/0018.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/0018.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/002.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/002.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/003.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/003.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/004.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/004.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/005.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/005.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/006.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/006.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/007.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/007.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/008.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/008.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/009.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/009.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/010.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/010.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/011(1).jpg",
+        "thumb": "assets_thumbs/Espacio Larra/011(1).webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/013.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/013.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/014(1).jpg",
+        "thumb": "assets_thumbs/Espacio Larra/014(1).webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/015.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/015.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/016.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/016.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/034.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/034.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/040.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/040.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/042.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/042.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/043.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/043.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/047.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/047.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/048.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/048.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/064.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/064.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/066.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/066.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/067.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/067.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/070.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/070.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/072.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/072.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/073.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/073.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/074-2.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/074-2.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/074_Easy-Resize.com.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/074_Easy-Resize.com.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/076_Easy-Resize.com.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/076_Easy-Resize.com.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/079_Easy-Resize.com.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/079_Easy-Resize.com.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/080_Easy-Resize.com.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/080_Easy-Resize.com.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/098.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/098.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/Espacio Larra_1.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/Espacio Larra_1.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/Espacio Larra_15.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/Espacio Larra_15.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/Espacio Larra_18.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/Espacio Larra_18.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/Espacio Larra_2.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/Espacio Larra_2.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/Espacio Larra_21.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/Espacio Larra_21.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/hall-10.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/hall-10.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/hall-4.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/hall-4.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/hall-9.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/hall-9.webp"
+      },
+      {
+        "orig": "assets/Espacio Larra/hall.jpg",
+        "thumb": "assets_thumbs/Espacio Larra/hall.webp"
+      }
+    ]
+  },
+  {
+    "category": "white-polyvalent",
+    "cat_num": "02",
+    "cat_title": "White & Polyvalent Spaces",
+    "cat_desc": "Curated white and daylight architectural spaces for custom set design and spatial intervention.",
+    "id": "espacio-abc",
+    "folder": "Espacio ABC",
+    "name": "Espacio ABC",
+    "tag": "SELECTED · EVENT STAGE",
+    "tag_class": "available",
+    "location": "C/ Serrano, 61 (Salamanca) · Madrid",
+    "distance": "~11.5 km from Valdebebas",
+    "drive_time": "~18 min driving",
+    "notes": "Premium venue in ABC Serrano with polished architectural finishes and daylight atriums.",
+    "images": [
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_0.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_0.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_1.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_1.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_10.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_10.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_11.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_11.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_14.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_14.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_15.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_15.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_19.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_19.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_2.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_2.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_23.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_23.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_25.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_25.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_26.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_26.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_3.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_3.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_33.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_33.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_34.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_34.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_35.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_35.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_36.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_36.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_37.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_37.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_38.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_38.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_4.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_4.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_44.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_44.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_45.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_45.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_46.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_46.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_47.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_47.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_48.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_48.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_5.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_5.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_52.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_52.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_54.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_54.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_55.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_55.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_56.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_56.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_57.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_57.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_6.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_6.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_60.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_60.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_63.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_63.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_66.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_66.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_67.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_67.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_69.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_69.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_7.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_7.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_70.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_70.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_71.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_71.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_73.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_73.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_76.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_76.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_8.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_8.webp"
+      },
+      {
+        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_9.jpg",
+        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_9.webp"
+      }
+    ]
+  }
+]
