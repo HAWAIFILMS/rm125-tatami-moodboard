@@ -1118,14 +1118,6 @@ for cat_id, cat_data in categories_grouped.items():
         num_imgs = len(v['images'])
         search_terms = f"{v['name']} {v['location']} {v['tag']} {v['notes']}".lower()
 
-        rate_html = f"""
-              <div class="spec-item">
-                <span class="spec-label">Rate / Tarifa</span>
-                <span class="spec-val-primary">{v['rate']}</span>
-                <span class="spec-val-secondary">cotización</span>
-              </div>
-        """ if v.get("rate") else ""
-
         status_html = f"""<div class="venue-status-banner"><strong>Feasibility & Status:</strong> {v['status_note']}</div>""" if v.get("status_note") else ""
 
         html_template += f"""
@@ -1142,7 +1134,6 @@ for cat_id, cat_data in categories_grouped.items():
             </div>
             
             <div class="venue-specs-column">
-              {rate_html}
               <div class="spec-item">
                 <span class="spec-label">Drive Time</span>
                 <span class="spec-val-primary">{v['drive_time']}</span>

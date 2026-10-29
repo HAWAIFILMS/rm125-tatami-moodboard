@@ -148,7 +148,7 @@
       "LAS ENCINAS-8.jpg",
       "LAS ENCINAS-9.jpg"
     ],
-    "status_note": "TBC Prelight 18 Nov, Shoot 19 Nov · Tarifas TBC"
+    "status_note": "TBC Prelight 18 Nov, Shoot 19 Nov"
   },
   {
     "category": "warm-wood",
@@ -807,8 +807,7 @@
       }
     ],
     "hidden": true,
-    "status_note": "Disponible 18 Nov (exc. sala baile), 19 Nov TBC · Catering exclusivo centro · Tarifa: 5.300 €/jornada + IVA (+20% nocturno)",
-    "rate": "5.300 € / jornada + IVA"
+    "status_note": "Disponible 18 Nov (exc. sala baile), 19 Nov TBC · Catering exclusivo centro"
   },
   {
     "category": "warm-wood",
@@ -900,8 +899,7 @@
         "thumb": "assets_thumbs/Dojo Shubukan/shubukan_10_vertical_tatami.webp"
       }
     ],
-    "status_note": "TBC Disponibilidad 18–19 Nov (sujeto a cuadre clases) · Tarifa: 300 €/h + IVA · Interés en visita previa",
-    "rate": "300 €/h + IVA"
+    "status_note": "TBC Disponibilidad 18–19 Nov (sujeto a cuadre de horarios y clases) · Interés en visita previa"
   },
   {
     "category": "white-polyvalent",
@@ -996,7 +994,7 @@
         "thumb": "assets_thumbs/Kairos Krav Maga/kairos_05_industrial_hall.webp"
       }
     ],
-    "status_note": "Factible mover clases Jueves 19 Nov · Posible montaje nocturno 18–19 Nov · Tarifa jornada completa TBC"
+    "status_note": "Factible mover clases Jueves 19 Nov · Opción de montaje nocturno 18–19 Nov"
   },
   {
     "category": "white-polyvalent",
@@ -1272,8 +1270,7 @@
         "thumb": "assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_9.webp"
       }
     ],
-    "status_note": "DISPONIBLE 18–19 Nov · Tarifa: 2.500 € – 3.000 €/jornada (según uso zona montacargas)",
-    "rate": "2.500 € – 3.000 € / jornada"
+    "status_note": "DISPONIBLE 18–19 Nov (zona montacargas opcional para rodaje)"
   },
   {
     "category": "white-polyvalent",
