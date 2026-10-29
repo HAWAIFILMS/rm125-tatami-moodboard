@@ -1020,8 +1020,8 @@ html_template = f"""<!DOCTYPE html>
             <span class="meta-col-val">TMC / adidas</span>
           </div>
           <div class="hero-meta-col">
-            <span class="meta-col-label">Shoot Dates</span>
-            <span class="meta-col-val">18–19 November 2026</span>
+            <span class="meta-col-label">Shoot Date</span>
+            <span class="meta-col-val">19 Nov 2026 (Pre-light 18 Nov)</span>
           </div>
           <div class="hero-meta-col">
             <span class="meta-col-label">Transit Origin</span>

@@ -462,7 +462,8 @@
         "orig": "assets/Principe de Asturias/PRINCIPE DE ASTURIAS-9-2.jpg",
         "thumb": "assets_thumbs/Principe de Asturias/PRINCIPE DE ASTURIAS-9-2.webp"
       }
-    ]
+    ],
+    "hidden": true
   },
   {
     "category": "warm-wood",
@@ -1455,6 +1456,7 @@
         "orig": "assets/Espacio Larra/hall.jpg",
         "thumb": "assets_thumbs/Espacio Larra/hall.webp"
       }
-    ]
+    ],
+    "hidden": true
   }
 ]
