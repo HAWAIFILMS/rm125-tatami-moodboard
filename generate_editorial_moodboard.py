@@ -148,6 +148,51 @@ venues_catalog = [
         "drive_time": "~26 min driving",
         "notes": "Dedicated Japanese martial arts dojo with authentic tatami flooring, traditional shoji wooden partitions, and atmospheric lighting."
     },
+    {
+        "category": "warm-wood",
+        "cat_num": "01",
+        "cat_title": "Traditional Dojos & Martial Arts",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+        "id": "casa-yoga-four-rooms",
+        "folder": "Casa Yoga Four Rooms (ref. 7953)",
+        "name": "Casa Residencial Yoga (Four Rooms · Ref. 7953)",
+        "tag": "ANA PICK · PRIVATE RESIDENCE",
+        "tag_class": "confirmed",
+        "location": "Madrid",
+        "distance": "~14.0 km from Valdebebas",
+        "drive_time": "~22 min driving",
+        "notes": "Private architectural residence featuring a dedicated timber-lined yoga and tatami studio. Complete intimacy, private access, and ideal production shooting conditions."
+    },
+    {
+        "category": "warm-wood",
+        "cat_num": "01",
+        "cat_title": "Traditional Dojos & Martial Arts",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+        "id": "kairos-krav-maga",
+        "folder": "Kairos Krav Maga",
+        "name": "Kairós Tatami (Vital Aza)",
+        "tag": "NEW · 230M² DIÁFANO",
+        "tag_class": "available",
+        "location": "C/ Vital Aza, 56 (Ciudad Lineal) · Madrid",
+        "distance": "~9.8 km from Valdebebas",
+        "drive_time": "~15 min driving",
+        "notes": "Converted industrial warehouse featuring a 230 m² open-plan tatami with padded perimeter walls, independent street access, and dedicated staging area."
+    },
+    {
+        "category": "warm-wood",
+        "cat_num": "01",
+        "cat_title": "Traditional Dojos & Martial Arts",
+        "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
+        "id": "centro-delicias",
+        "folder": "Centro Delicias",
+        "name": "Centro Deportivo & Cultural Delicias",
+        "tag": "NEW · TRADITIONAL TATAMI",
+        "tag_class": "available",
+        "location": "Paseo de las Delicias, 61 (Arganzuela) · Madrid",
+        "distance": "~16.8 km from Valdebebas",
+        "drive_time": "~24 min driving",
+        "notes": "Central multipurpose sporting facility featuring dedicated wood-accented tatami halls and polyvalent parquet studios with ample natural light."
+    },
 
     # 02 / WHITE & POLYVALENT SPACES
     {
