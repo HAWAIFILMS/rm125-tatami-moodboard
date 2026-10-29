@@ -138,6 +138,15 @@
         "orig": "assets/Encinas/LAS ENCINAS-9.jpg",
         "thumb": "assets_thumbs/Encinas/LAS ENCINAS-9.webp"
       }
+    ],
+    "image_order": [
+      "LAS ENCINAS-3.jpg",
+      "LAS ENCINAS-4.jpg",
+      "LAS ENCINAS-5.jpg",
+      "LAS ENCINAS-6.jpg",
+      "LAS ENCINAS-7.jpg",
+      "LAS ENCINAS-8.jpg",
+      "LAS ENCINAS-9.jpg"
     ]
   },
   {
@@ -355,7 +364,8 @@
         "orig": "assets/CSD/CSD_WRESTLING.jpg",
         "thumb": "assets_thumbs/CSD/CSD_WRESTLING.webp"
       }
-    ]
+    ],
+    "hidden": true
   },
   {
     "category": "warm-wood",
@@ -496,59 +506,6 @@
     "cat_num": "01",
     "cat_title": "Traditional Dojos & Martial Arts",
     "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
-    "id": "puerta-hierro",
-    "folder": "Puerta de Hierro",
-    "name": "Parque Deportivo Puerta de Hierro",
-    "tag": "PRIORITY · BRUTALIST",
-    "tag_class": "optioned",
-    "location": "Ctra. de El Pardo, km 1 · Madrid",
-    "distance": "~15.7 km from Valdebebas",
-    "drive_time": "~25 min driving",
-    "notes": "Standout brutalist exposed raw concrete sports pavilion with tatami mats. Note: Municipal administrative permit lead time is lengthy; subject to immediate feasibility confirmation.",
-    "images": [
-      {
-        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-10.jpg",
-        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-10.webp"
-      },
-      {
-        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-11.jpg",
-        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-11.webp"
-      },
-      {
-        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-2.jpg",
-        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-2.webp"
-      },
-      {
-        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-3.jpg",
-        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-3.webp"
-      },
-      {
-        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-4.jpg",
-        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-4.webp"
-      },
-      {
-        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-5.jpg",
-        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-5.webp"
-      },
-      {
-        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-6.jpg",
-        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-6.webp"
-      },
-      {
-        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-9.jpg",
-        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_-9.webp"
-      },
-      {
-        "orig": "assets/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_.jpg",
-        "thumb": "assets_thumbs/Puerta de Hierro/Parque deportivo Puerta de Hierro_ARTES MARCILAES_.webp"
-      }
-    ]
-  },
-  {
-    "category": "warm-wood",
-    "cat_num": "01",
-    "cat_title": "Traditional Dojos & Martial Arts",
-    "cat_desc": "Curated martial arts facilities and authentic timber tatami dojos in Madrid.",
     "id": "shotokan",
     "folder": "Shotokan Honbu Dojo",
     "name": "Shotokan Honbu Dojo",
@@ -647,7 +604,8 @@
         "orig": "assets/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO.jpg",
         "thumb": "assets_thumbs/Shotokan Honbu Dojo/SHOTOKAN HONBU DOJO.webp"
       }
-    ]
+    ],
+    "hidden": true
   },
   {
     "category": "warm-wood",
@@ -844,7 +802,8 @@
         "orig": "assets/CC Ejércitos/WhatsApp Image 2026-01-13 at 20.20.50.jpg",
         "thumb": "assets_thumbs/CC Ejércitos/WhatsApp Image 2026-01-13 at 20.20.50.webp"
       }
-    ]
+    ],
+    "hidden": true
   },
   {
     "category": "warm-wood",
@@ -885,7 +844,8 @@
         "orig": "assets/Zanshin Madrid/Zanshin Madrid 05.jpg",
         "thumb": "assets_thumbs/Zanshin Madrid/Zanshin Madrid 05.webp"
       }
-    ]
+    ],
+    "hidden": true
   },
   {
     "category": "warm-wood",
@@ -1494,195 +1454,6 @@
       {
         "orig": "assets/Espacio Larra/hall.jpg",
         "thumb": "assets_thumbs/Espacio Larra/hall.webp"
-      }
-    ]
-  },
-  {
-    "category": "white-polyvalent",
-    "cat_num": "02",
-    "cat_title": "White & Polyvalent Spaces",
-    "cat_desc": "Curated white and daylight architectural spaces for custom set design and spatial intervention.",
-    "id": "espacio-abc",
-    "folder": "Espacio ABC",
-    "name": "Espacio ABC",
-    "tag": "SELECTED · EVENT STAGE",
-    "tag_class": "available",
-    "location": "C/ Serrano, 61 (Salamanca) · Madrid",
-    "distance": "~11.5 km from Valdebebas",
-    "drive_time": "~18 min driving",
-    "notes": "Premium venue in ABC Serrano with polished architectural finishes and daylight atriums.",
-    "images": [
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_0.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_0.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_1.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_1.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_10.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_10.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_11.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_11.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_14.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_14.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_15.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_15.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_19.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_19.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_2.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_2.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_23.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_23.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_25.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_25.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_26.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_26.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_3.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_3.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_33.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_33.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_34.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_34.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_35.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_35.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_36.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_36.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_37.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_37.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_38.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_38.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_4.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_4.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_44.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_44.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_45.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_45.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_46.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_46.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_47.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_47.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_48.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_48.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_5.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_5.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_52.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_52.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_54.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_54.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_55.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_55.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_56.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_56.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_57.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_57.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_6.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_6.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_60.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_60.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_63.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_63.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_66.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_66.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_67.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_67.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_69.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_69.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_7.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_7.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_70.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_70.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_71.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_71.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_73.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_73.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_76.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_76.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_8.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_8.webp"
-      },
-      {
-        "orig": "assets/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_9.jpg",
-        "thumb": "assets_thumbs/Espacio ABC/ESPACIO ABC_VENUE_MAD_FEB_2023_9.webp"
       }
     ]
   }

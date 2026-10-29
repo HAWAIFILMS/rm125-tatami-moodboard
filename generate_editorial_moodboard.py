@@ -20,16 +20,26 @@ else:
     venues_catalog = []
 
 
+# Filter out hidden venues so they don't appear in client-facing moodboard
+active_venues = [v for v in venues_catalog if not v.get("hidden", False)]
+
 total_images = 0
 categories_grouped = {}
 THUMBS_DIR = os.path.join(ROOT, "assets_thumbs")
 
-for v in venues_catalog:
+for v in active_venues:
     v_folder = os.path.join(ASSETS_DIR, v["folder"])
     thumb_v_folder = os.path.join(THUMBS_DIR, v["folder"])
     images = []
     if os.path.exists(v_folder):
         files = sorted([f for f in os.listdir(v_folder) if f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp')) and not f.startswith('._')])
+        
+        # Custom re-ordering if venue specifies image_order
+        if "image_order" in v and isinstance(v["image_order"], list):
+            priority_files = [f for f in v["image_order"] if f in files]
+            remaining_files = [f for f in files if f not in priority_files]
+            files = priority_files + remaining_files
+
         for f in files:
             orig_rel = f"assets/{v['folder']}/{f}"
             base_name = os.path.splitext(f)[0]
@@ -56,7 +66,7 @@ for v in venues_catalog:
         }
     categories_grouped[cat_id]["venues"].append(v)
 
-print(f"Shortlist catalog ready: {len(venues_catalog)} venues, {total_images} total images linked.")
+print(f"Shortlist catalog ready: {len(active_venues)} active venues ({len(venues_catalog) - len(active_venues)} hidden), {total_images} total images linked.")
 
 sidebar_nav_html = ""
 for cat_id, cat_data in categories_grouped.items():
@@ -978,7 +988,7 @@ html_template = f"""<!DOCTYPE html>
       <div class="masthead-project">TMC × TATAMIS — ADIDAS RM125</div>
     </div>
     <div class="masthead-right">
-      <div class="curation-counter">{len(venues_catalog)} Locations · {total_images} Curated Plates</div>
+      <div class="curation-counter">{len(active_venues)} Locations · {total_images} Curated Plates</div>
       <div class="masthead-sep"></div>
       <div class="masthead-origin-badge">Origin: Valdebebas</div>
     </div>
@@ -991,7 +1001,7 @@ html_template = f"""<!DOCTYPE html>
     <aside class="location-sidebar">
       <div class="sidebar-header">
         <span class="sidebar-title">Locations Directory</span>
-        <span class="sidebar-count">{len(venues_catalog)} Venues</span>
+        <span class="sidebar-count">{len(active_venues)} Venues</span>
       </div>
       <nav class="sidebar-nav">
         {sidebar_nav_html}
@@ -1020,7 +1030,7 @@ html_template = f"""<!DOCTYPE html>
         </div>
       </div>
       <h1 class="hero-headline">Location Moodboard</h1>
-      <p class="hero-deck">Curated location options for client review and feasibility assessment. Features 9 authentic tatamis and martial arts dojos alongside 4 polyvalent white architectural spaces in Madrid.</p>
+      <p class="hero-deck">Curated location options for client review and feasibility assessment. Features authentic tatamis and martial arts dojos alongside polyvalent white architectural spaces in Madrid.</p>
     </section>
 
 
