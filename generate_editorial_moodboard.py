@@ -1,9 +1,12 @@
-import json, os
+import json, os, sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 ASSETS_DIR = os.path.join(ROOT, "assets")
 OUTPUT_HTML = os.path.join(ROOT, "tatami_moodboard.html")
 LOGO_PATH = os.path.join(ROOT, "hawai_logo.svg")
+
+# Curation mode is strictly local and disabled by default for public/GitHub Pages builds
+ENABLE_CURATION = "--curate" in sys.argv or os.environ.get("ENABLE_CURATION") == "1"
 
 hawai_logo_svg = ""
 if os.path.exists(LOGO_PATH):
@@ -85,20 +88,18 @@ for cat_id, cat_data in categories_grouped.items():
     for idx_v, v in enumerate(cat_venues):
         primary_tag = v['tag'].split('·')[0].strip()
         is_priority = 'PRIORITY' in v['tag'].upper()
-        p_dot = '<span class="priority-dot" title="Priority Check"></span>' if is_priority else ''
+        p_badge = '<span class="status-indicator priority" title="Priority Check">Priority</span>' if is_priority else f'<span class="status-indicator">{primary_tag}</span>'
+        drive_clean = v['drive_time'].replace('driving', '').replace('~', '').strip()
         sidebar_nav_html += f"""
         <a href="#venue-{v['id']}" class="sidebar-item" data-venue-target="venue-{v['id']}">
-          <div class="sidebar-item-main">
-            <span class="sidebar-item-num">{idx_v+1:02d}</span>
-            <div class="sidebar-item-text-group">
-              <div class="sidebar-item-title-row">
-                <span class="sidebar-item-name">{v['name']}</span>
-                {p_dot}
-              </div>
-              <div class="sidebar-item-meta">
-                <span class="sidebar-item-tag">{primary_tag}</span>
-                <span class="sidebar-item-time">{v['drive_time'].replace('driving', '').strip()}</span>
-              </div>
+          <div class="sidebar-item-card">
+            <div class="sidebar-item-header-row">
+              <span class="sidebar-item-index">{idx_v+1:02d}</span>
+              <span class="sidebar-item-name">{v['name']}</span>
+            </div>
+            <div class="sidebar-item-footer-row">
+              {p_badge}
+              <span class="sidebar-item-time">{drive_clean}</span>
             </div>
           </div>
         </a>
@@ -251,7 +252,7 @@ html_template = f"""<!DOCTYPE html>
     min-height: calc(100vh - 57px);
   }}
 
-  /* Left Side Navigation Panel */
+  /* Left Side Navigation Panel — Editorial Index */
   aside.location-sidebar {{
     width: 320px;
     flex-shrink: 0;
@@ -260,26 +261,27 @@ html_template = f"""<!DOCTYPE html>
     height: calc(100vh - 57px);
     overflow-y: auto;
     border-right: 1px solid var(--line-hairline);
-    background: var(--bg-surface-subtle);
+    background: #F8F4E8;
     display: flex;
     flex-direction: column;
     z-index: 80;
     scrollbar-width: thin;
-    scrollbar-color: rgba(15, 15, 15, 0.15) transparent;
+    scrollbar-color: rgba(15, 15, 15, 0.12) transparent;
   }}
 
   .sidebar-header {{
-    padding: 24px 26px 18px;
+    padding: 22px 24px 16px;
     border-bottom: 1px solid var(--line-hairline);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--bg-card);
+    background: rgba(249, 245, 233, 0.7);
+    backdrop-filter: blur(12px);
   }}
 
   .sidebar-title {{
     font-family: var(--font-heading);
-    font-size: 10.5px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -290,21 +292,30 @@ html_template = f"""<!DOCTYPE html>
     font-family: var(--font-heading);
     font-size: 10px;
     font-weight: 600;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--ink-muted);
+    background: rgba(15, 15, 15, 0.05);
+    padding: 2px 8px;
+    border-radius: 999px;
   }}
 
   .sidebar-nav {{
-    padding: 8px 0 40px;
+    padding: 16px 14px 48px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }}
 
   .sidebar-section {{
-    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }}
 
   .sidebar-section-header {{
-    padding: 18px 26px 8px;
+    padding: 6px 10px 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -318,55 +329,106 @@ html_template = f"""<!DOCTYPE html>
 
   .section-badge-num {{
     font-family: var(--font-heading);
-    font-size: 9px;
+    font-size: 9.5px;
     font-weight: 700;
     color: var(--ink-faint);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
   }}
 
   .section-badge-title {{
     font-family: var(--font-heading);
-    font-size: 10.5px;
+    font-size: 10px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--ink-charcoal);
+    color: var(--ink-black);
   }}
 
   .section-badge-count {{
     font-family: var(--font-heading);
-    font-size: 10px;
+    font-size: 9.5px;
     font-weight: 600;
-    color: var(--ink-faint);
+    color: var(--ink-muted);
     background: rgba(15, 15, 15, 0.04);
-    padding: 1px 7px;
-    border-radius: 999px;
+    border: 1px solid var(--line-light);
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
   }}
 
   .sidebar-items-list {{
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 5px;
   }}
 
   .sidebar-item {{
     display: block;
-    padding: 10px 26px;
     text-decoration: none;
-    color: var(--ink-charcoal);
-    transition: all 0.15s ease;
-    border-left: 2px solid transparent;
+    color: inherit;
+    border-radius: 8px;
+    transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
   }}
 
-  .sidebar-item:hover {{
-    background: rgba(15, 15, 15, 0.035);
+  .sidebar-item-card {{
+    padding: 11px 14px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  }}
+
+  .sidebar-item:hover .sidebar-item-card {{
+    background: rgba(255, 255, 255, 0.6);
+    border-color: rgba(15, 15, 15, 0.06);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(15, 15, 15, 0.03);
+  }}
+
+  .sidebar-item.active .sidebar-item-card {{
+    background: #FFFFFF;
+    border-color: rgba(15, 15, 15, 0.12);
+    box-shadow: 0 4px 14px rgba(15, 15, 15, 0.06), 0 1px 3px rgba(15, 15, 15, 0.03);
+  }}
+
+  .sidebar-item-header-row {{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    width: 100%;
+  }}
+
+  .sidebar-item-index {{
+    font-family: var(--font-heading);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--ink-faint);
+    letter-spacing: 0.04em;
+    flex-shrink: 0;
+    transition: color 0.15s ease;
+  }}
+
+  .sidebar-item.active .sidebar-item-index {{
     color: var(--ink-black);
+    font-weight: 700;
   }}
 
-  .sidebar-item.active {{
-    background: var(--bg-card);
-    border-left-color: var(--ink-black);
-    box-shadow: 0 2px 8px rgba(15, 15, 15, 0.04);
+  .sidebar-item-name {{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.35;
+    color: var(--ink-charcoal);
+    flex: 1;
+    word-break: normal;
+    overflow-wrap: break-word;
+    letter-spacing: -0.01em;
+    transition: color 0.15s ease;
   }}
 
   .sidebar-item.active .sidebar-item-name {{
@@ -374,77 +436,42 @@ html_template = f"""<!DOCTYPE html>
     font-weight: 600;
   }}
 
-  .sidebar-item.active .sidebar-item-num {{
-    color: var(--ink-black);
-  }}
-
-  .sidebar-item-main {{
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-  }}
-
-  .sidebar-item-num {{
-    font-family: var(--font-heading);
-    font-size: 10px;
-    font-weight: 500;
-    color: var(--ink-faint);
-    letter-spacing: 0.04em;
-    padding-top: 2px;
-    min-width: 16px;
-  }}
-
-  .sidebar-item-text-group {{
-    flex: 1;
-    min-width: 0;
-  }}
-
-  .sidebar-item-title-row {{
+  .sidebar-item-footer-row {{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 6px;
-    margin-bottom: 3px;
+    gap: 8px;
+    padding-left: 21px; /* Align with text past the 2-digit index */
   }}
 
-  .sidebar-item-name {{
-    font-size: 13.5px;
-    font-weight: 500;
-    line-height: 1.3;
-    color: var(--ink-charcoal);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }}
-
-  .priority-dot {{
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #1A6B3C;
-    flex-shrink: 0;
-  }}
-
-  .sidebar-item-meta {{
+  .status-indicator {{
     font-family: var(--font-heading);
-    font-size: 10px;
-    color: var(--ink-muted);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    letter-spacing: 0.04em;
-  }}
-
-  .sidebar-item-tag {{
-    text-transform: uppercase;
     font-size: 9px;
-    letter-spacing: 0.06em;
-    color: var(--ink-faint);
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    background: rgba(15, 15, 15, 0.04);
+    padding: 2px 7px;
+    border-radius: 4px;
+    border: 1px solid rgba(15, 15, 15, 0.04);
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.2;
+  }}
+
+  .status-indicator.priority {{
+    color: #1A6B3C;
+    background: #E8F5E9;
+    border-color: rgba(26, 107, 60, 0.15);
   }}
 
   .sidebar-item-time {{
-    color: var(--ink-muted);
+    font-family: var(--font-heading);
+    font-size: 10px;
     font-weight: 500;
+    letter-spacing: 0.03em;
+    color: var(--ink-muted);
   }}
 
   .masthead-origin-badge {{
@@ -878,9 +905,9 @@ html_template = f"""<!DOCTYPE html>
     .masthead-right {{ display: none; }}
     .hero-meta-grid {{ flex-direction: column; gap: 14px; }}
   }}
-
-  /* Curation Mode Floating Tool Bar */
-  .curate-toolbar {{
+{'''
+  /* Curation Mode Floating Tool Bar (Local Dev only) */
+  .curate-toolbar {
     position: fixed;
     top: 14px;
     right: 48px;
@@ -888,9 +915,9 @@ html_template = f"""<!DOCTYPE html>
     display: flex;
     align-items: center;
     gap: 8px;
-  }}
+  }
 
-  .curate-btn {{
+  .curate-btn {
     font-family: var(--font-heading);
     font-size: 11px;
     font-weight: 600;
@@ -904,20 +931,20 @@ html_template = f"""<!DOCTYPE html>
     color: var(--ink-charcoal);
     box-shadow: 0 4px 16px rgba(15, 15, 15, 0.08);
     transition: all 0.15s ease;
-  }}
+  }
 
-  .curate-btn:hover {{
+  .curate-btn:hover {
     background: var(--bg-surface-subtle);
     color: var(--ink-black);
-  }}
+  }
 
-  .curate-btn.active {{
+  .curate-btn.active {
     background: #E53935;
     color: #FFFFFF;
     border-color: #D32F2F;
-  }}
+  }
 
-  .delete-badge {{
+  .delete-badge {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -935,24 +962,24 @@ html_template = f"""<!DOCTYPE html>
     cursor: pointer;
     z-index: 10;
     transition: all 0.15s ease;
-  }}
+  }
 
-  body.curate-active .delete-badge {{
+  body.curate-active .delete-badge {
     display: flex;
-  }}
+  }
 
-  .mosaic-cell.marked-for-removal {{
+  .mosaic-cell.marked-for-removal {
     opacity: 0.25;
     filter: grayscale(1);
-  }}
+  }
 
-  .mosaic-cell.marked-for-removal .delete-badge {{
+  .mosaic-cell.marked-for-removal .delete-badge {
     background: #E53935;
     border-color: #FFFFFF;
     color: #FFFFFF;
-  }}
+  }
 
-  .curate-status-pill {{
+  .curate-status-pill {
     display: none;
     font-family: var(--font-heading);
     font-size: 11px;
@@ -961,21 +988,21 @@ html_template = f"""<!DOCTYPE html>
     background: #111111;
     padding: 6px 14px;
     border-radius: 999px;
-  }}
+  }
 
-  body.curate-active .curate-status-pill {{
+  body.curate-active .curate-status-pill {
     display: inline-block;
-  }}
-
+  }
+''' if ENABLE_CURATION else ''}
 </style>
 </head>
 <body>
   <!-- Local Curation Bar -->
-  <div class="curate-toolbar">
+  {f'''<div class="curate-toolbar">
     <span class="curate-status-pill" id="curateCount">0 marked</span>
     <button class="curate-btn" id="toggleCurateBtn" onclick="toggleCurationMode()">✂️ Curate Mode</button>
     <button class="curate-btn" id="applyDeleteBtn" style="display:none; background:#E53935; color:#fff;" onclick="applyBatchRemove()">Trash Selected (<span id="deleteNum">0</span>)</button>
-  </div>
+  </div>''' if ENABLE_CURATION else ''}
 
 
 
@@ -1112,9 +1139,10 @@ for cat_id, cat_data in categories_grouped.items():
 
         for idx, img_info in enumerate(v['images']):
             span_cls = get_grid_span(idx, num_imgs)
+            del_badge = '<div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>' if ENABLE_CURATION else ''
             html_template += f"""
             <div class="mosaic-cell {span_cls}" data-src="{img_info['orig']}" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              {del_badge}
               <img src="{img_info['thumb']}" data-full="{img_info['orig']}" alt="{v['name']} plate {idx+1}" loading="lazy">
               <span class="cell-caption">Plate {idx+1:02d}</span>
             </div>
@@ -1150,80 +1178,8 @@ html_template += f"""
   </div>
 
   <script>
-
-    let curationMode = false;
-    const selectedForTrash = new Set();
-
-    function toggleCurationMode() {{
-      curationMode = !curationMode;
-      document.body.classList.toggle('curate-active', curationMode);
-      const btn = document.getElementById('toggleCurateBtn');
-      btn.classList.toggle('active', curationMode);
-      btn.innerText = curationMode ? '✕ Exit Curate' : '✂️ Curate Mode';
-      updateCurateUI();
-    }}
-
-    function toggleMarkCell(e, badge) {{
-      e.stopPropagation();
-      const cell = badge.closest('.mosaic-cell');
-      const src = cell.getAttribute('data-src');
-      if (selectedForTrash.has(src)) {{
-        selectedForTrash.delete(src);
-        cell.classList.remove('marked-for-removal');
-      }} else {{
-        selectedForTrash.add(src);
-        cell.classList.add('marked-for-removal');
-      }}
-      updateCurateUI();
-    }}
-
     function handleCellClick(e, cell) {{
-      if (curationMode) {{
-        const src = cell.getAttribute('data-src');
-        if (selectedForTrash.has(src)) {{
-          selectedForTrash.delete(src);
-          cell.classList.remove('marked-for-removal');
-        }} else {{
-          selectedForTrash.add(src);
-          cell.classList.add('marked-for-removal');
-        }}
-        updateCurateUI();
-      }} else {{
-        openLightbox(cell);
-      }}
-    }}
-
-    function updateCurateUI() {{
-      const applyBtn = document.getElementById('applyDeleteBtn');
-      const countPill = document.getElementById('curateCount');
-      const deleteNum = document.getElementById('deleteNum');
-      countPill.innerText = `${{selectedForTrash.size}} marked`;
-      deleteNum.innerText = selectedForTrash.size;
-      applyBtn.style.display = (curationMode && selectedForTrash.size > 0) ? 'inline-block' : 'none';
-    }}
-
-    async function applyBatchRemove() {{
-      if (selectedForTrash.size === 0) return;
-      const count = selectedForTrash.size;
-      if (!confirm(`Are you sure you want to remove and trash ${{count}} images? They will be moved to .trashed_plates safely.`)) {{
-        return;
-      }}
-      try {{
-        const res = await fetch('/api/remove-images', {{
-          method: 'POST',
-          headers: {{'Content-Type': 'application/json'}},
-          body: JSON.stringify({{images: Array.from(selectedForTrash)}})
-        }});
-        const data = await res.json();
-        if (data.ok) {{
-          alert(`Successfully removed ${{data.removed_count}} images! The moodboard has been automatically regenerated.`);
-          location.reload();
-        }} else {{
-          alert('Error removing images: ' + data.error);
-        }}
-      }} catch (err) {{
-        alert('Could not connect to curation server: ' + err.message);
-      }}
+      openLightbox(cell);
     }}
 
     function openLightbox(el) {{

@@ -141,7 +141,7 @@
     min-height: calc(100vh - 57px);
   }
 
-  /* Left Side Navigation Panel */
+  /* Left Side Navigation Panel — Editorial Index */
   aside.location-sidebar {
     width: 320px;
     flex-shrink: 0;
@@ -150,26 +150,27 @@
     height: calc(100vh - 57px);
     overflow-y: auto;
     border-right: 1px solid var(--line-hairline);
-    background: var(--bg-surface-subtle);
+    background: #F8F4E8;
     display: flex;
     flex-direction: column;
     z-index: 80;
     scrollbar-width: thin;
-    scrollbar-color: rgba(15, 15, 15, 0.15) transparent;
+    scrollbar-color: rgba(15, 15, 15, 0.12) transparent;
   }
 
   .sidebar-header {
-    padding: 24px 26px 18px;
+    padding: 22px 24px 16px;
     border-bottom: 1px solid var(--line-hairline);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--bg-card);
+    background: rgba(249, 245, 233, 0.7);
+    backdrop-filter: blur(12px);
   }
 
   .sidebar-title {
     font-family: var(--font-heading);
-    font-size: 10.5px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -180,21 +181,30 @@
     font-family: var(--font-heading);
     font-size: 10px;
     font-weight: 600;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--ink-muted);
+    background: rgba(15, 15, 15, 0.05);
+    padding: 2px 8px;
+    border-radius: 999px;
   }
 
   .sidebar-nav {
-    padding: 8px 0 40px;
+    padding: 16px 14px 48px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 
   .sidebar-section {
-    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .sidebar-section-header {
-    padding: 18px 26px 8px;
+    padding: 6px 10px 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -208,55 +218,106 @@
 
   .section-badge-num {
     font-family: var(--font-heading);
-    font-size: 9px;
+    font-size: 9.5px;
     font-weight: 700;
     color: var(--ink-faint);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
   }
 
   .section-badge-title {
     font-family: var(--font-heading);
-    font-size: 10.5px;
+    font-size: 10px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--ink-charcoal);
+    color: var(--ink-black);
   }
 
   .section-badge-count {
     font-family: var(--font-heading);
-    font-size: 10px;
+    font-size: 9.5px;
     font-weight: 600;
-    color: var(--ink-faint);
+    color: var(--ink-muted);
     background: rgba(15, 15, 15, 0.04);
-    padding: 1px 7px;
-    border-radius: 999px;
+    border: 1px solid var(--line-light);
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
   }
 
   .sidebar-items-list {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 5px;
   }
 
   .sidebar-item {
     display: block;
-    padding: 10px 26px;
     text-decoration: none;
-    color: var(--ink-charcoal);
-    transition: all 0.15s ease;
-    border-left: 2px solid transparent;
+    color: inherit;
+    border-radius: 8px;
+    transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  .sidebar-item:hover {
-    background: rgba(15, 15, 15, 0.035);
+  .sidebar-item-card {
+    padding: 11px 14px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .sidebar-item:hover .sidebar-item-card {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: rgba(15, 15, 15, 0.06);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(15, 15, 15, 0.03);
+  }
+
+  .sidebar-item.active .sidebar-item-card {
+    background: #FFFFFF;
+    border-color: rgba(15, 15, 15, 0.12);
+    box-shadow: 0 4px 14px rgba(15, 15, 15, 0.06), 0 1px 3px rgba(15, 15, 15, 0.03);
+  }
+
+  .sidebar-item-header-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .sidebar-item-index {
+    font-family: var(--font-heading);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--ink-faint);
+    letter-spacing: 0.04em;
+    flex-shrink: 0;
+    transition: color 0.15s ease;
+  }
+
+  .sidebar-item.active .sidebar-item-index {
     color: var(--ink-black);
+    font-weight: 700;
   }
 
-  .sidebar-item.active {
-    background: var(--bg-card);
-    border-left-color: var(--ink-black);
-    box-shadow: 0 2px 8px rgba(15, 15, 15, 0.04);
+  .sidebar-item-name {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.35;
+    color: var(--ink-charcoal);
+    flex: 1;
+    word-break: normal;
+    overflow-wrap: break-word;
+    letter-spacing: -0.01em;
+    transition: color 0.15s ease;
   }
 
   .sidebar-item.active .sidebar-item-name {
@@ -264,77 +325,42 @@
     font-weight: 600;
   }
 
-  .sidebar-item.active .sidebar-item-num {
-    color: var(--ink-black);
-  }
-
-  .sidebar-item-main {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .sidebar-item-num {
-    font-family: var(--font-heading);
-    font-size: 10px;
-    font-weight: 500;
-    color: var(--ink-faint);
-    letter-spacing: 0.04em;
-    padding-top: 2px;
-    min-width: 16px;
-  }
-
-  .sidebar-item-text-group {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .sidebar-item-title-row {
+  .sidebar-item-footer-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 6px;
-    margin-bottom: 3px;
+    gap: 8px;
+    padding-left: 21px; /* Align with text past the 2-digit index */
   }
 
-  .sidebar-item-name {
-    font-size: 13.5px;
-    font-weight: 500;
-    line-height: 1.3;
-    color: var(--ink-charcoal);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .priority-dot {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #1A6B3C;
-    flex-shrink: 0;
-  }
-
-  .sidebar-item-meta {
+  .status-indicator {
     font-family: var(--font-heading);
-    font-size: 10px;
-    color: var(--ink-muted);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    letter-spacing: 0.04em;
-  }
-
-  .sidebar-item-tag {
-    text-transform: uppercase;
     font-size: 9px;
-    letter-spacing: 0.06em;
-    color: var(--ink-faint);
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    background: rgba(15, 15, 15, 0.04);
+    padding: 2px 7px;
+    border-radius: 4px;
+    border: 1px solid rgba(15, 15, 15, 0.04);
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.2;
+  }
+
+  .status-indicator.priority {
+    color: #1A6B3C;
+    background: #E8F5E9;
+    border-color: rgba(26, 107, 60, 0.15);
   }
 
   .sidebar-item-time {
-    color: var(--ink-muted);
+    font-family: var(--font-heading);
+    font-size: 10px;
     font-weight: 500;
+    letter-spacing: 0.03em;
+    color: var(--ink-muted);
   }
 
   .masthead-origin-badge {
@@ -769,103 +795,11 @@
     .hero-meta-grid { flex-direction: column; gap: 14px; }
   }
 
-  /* Curation Mode Floating Tool Bar */
-  .curate-toolbar {
-    position: fixed;
-    top: 14px;
-    right: 48px;
-    z-index: 120;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .curate-btn {
-    font-family: var(--font-heading);
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 7px 14px;
-    border-radius: 999px;
-    cursor: pointer;
-    border: 1px solid var(--line-hairline);
-    background: var(--bg-card);
-    color: var(--ink-charcoal);
-    box-shadow: 0 4px 16px rgba(15, 15, 15, 0.08);
-    transition: all 0.15s ease;
-  }
-
-  .curate-btn:hover {
-    background: var(--bg-surface-subtle);
-    color: var(--ink-black);
-  }
-
-  .curate-btn.active {
-    background: #E53935;
-    color: #FFFFFF;
-    border-color: #D32F2F;
-  }
-
-  .delete-badge {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: rgba(15, 15, 15, 0.55);
-    backdrop-filter: blur(8px);
-    border: 1.5px solid rgba(255, 255, 255, 0.7);
-    color: #FFFFFF;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    cursor: pointer;
-    z-index: 10;
-    transition: all 0.15s ease;
-  }
-
-  body.curate-active .delete-badge {
-    display: flex;
-  }
-
-  .mosaic-cell.marked-for-removal {
-    opacity: 0.25;
-    filter: grayscale(1);
-  }
-
-  .mosaic-cell.marked-for-removal .delete-badge {
-    background: #E53935;
-    border-color: #FFFFFF;
-    color: #FFFFFF;
-  }
-
-  .curate-status-pill {
-    display: none;
-    font-family: var(--font-heading);
-    font-size: 11px;
-    font-weight: 600;
-    color: #FFFFFF;
-    background: #111111;
-    padding: 6px 14px;
-    border-radius: 999px;
-  }
-
-  body.curate-active .curate-status-pill {
-    display: inline-block;
-  }
-
 </style>
 </head>
 <body>
   <!-- Local Curation Bar -->
-  <div class="curate-toolbar">
-    <span class="curate-status-pill" id="curateCount">0 marked</span>
-    <button class="curate-btn" id="toggleCurateBtn" onclick="toggleCurationMode()">✂️ Curate Mode</button>
-    <button class="curate-btn" id="applyDeleteBtn" style="display:none; background:#E53935; color:#fff;" onclick="applyBatchRemove()">Trash Selected (<span id="deleteNum">0</span>)</button>
-  </div>
+  
 
 
 
@@ -912,81 +846,66 @@
       <div class="sidebar-items-list">
     
         <a href="#venue-las-encinas" class="sidebar-item" data-venue-target="venue-las-encinas">
-          <div class="sidebar-item-main">
-            <span class="sidebar-item-num">01</span>
-            <div class="sidebar-item-text-group">
-              <div class="sidebar-item-title-row">
-                <span class="sidebar-item-name">Las Encinas de Boadilla</span>
-                <span class="priority-dot" title="Priority Check"></span>
-              </div>
-              <div class="sidebar-item-meta">
-                <span class="sidebar-item-tag">PRIORITY</span>
-                <span class="sidebar-item-time">~45–50 min</span>
-              </div>
+          <div class="sidebar-item-card">
+            <div class="sidebar-item-header-row">
+              <span class="sidebar-item-index">01</span>
+              <span class="sidebar-item-name">Las Encinas de Boadilla</span>
+            </div>
+            <div class="sidebar-item-footer-row">
+              <span class="status-indicator priority" title="Priority Check">Priority</span>
+              <span class="sidebar-item-time">45–50 min</span>
             </div>
           </div>
         </a>
         
         <a href="#venue-santiago-apostol" class="sidebar-item" data-venue-target="venue-santiago-apostol">
-          <div class="sidebar-item-main">
-            <span class="sidebar-item-num">02</span>
-            <div class="sidebar-item-text-group">
-              <div class="sidebar-item-title-row">
-                <span class="sidebar-item-name">Complejo Deportivo Santiago Apóstol</span>
-                <span class="priority-dot" title="Priority Check"></span>
-              </div>
-              <div class="sidebar-item-meta">
-                <span class="sidebar-item-tag">PRIORITY</span>
-                <span class="sidebar-item-time">~60–65 min</span>
-              </div>
+          <div class="sidebar-item-card">
+            <div class="sidebar-item-header-row">
+              <span class="sidebar-item-index">02</span>
+              <span class="sidebar-item-name">Complejo Deportivo Santiago Apóstol</span>
+            </div>
+            <div class="sidebar-item-footer-row">
+              <span class="status-indicator priority" title="Priority Check">Priority</span>
+              <span class="sidebar-item-time">60–65 min</span>
             </div>
           </div>
         </a>
         
         <a href="#venue-dojo-shubukan" class="sidebar-item" data-venue-target="venue-dojo-shubukan">
-          <div class="sidebar-item-main">
-            <span class="sidebar-item-num">03</span>
-            <div class="sidebar-item-text-group">
-              <div class="sidebar-item-title-row">
-                <span class="sidebar-item-name">Dojo Shubukan</span>
-                
-              </div>
-              <div class="sidebar-item-meta">
-                <span class="sidebar-item-tag">NEW</span>
-                <span class="sidebar-item-time">~26 min</span>
-              </div>
+          <div class="sidebar-item-card">
+            <div class="sidebar-item-header-row">
+              <span class="sidebar-item-index">03</span>
+              <span class="sidebar-item-name">Dojo Shubukan</span>
+            </div>
+            <div class="sidebar-item-footer-row">
+              <span class="status-indicator">NEW</span>
+              <span class="sidebar-item-time">26 min</span>
             </div>
           </div>
         </a>
         
         <a href="#venue-casa-yoga-four-rooms" class="sidebar-item" data-venue-target="venue-casa-yoga-four-rooms">
-          <div class="sidebar-item-main">
-            <span class="sidebar-item-num">04</span>
-            <div class="sidebar-item-text-group">
-              <div class="sidebar-item-title-row">
-                <span class="sidebar-item-name">Casa Residencial Yoga (Four Rooms · Ref. 7953)</span>
-                
-              </div>
-              <div class="sidebar-item-meta">
-                <span class="sidebar-item-tag">ANA PICK</span>
-                <span class="sidebar-item-time">~22 min</span>
-              </div>
+          <div class="sidebar-item-card">
+            <div class="sidebar-item-header-row">
+              <span class="sidebar-item-index">04</span>
+              <span class="sidebar-item-name">Casa Residencial Yoga (Four Rooms · Ref. 7953)</span>
+            </div>
+            <div class="sidebar-item-footer-row">
+              <span class="status-indicator">ANA PICK</span>
+              <span class="sidebar-item-time">22 min</span>
             </div>
           </div>
         </a>
         
         <a href="#venue-kairos-krav-maga" class="sidebar-item" data-venue-target="venue-kairos-krav-maga">
-          <div class="sidebar-item-main">
-            <span class="sidebar-item-num">05</span>
-            <div class="sidebar-item-text-group">
-              <div class="sidebar-item-title-row">
-                <span class="sidebar-item-name">Kairós Tatami (Vital Aza)</span>
-                
-              </div>
-              <div class="sidebar-item-meta">
-                <span class="sidebar-item-tag">NEW</span>
-                <span class="sidebar-item-time">~15 min</span>
-              </div>
+          <div class="sidebar-item-card">
+            <div class="sidebar-item-header-row">
+              <span class="sidebar-item-index">05</span>
+              <span class="sidebar-item-name">Kairós Tatami (Vital Aza)</span>
+            </div>
+            <div class="sidebar-item-footer-row">
+              <span class="status-indicator">NEW</span>
+              <span class="sidebar-item-time">15 min</span>
             </div>
           </div>
         </a>
@@ -1005,33 +924,27 @@
       <div class="sidebar-items-list">
     
         <a href="#venue-invernadero-penotes" class="sidebar-item" data-venue-target="venue-invernadero-penotes">
-          <div class="sidebar-item-main">
-            <span class="sidebar-item-num">01</span>
-            <div class="sidebar-item-text-group">
-              <div class="sidebar-item-title-row">
-                <span class="sidebar-item-name">Invernadero Los Peñotes</span>
-                
-              </div>
-              <div class="sidebar-item-meta">
-                <span class="sidebar-item-tag">SELECTED</span>
-                <span class="sidebar-item-time">~14 min</span>
-              </div>
+          <div class="sidebar-item-card">
+            <div class="sidebar-item-header-row">
+              <span class="sidebar-item-index">01</span>
+              <span class="sidebar-item-name">Invernadero Los Peñotes</span>
+            </div>
+            <div class="sidebar-item-footer-row">
+              <span class="status-indicator">SELECTED</span>
+              <span class="sidebar-item-time">14 min</span>
             </div>
           </div>
         </a>
         
         <a href="#venue-plato-who" class="sidebar-item" data-venue-target="venue-plato-who">
-          <div class="sidebar-item-main">
-            <span class="sidebar-item-num">02</span>
-            <div class="sidebar-item-text-group">
-              <div class="sidebar-item-title-row">
-                <span class="sidebar-item-name">Plató Who (Who Espacio Creativo)</span>
-                
-              </div>
-              <div class="sidebar-item-meta">
-                <span class="sidebar-item-tag">SELECTED</span>
-                <span class="sidebar-item-time">~20 min</span>
-              </div>
+          <div class="sidebar-item-card">
+            <div class="sidebar-item-header-row">
+              <span class="sidebar-item-index">02</span>
+              <span class="sidebar-item-name">Plató Who (Who Espacio Creativo)</span>
+            </div>
+            <div class="sidebar-item-footer-row">
+              <span class="status-indicator">SELECTED</span>
+              <span class="sidebar-item-time">20 min</span>
             </div>
           </div>
         </a>
@@ -1114,187 +1027,187 @@
           <div class="pixieset-mosaic">
         
             <div class="mosaic-cell hero-large" data-src="assets/Encinas/LAS ENCINAS-3.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-3.webp" data-full="assets/Encinas/LAS ENCINAS-3.jpg" alt="Las Encinas de Boadilla plate 1" loading="lazy">
               <span class="cell-caption">Plate 01</span>
             </div>
             
             <div class="mosaic-cell hero-side" data-src="assets/Encinas/LAS ENCINAS-4.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-4.webp" data-full="assets/Encinas/LAS ENCINAS-4.jpg" alt="Las Encinas de Boadilla plate 2" loading="lazy">
               <span class="cell-caption">Plate 02</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/LAS ENCINAS-5.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-5.webp" data-full="assets/Encinas/LAS ENCINAS-5.jpg" alt="Las Encinas de Boadilla plate 3" loading="lazy">
               <span class="cell-caption">Plate 03</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/LAS ENCINAS-6.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-6.webp" data-full="assets/Encinas/LAS ENCINAS-6.jpg" alt="Las Encinas de Boadilla plate 4" loading="lazy">
               <span class="cell-caption">Plate 04</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/LAS ENCINAS-7.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-7.webp" data-full="assets/Encinas/LAS ENCINAS-7.jpg" alt="Las Encinas de Boadilla plate 5" loading="lazy">
               <span class="cell-caption">Plate 05</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Encinas/LAS ENCINAS-8.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-8.webp" data-full="assets/Encinas/LAS ENCINAS-8.jpg" alt="Las Encinas de Boadilla plate 6" loading="lazy">
               <span class="cell-caption">Plate 06</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Encinas/LAS ENCINAS-9.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-9.webp" data-full="assets/Encinas/LAS ENCINAS-9.jpg" alt="Las Encinas de Boadilla plate 7" loading="lazy">
               <span class="cell-caption">Plate 07</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Encinas/**12sala de esgrima club las encinas.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/**12sala de esgrima club las encinas.webp" data-full="assets/Encinas/**12sala de esgrima club las encinas.jpg" alt="Las Encinas de Boadilla plate 8" loading="lazy">
               <span class="cell-caption">Plate 08</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Encinas/11sala de esgrima club las encinas.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/11sala de esgrima club las encinas.webp" data-full="assets/Encinas/11sala de esgrima club las encinas.jpg" alt="Las Encinas de Boadilla plate 9" loading="lazy">
               <span class="cell-caption">Plate 09</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Encinas/14sala de esgrima club las encinas.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/14sala de esgrima club las encinas.webp" data-full="assets/Encinas/14sala de esgrima club las encinas.jpg" alt="Las Encinas de Boadilla plate 10" loading="lazy">
               <span class="cell-caption">Plate 10</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Encinas/16sala de esgrima club las encinas.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/16sala de esgrima club las encinas.webp" data-full="assets/Encinas/16sala de esgrima club las encinas.jpg" alt="Las Encinas de Boadilla plate 11" loading="lazy">
               <span class="cell-caption">Plate 11</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/18sala de esgrima club las encinas.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/18sala de esgrima club las encinas.webp" data-full="assets/Encinas/18sala de esgrima club las encinas.jpg" alt="Las Encinas de Boadilla plate 12" loading="lazy">
               <span class="cell-caption">Plate 12</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/1sala de esgrima club las encinas.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/1sala de esgrima club las encinas.webp" data-full="assets/Encinas/1sala de esgrima club las encinas.jpg" alt="Las Encinas de Boadilla plate 13" loading="lazy">
               <span class="cell-caption">Plate 13</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/2sala de esgrima club las encinas.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/2sala de esgrima club las encinas.webp" data-full="assets/Encinas/2sala de esgrima club las encinas.jpg" alt="Las Encinas de Boadilla plate 14" loading="lazy">
               <span class="cell-caption">Plate 14</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Encinas/3sala de esgrima club las encinas.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/3sala de esgrima club las encinas.webp" data-full="assets/Encinas/3sala de esgrima club las encinas.jpg" alt="Las Encinas de Boadilla plate 15" loading="lazy">
               <span class="cell-caption">Plate 15</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Encinas/7sala de esgrima club las encinas.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/7sala de esgrima club las encinas.webp" data-full="assets/Encinas/7sala de esgrima club las encinas.jpg" alt="Las Encinas de Boadilla plate 16" loading="lazy">
               <span class="cell-caption">Plate 16</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/LAS ENCINAS-1.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-1.webp" data-full="assets/Encinas/LAS ENCINAS-1.jpg" alt="Las Encinas de Boadilla plate 17" loading="lazy">
               <span class="cell-caption">Plate 17</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/LAS ENCINAS-10.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-10.webp" data-full="assets/Encinas/LAS ENCINAS-10.jpg" alt="Las Encinas de Boadilla plate 18" loading="lazy">
               <span class="cell-caption">Plate 18</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/LAS ENCINAS-2.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-2.webp" data-full="assets/Encinas/LAS ENCINAS-2.jpg" alt="Las Encinas de Boadilla plate 19" loading="lazy">
               <span class="cell-caption">Plate 19</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Encinas/LAS ENCINAS-22.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-22.webp" data-full="assets/Encinas/LAS ENCINAS-22.jpg" alt="Las Encinas de Boadilla plate 20" loading="lazy">
               <span class="cell-caption">Plate 20</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Encinas/LAS ENCINAS-23.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-23.webp" data-full="assets/Encinas/LAS ENCINAS-23.jpg" alt="Las Encinas de Boadilla plate 21" loading="lazy">
               <span class="cell-caption">Plate 21</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/LAS ENCINAS-24.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-24.webp" data-full="assets/Encinas/LAS ENCINAS-24.jpg" alt="Las Encinas de Boadilla plate 22" loading="lazy">
               <span class="cell-caption">Plate 22</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/LAS ENCINAS-26.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-26.webp" data-full="assets/Encinas/LAS ENCINAS-26.jpg" alt="Las Encinas de Boadilla plate 23" loading="lazy">
               <span class="cell-caption">Plate 23</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/LAS ENCINAS-69.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-69.webp" data-full="assets/Encinas/LAS ENCINAS-69.jpg" alt="Las Encinas de Boadilla plate 24" loading="lazy">
               <span class="cell-caption">Plate 24</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Encinas/LAS ENCINAS-70.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-70.webp" data-full="assets/Encinas/LAS ENCINAS-70.jpg" alt="Las Encinas de Boadilla plate 25" loading="lazy">
               <span class="cell-caption">Plate 25</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Encinas/LAS ENCINAS-71.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-71.webp" data-full="assets/Encinas/LAS ENCINAS-71.jpg" alt="Las Encinas de Boadilla plate 26" loading="lazy">
               <span class="cell-caption">Plate 26</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/LAS ENCINAS-72.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-72.webp" data-full="assets/Encinas/LAS ENCINAS-72.jpg" alt="Las Encinas de Boadilla plate 27" loading="lazy">
               <span class="cell-caption">Plate 27</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/LAS ENCINAS-73.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-73.webp" data-full="assets/Encinas/LAS ENCINAS-73.jpg" alt="Las Encinas de Boadilla plate 28" loading="lazy">
               <span class="cell-caption">Plate 28</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Encinas/LAS ENCINAS-74.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-74.webp" data-full="assets/Encinas/LAS ENCINAS-74.jpg" alt="Las Encinas de Boadilla plate 29" loading="lazy">
               <span class="cell-caption">Plate 29</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Encinas/LAS ENCINAS-75.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-75.webp" data-full="assets/Encinas/LAS ENCINAS-75.jpg" alt="Las Encinas de Boadilla plate 30" loading="lazy">
               <span class="cell-caption">Plate 30</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Encinas/LAS ENCINAS-76.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Encinas/LAS ENCINAS-76.webp" data-full="assets/Encinas/LAS ENCINAS-76.jpg" alt="Las Encinas de Boadilla plate 31" loading="lazy">
               <span class="cell-caption">Plate 31</span>
             </div>
@@ -1335,31 +1248,31 @@
           <div class="pixieset-mosaic">
         
             <div class="mosaic-cell hero-large" data-src="assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (21).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (21).webp" data-full="assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (21).jpg" alt="Complejo Deportivo Santiago Apóstol plate 1" loading="lazy">
               <span class="cell-caption">Plate 01</span>
             </div>
             
             <div class="mosaic-cell hero-side" data-src="assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (22).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (22).webp" data-full="assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (22).jpg" alt="Complejo Deportivo Santiago Apóstol plate 2" loading="lazy">
               <span class="cell-caption">Plate 02</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (23).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (23).webp" data-full="assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (23).jpg" alt="Complejo Deportivo Santiago Apóstol plate 3" loading="lazy">
               <span class="cell-caption">Plate 03</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (33).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (33).webp" data-full="assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (33).jpg" alt="Complejo Deportivo Santiago Apóstol plate 4" loading="lazy">
               <span class="cell-caption">Plate 04</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (34).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (34).webp" data-full="assets/Complejo Deportivo Santiago Apostol/_Polideportivo_Santiago_Apostol (34).jpg" alt="Complejo Deportivo Santiago Apóstol plate 5" loading="lazy">
               <span class="cell-caption">Plate 05</span>
             </div>
@@ -1400,67 +1313,67 @@
           <div class="pixieset-mosaic">
         
             <div class="mosaic-cell hero-large" data-src="assets/Dojo Shubukan/shubukan_01_main_tatami_pano.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Dojo Shubukan/shubukan_01_main_tatami_pano.webp" data-full="assets/Dojo Shubukan/shubukan_01_main_tatami_pano.jpg" alt="Dojo Shubukan plate 1" loading="lazy">
               <span class="cell-caption">Plate 01</span>
             </div>
             
             <div class="mosaic-cell hero-side" data-src="assets/Dojo Shubukan/shubukan_02_tatami_angle.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Dojo Shubukan/shubukan_02_tatami_angle.webp" data-full="assets/Dojo Shubukan/shubukan_02_tatami_angle.jpg" alt="Dojo Shubukan plate 2" loading="lazy">
               <span class="cell-caption">Plate 02</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Dojo Shubukan/shubukan_04_dojo_tatami.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Dojo Shubukan/shubukan_04_dojo_tatami.webp" data-full="assets/Dojo Shubukan/shubukan_04_dojo_tatami.jpg" alt="Dojo Shubukan plate 3" loading="lazy">
               <span class="cell-caption">Plate 03</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Dojo Shubukan/shubukan_05_tatami_perspective.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Dojo Shubukan/shubukan_05_tatami_perspective.webp" data-full="assets/Dojo Shubukan/shubukan_05_tatami_perspective.jpg" alt="Dojo Shubukan plate 4" loading="lazy">
               <span class="cell-caption">Plate 04</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Dojo Shubukan/shubukan_06_traditional_wood_floor.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Dojo Shubukan/shubukan_06_traditional_wood_floor.webp" data-full="assets/Dojo Shubukan/shubukan_06_traditional_wood_floor.jpg" alt="Dojo Shubukan plate 5" loading="lazy">
               <span class="cell-caption">Plate 05</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Dojo Shubukan/shubukan_07_action_tatami.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Dojo Shubukan/shubukan_07_action_tatami.webp" data-full="assets/Dojo Shubukan/shubukan_07_action_tatami.jpg" alt="Dojo Shubukan plate 6" loading="lazy">
               <span class="cell-caption">Plate 06</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Dojo Shubukan/shubukan_09_production_space.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Dojo Shubukan/shubukan_09_production_space.webp" data-full="assets/Dojo Shubukan/shubukan_09_production_space.jpg" alt="Dojo Shubukan plate 7" loading="lazy">
               <span class="cell-caption">Plate 07</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Dojo Shubukan/shubukan_10_vertical_tatami.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Dojo Shubukan/shubukan_10_vertical_tatami.webp" data-full="assets/Dojo Shubukan/shubukan_10_vertical_tatami.jpg" alt="Dojo Shubukan plate 8" loading="lazy">
               <span class="cell-caption">Plate 08</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Dojo Shubukan/shubukan_11_wa_turpin_01.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Dojo Shubukan/shubukan_11_wa_turpin_01.webp" data-full="assets/Dojo Shubukan/shubukan_11_wa_turpin_01.jpg" alt="Dojo Shubukan plate 9" loading="lazy">
               <span class="cell-caption">Plate 09</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Dojo Shubukan/shubukan_12_wa_turpin_02.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Dojo Shubukan/shubukan_12_wa_turpin_02.webp" data-full="assets/Dojo Shubukan/shubukan_12_wa_turpin_02.jpg" alt="Dojo Shubukan plate 10" loading="lazy">
               <span class="cell-caption">Plate 10</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Dojo Shubukan/shubukan_13_wa_turpin_03.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Dojo Shubukan/shubukan_13_wa_turpin_03.webp" data-full="assets/Dojo Shubukan/shubukan_13_wa_turpin_03.jpg" alt="Dojo Shubukan plate 11" loading="lazy">
               <span class="cell-caption">Plate 11</span>
             </div>
@@ -1501,61 +1414,61 @@
           <div class="pixieset-mosaic">
         
             <div class="mosaic-cell hero-large" data-src="assets/Casa Yoga Four Rooms (ref. 7953)/01_yoga_tatami_room_hero.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/01_yoga_tatami_room_hero.webp" data-full="assets/Casa Yoga Four Rooms (ref. 7953)/01_yoga_tatami_room_hero.jpg" alt="Casa Residencial Yoga (Four Rooms · Ref. 7953) plate 1" loading="lazy">
               <span class="cell-caption">Plate 01</span>
             </div>
             
             <div class="mosaic-cell hero-side" data-src="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_02.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_02.webp" data-full="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_02.jpg" alt="Casa Residencial Yoga (Four Rooms · Ref. 7953) plate 2" loading="lazy">
               <span class="cell-caption">Plate 02</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_08.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_08.webp" data-full="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_08.jpg" alt="Casa Residencial Yoga (Four Rooms · Ref. 7953) plate 3" loading="lazy">
               <span class="cell-caption">Plate 03</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_14.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_14.webp" data-full="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_14.jpg" alt="Casa Residencial Yoga (Four Rooms · Ref. 7953) plate 4" loading="lazy">
               <span class="cell-caption">Plate 04</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_41.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_41.webp" data-full="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_41.jpg" alt="Casa Residencial Yoga (Four Rooms · Ref. 7953) plate 5" loading="lazy">
               <span class="cell-caption">Plate 05</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_42.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_42.webp" data-full="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_42.jpg" alt="Casa Residencial Yoga (Four Rooms · Ref. 7953) plate 6" loading="lazy">
               <span class="cell-caption">Plate 06</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_43.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_43.webp" data-full="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_43.jpg" alt="Casa Residencial Yoga (Four Rooms · Ref. 7953) plate 7" loading="lazy">
               <span class="cell-caption">Plate 07</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_44.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_44.webp" data-full="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_44.jpg" alt="Casa Residencial Yoga (Four Rooms · Ref. 7953) plate 8" loading="lazy">
               <span class="cell-caption">Plate 08</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_45.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_45.webp" data-full="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_45.jpg" alt="Casa Residencial Yoga (Four Rooms · Ref. 7953) plate 9" loading="lazy">
               <span class="cell-caption">Plate 09</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_46.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Casa Yoga Four Rooms (ref. 7953)/fr_7953_46.webp" data-full="assets/Casa Yoga Four Rooms (ref. 7953)/fr_7953_46.jpg" alt="Casa Residencial Yoga (Four Rooms · Ref. 7953) plate 10" loading="lazy">
               <span class="cell-caption">Plate 10</span>
             </div>
@@ -1596,31 +1509,31 @@
           <div class="pixieset-mosaic">
         
             <div class="mosaic-cell hero-large" data-src="assets/Kairos Krav Maga/kairos_01_tatami_diafano.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Kairos Krav Maga/kairos_01_tatami_diafano.webp" data-full="assets/Kairos Krav Maga/kairos_01_tatami_diafano.jpg" alt="Kairós Tatami (Vital Aza) plate 1" loading="lazy">
               <span class="cell-caption">Plate 01</span>
             </div>
             
             <div class="mosaic-cell hero-side" data-src="assets/Kairos Krav Maga/kairos_02_tatami_perspective.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Kairos Krav Maga/kairos_02_tatami_perspective.webp" data-full="assets/Kairos Krav Maga/kairos_02_tatami_perspective.jpg" alt="Kairós Tatami (Vital Aza) plate 2" loading="lazy">
               <span class="cell-caption">Plate 02</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Kairos Krav Maga/kairos_03_tatami_wide.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Kairos Krav Maga/kairos_03_tatami_wide.webp" data-full="assets/Kairos Krav Maga/kairos_03_tatami_wide.jpg" alt="Kairós Tatami (Vital Aza) plate 3" loading="lazy">
               <span class="cell-caption">Plate 03</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Kairos Krav Maga/kairos_04_padded_walls.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Kairos Krav Maga/kairos_04_padded_walls.webp" data-full="assets/Kairos Krav Maga/kairos_04_padded_walls.jpg" alt="Kairós Tatami (Vital Aza) plate 4" loading="lazy">
               <span class="cell-caption">Plate 04</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Kairos Krav Maga/kairos_05_industrial_hall.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Kairos Krav Maga/kairos_05_industrial_hall.webp" data-full="assets/Kairos Krav Maga/kairos_05_industrial_hall.jpg" alt="Kairós Tatami (Vital Aza) plate 5" loading="lazy">
               <span class="cell-caption">Plate 05</span>
             </div>
@@ -1672,67 +1585,67 @@
           <div class="pixieset-mosaic">
         
             <div class="mosaic-cell hero-large" data-src="assets/Invernadero los Peñotes/invernadero los peñotes (10 de 19).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (10 de 19).webp" data-full="assets/Invernadero los Peñotes/invernadero los peñotes (10 de 19).jpg" alt="Invernadero Los Peñotes plate 1" loading="lazy">
               <span class="cell-caption">Plate 01</span>
             </div>
             
             <div class="mosaic-cell hero-side" data-src="assets/Invernadero los Peñotes/invernadero los peñotes (11 de 19).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (11 de 19).webp" data-full="assets/Invernadero los Peñotes/invernadero los peñotes (11 de 19).jpg" alt="Invernadero Los Peñotes plate 2" loading="lazy">
               <span class="cell-caption">Plate 02</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Invernadero los Peñotes/invernadero los peñotes (12 de 19).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (12 de 19).webp" data-full="assets/Invernadero los Peñotes/invernadero los peñotes (12 de 19).jpg" alt="Invernadero Los Peñotes plate 3" loading="lazy">
               <span class="cell-caption">Plate 03</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Invernadero los Peñotes/invernadero los peñotes (13 de 19).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (13 de 19).webp" data-full="assets/Invernadero los Peñotes/invernadero los peñotes (13 de 19).jpg" alt="Invernadero Los Peñotes plate 4" loading="lazy">
               <span class="cell-caption">Plate 04</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Invernadero los Peñotes/invernadero los peñotes (15 de 19).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (15 de 19).webp" data-full="assets/Invernadero los Peñotes/invernadero los peñotes (15 de 19).jpg" alt="Invernadero Los Peñotes plate 5" loading="lazy">
               <span class="cell-caption">Plate 05</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Invernadero los Peñotes/invernadero los peñotes (17 de 19).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (17 de 19).webp" data-full="assets/Invernadero los Peñotes/invernadero los peñotes (17 de 19).jpg" alt="Invernadero Los Peñotes plate 6" loading="lazy">
               <span class="cell-caption">Plate 06</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Invernadero los Peñotes/invernadero los peñotes (18 de 19).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (18 de 19).webp" data-full="assets/Invernadero los Peñotes/invernadero los peñotes (18 de 19).jpg" alt="Invernadero Los Peñotes plate 7" loading="lazy">
               <span class="cell-caption">Plate 07</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Invernadero los Peñotes/invernadero los peñotes (4 de 19).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (4 de 19).webp" data-full="assets/Invernadero los Peñotes/invernadero los peñotes (4 de 19).jpg" alt="Invernadero Los Peñotes plate 8" loading="lazy">
               <span class="cell-caption">Plate 08</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Invernadero los Peñotes/invernadero los peñotes (6 de 19).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (6 de 19).webp" data-full="assets/Invernadero los Peñotes/invernadero los peñotes (6 de 19).jpg" alt="Invernadero Los Peñotes plate 9" loading="lazy">
               <span class="cell-caption">Plate 09</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Invernadero los Peñotes/invernadero los peñotes (7 de 19).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (7 de 19).webp" data-full="assets/Invernadero los Peñotes/invernadero los peñotes (7 de 19).jpg" alt="Invernadero Los Peñotes plate 10" loading="lazy">
               <span class="cell-caption">Plate 10</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Invernadero los Peñotes/invernadero los peñotes (9 de 19).jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Invernadero los Peñotes/invernadero los peñotes (9 de 19).webp" data-full="assets/Invernadero los Peñotes/invernadero los peñotes (9 de 19).jpg" alt="Invernadero Los Peñotes plate 11" loading="lazy">
               <span class="cell-caption">Plate 11</span>
             </div>
@@ -1773,295 +1686,295 @@
           <div class="pixieset-mosaic">
         
             <div class="mosaic-cell hero-large" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_1.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_1.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_1.jpg" alt="Plató Who (Who Espacio Creativo) plate 1" loading="lazy">
               <span class="cell-caption">Plate 01</span>
             </div>
             
             <div class="mosaic-cell hero-side" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_10.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_10.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_10.jpg" alt="Plató Who (Who Espacio Creativo) plate 2" loading="lazy">
               <span class="cell-caption">Plate 02</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_11.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_11.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_11.jpg" alt="Plató Who (Who Espacio Creativo) plate 3" loading="lazy">
               <span class="cell-caption">Plate 03</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_12.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_12.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_12.jpg" alt="Plató Who (Who Espacio Creativo) plate 4" loading="lazy">
               <span class="cell-caption">Plate 04</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_13.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_13.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_13.jpg" alt="Plató Who (Who Espacio Creativo) plate 5" loading="lazy">
               <span class="cell-caption">Plate 05</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_14.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_14.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_14.jpg" alt="Plató Who (Who Espacio Creativo) plate 6" loading="lazy">
               <span class="cell-caption">Plate 06</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_15.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_15.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_15.jpg" alt="Plató Who (Who Espacio Creativo) plate 7" loading="lazy">
               <span class="cell-caption">Plate 07</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_16.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_16.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_16.jpg" alt="Plató Who (Who Espacio Creativo) plate 8" loading="lazy">
               <span class="cell-caption">Plate 08</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_17.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_17.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_17.jpg" alt="Plató Who (Who Espacio Creativo) plate 9" loading="lazy">
               <span class="cell-caption">Plate 09</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_18.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_18.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_18.jpg" alt="Plató Who (Who Espacio Creativo) plate 10" loading="lazy">
               <span class="cell-caption">Plate 10</span>
             </div>
             
             <div class="mosaic-cell trio-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_19.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_19.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_19.jpg" alt="Plató Who (Who Espacio Creativo) plate 11" loading="lazy">
               <span class="cell-caption">Plate 11</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_2.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_2.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_2.jpg" alt="Plató Who (Who Espacio Creativo) plate 12" loading="lazy">
               <span class="cell-caption">Plate 12</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_20.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_20.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_20.jpg" alt="Plató Who (Who Espacio Creativo) plate 13" loading="lazy">
               <span class="cell-caption">Plate 13</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_21.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_21.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_21.jpg" alt="Plató Who (Who Espacio Creativo) plate 14" loading="lazy">
               <span class="cell-caption">Plate 14</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_22.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_22.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_22.jpg" alt="Plató Who (Who Espacio Creativo) plate 15" loading="lazy">
               <span class="cell-caption">Plate 15</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_23.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_23.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_23.jpg" alt="Plató Who (Who Espacio Creativo) plate 16" loading="lazy">
               <span class="cell-caption">Plate 16</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_24.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_24.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_24.jpg" alt="Plató Who (Who Espacio Creativo) plate 17" loading="lazy">
               <span class="cell-caption">Plate 17</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_25.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_25.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_25.jpg" alt="Plató Who (Who Espacio Creativo) plate 18" loading="lazy">
               <span class="cell-caption">Plate 18</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_27.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_27.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_27.jpg" alt="Plató Who (Who Espacio Creativo) plate 19" loading="lazy">
               <span class="cell-caption">Plate 19</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_28.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_28.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_28.jpg" alt="Plató Who (Who Espacio Creativo) plate 20" loading="lazy">
               <span class="cell-caption">Plate 20</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_29.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_29.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_29.jpg" alt="Plató Who (Who Espacio Creativo) plate 21" loading="lazy">
               <span class="cell-caption">Plate 21</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_30.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_30.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_30.jpg" alt="Plató Who (Who Espacio Creativo) plate 22" loading="lazy">
               <span class="cell-caption">Plate 22</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_31.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_31.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_31.jpg" alt="Plató Who (Who Espacio Creativo) plate 23" loading="lazy">
               <span class="cell-caption">Plate 23</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_35.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_35.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_35.jpg" alt="Plató Who (Who Espacio Creativo) plate 24" loading="lazy">
               <span class="cell-caption">Plate 24</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_36.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_36.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_36.jpg" alt="Plató Who (Who Espacio Creativo) plate 25" loading="lazy">
               <span class="cell-caption">Plate 25</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_38.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_38.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_38.jpg" alt="Plató Who (Who Espacio Creativo) plate 26" loading="lazy">
               <span class="cell-caption">Plate 26</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_39.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_39.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_39.jpg" alt="Plató Who (Who Espacio Creativo) plate 27" loading="lazy">
               <span class="cell-caption">Plate 27</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_4.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_4.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_4.jpg" alt="Plató Who (Who Espacio Creativo) plate 28" loading="lazy">
               <span class="cell-caption">Plate 28</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_42.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_42.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_42.jpg" alt="Plató Who (Who Espacio Creativo) plate 29" loading="lazy">
               <span class="cell-caption">Plate 29</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_44.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_44.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_44.jpg" alt="Plató Who (Who Espacio Creativo) plate 30" loading="lazy">
               <span class="cell-caption">Plate 30</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_47.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_47.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_47.jpg" alt="Plató Who (Who Espacio Creativo) plate 31" loading="lazy">
               <span class="cell-caption">Plate 31</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_48.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_48.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_48.jpg" alt="Plató Who (Who Espacio Creativo) plate 32" loading="lazy">
               <span class="cell-caption">Plate 32</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_49.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_49.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_49.jpg" alt="Plató Who (Who Espacio Creativo) plate 33" loading="lazy">
               <span class="cell-caption">Plate 33</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_5.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_5.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_5.jpg" alt="Plató Who (Who Espacio Creativo) plate 34" loading="lazy">
               <span class="cell-caption">Plate 34</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_51.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_51.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_51.jpg" alt="Plató Who (Who Espacio Creativo) plate 35" loading="lazy">
               <span class="cell-caption">Plate 35</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_52.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_52.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_52.jpg" alt="Plató Who (Who Espacio Creativo) plate 36" loading="lazy">
               <span class="cell-caption">Plate 36</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_53.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_53.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_53.jpg" alt="Plató Who (Who Espacio Creativo) plate 37" loading="lazy">
               <span class="cell-caption">Plate 37</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_54.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_54.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_54.jpg" alt="Plató Who (Who Espacio Creativo) plate 38" loading="lazy">
               <span class="cell-caption">Plate 38</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_55.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_55.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_55.jpg" alt="Plató Who (Who Espacio Creativo) plate 39" loading="lazy">
               <span class="cell-caption">Plate 39</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_56.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_56.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_56.jpg" alt="Plató Who (Who Espacio Creativo) plate 40" loading="lazy">
               <span class="cell-caption">Plate 40</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_57.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_57.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_57.jpg" alt="Plató Who (Who Espacio Creativo) plate 41" loading="lazy">
               <span class="cell-caption">Plate 41</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_58.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_58.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_58.jpg" alt="Plató Who (Who Espacio Creativo) plate 42" loading="lazy">
               <span class="cell-caption">Plate 42</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_59.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_59.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_59.jpg" alt="Plató Who (Who Espacio Creativo) plate 43" loading="lazy">
               <span class="cell-caption">Plate 43</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_6.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_6.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_6.jpg" alt="Plató Who (Who Espacio Creativo) plate 44" loading="lazy">
               <span class="cell-caption">Plate 44</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_60.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_60.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_60.jpg" alt="Plató Who (Who Espacio Creativo) plate 45" loading="lazy">
               <span class="cell-caption">Plate 45</span>
             </div>
             
             <div class="mosaic-cell half-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_61.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_61.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_61.jpg" alt="Plató Who (Who Espacio Creativo) plate 46" loading="lazy">
               <span class="cell-caption">Plate 46</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_64.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_64.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_64.jpg" alt="Plató Who (Who Espacio Creativo) plate 47" loading="lazy">
               <span class="cell-caption">Plate 47</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_66.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_66.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_66.jpg" alt="Plató Who (Who Espacio Creativo) plate 48" loading="lazy">
               <span class="cell-caption">Plate 48</span>
             </div>
             
             <div class="mosaic-cell quad-cell" data-src="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_9.jpg" onclick="handleCellClick(event, this)">
-              <div class="delete-badge" onclick="toggleMarkCell(event, this)">✕</div>
+              
               <img src="assets_thumbs/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_9.webp" data-full="assets/Who Espacio Creativo/WHO_OFFICE_MAD_MAY_2025_9.jpg" alt="Plató Who (Who Espacio Creativo) plate 49" loading="lazy">
               <span class="cell-caption">Plate 49</span>
             </div>
@@ -2089,80 +2002,8 @@
   </div>
 
   <script>
-
-    let curationMode = false;
-    const selectedForTrash = new Set();
-
-    function toggleCurationMode() {
-      curationMode = !curationMode;
-      document.body.classList.toggle('curate-active', curationMode);
-      const btn = document.getElementById('toggleCurateBtn');
-      btn.classList.toggle('active', curationMode);
-      btn.innerText = curationMode ? '✕ Exit Curate' : '✂️ Curate Mode';
-      updateCurateUI();
-    }
-
-    function toggleMarkCell(e, badge) {
-      e.stopPropagation();
-      const cell = badge.closest('.mosaic-cell');
-      const src = cell.getAttribute('data-src');
-      if (selectedForTrash.has(src)) {
-        selectedForTrash.delete(src);
-        cell.classList.remove('marked-for-removal');
-      } else {
-        selectedForTrash.add(src);
-        cell.classList.add('marked-for-removal');
-      }
-      updateCurateUI();
-    }
-
     function handleCellClick(e, cell) {
-      if (curationMode) {
-        const src = cell.getAttribute('data-src');
-        if (selectedForTrash.has(src)) {
-          selectedForTrash.delete(src);
-          cell.classList.remove('marked-for-removal');
-        } else {
-          selectedForTrash.add(src);
-          cell.classList.add('marked-for-removal');
-        }
-        updateCurateUI();
-      } else {
-        openLightbox(cell);
-      }
-    }
-
-    function updateCurateUI() {
-      const applyBtn = document.getElementById('applyDeleteBtn');
-      const countPill = document.getElementById('curateCount');
-      const deleteNum = document.getElementById('deleteNum');
-      countPill.innerText = `${selectedForTrash.size} marked`;
-      deleteNum.innerText = selectedForTrash.size;
-      applyBtn.style.display = (curationMode && selectedForTrash.size > 0) ? 'inline-block' : 'none';
-    }
-
-    async function applyBatchRemove() {
-      if (selectedForTrash.size === 0) return;
-      const count = selectedForTrash.size;
-      if (!confirm(`Are you sure you want to remove and trash ${count} images? They will be moved to .trashed_plates safely.`)) {
-        return;
-      }
-      try {
-        const res = await fetch('/api/remove-images', {
-          method: 'POST',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({images: Array.from(selectedForTrash)})
-        });
-        const data = await res.json();
-        if (data.ok) {
-          alert(`Successfully removed ${data.removed_count} images! The moodboard has been automatically regenerated.`);
-          location.reload();
-        } else {
-          alert('Error removing images: ' + data.error);
-        }
-      } catch (err) {
-        alert('Could not connect to curation server: ' + err.message);
-      }
+      openLightbox(cell);
     }
 
     function openLightbox(el) {
